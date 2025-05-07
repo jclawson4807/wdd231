@@ -1,0 +1,197 @@
+:root {
+    --header-font: Roboto;
+    --body-font: Domine;
+    --dark-blue-emphasis-color: #0D2149;
+    --header-footer-background-color: #1d4d73;
+    --header-footer-nav-text-color: #fff;
+    --main-background-color: #ffffff;
+    --main-aside-text-color: #000;
+    --box-shadow-color: #0000002e;
+    --main-max-width: 800px;
+    --highlight-text-color: #f3f437;
+    --required-red: #9c2c13;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: var(--body-font), serif;
+    font-weight: 300;
+    line-height: 1.7em;
+    width: 100%;
+    min-width: 320px;
+    color: var(--dark-body-blue-text-color);
+}
+
+a {
+    color: var(--header-footer-background-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-blue-emphasis-color);
+    text-decoration: none;
+}
+
+header,
+footer,
+nav {
+    background-color: var(--header-footer-background-color);
+    color: var(--header-footer-nav-text-color);
+    font-family: var(--header-font), sans-serif;
+}
+
+header {
+    padding: 20px 20px 0px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding: 1.1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: navy;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+nav {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--main-background-color);
+    color: var(--main-aside-text-color);
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+main h2 {
+    text-align: center;
+    color: var(--header-footer-background-color);
+    grid-column: span 1;
+}
+
+main picture {
+    margin: 0 auto 20px;
+    width: 100%;
+}
+
+main picture img {
+    margin: 0;
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.75em;
+}
+
+section p {
+    text-align: justify;
+    margin: 0 0 1.5em 0;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#fhdlogo {
+    width: 100%;
+    margin: 20px auto;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.highlight {
+    color: var(--highlight-text-color);
+}
