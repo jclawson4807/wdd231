@@ -182,6 +182,11 @@ section h2 {
     border-radius: 6px 6px 0 0;
 }
 
+section ul {
+    width: calc(100% - 70px);
+    margin: 15px 35px;
+}
+
 section p {
     text-align: justify;
     margin: 0 0 1.5em 0;
