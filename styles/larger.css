@@ -1,0 +1,54 @@
+
+/* large view navigation ************************************/
+@media (min-width: 615px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 800px) {
+
+    h2 {
+        text-align: left;
+    }
+/* 
+    main {
+        max-width: var(--main-max-width);
+    } */
+
+    main h2 {
+        text-align: left;
+    }
+
+    section {
+        margin: 10px auto;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.0rem;
+    }
+}

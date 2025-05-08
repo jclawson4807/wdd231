@@ -6,10 +6,9 @@
     --header-footer-nav-text-color: #fff;
     --main-background-color: #ffffff;
     --main-aside-text-color: #000;
-    --box-shadow-color: #0000002e;
+    --box-shadow-color: #00000064;
     --main-max-width: 800px;
     --highlight-text-color: #f3f437;
-    --required-red: #9c2c13;
 }
 
 * {
@@ -72,6 +71,19 @@ nav {
     margin: 1rem auto 0 auto;
 }
 
+.header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+}
+
+.header_content span {
+    font-family: var(--header-font), sans-serif;
+    font-size: 2.5em;
+}
+
 /* small view navigation */
 #menu {
     font-size: 1.5rem;
@@ -121,6 +133,11 @@ nav {
 .active::before {
     content: "📍";
     /* just a wayfinding symbol for the user */
+}
+
+header img {
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+    margin: 10px;
 }
 
 main {
