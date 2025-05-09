@@ -4,7 +4,6 @@
     h1 {
         font-size: 2.5rem;
         margin-left: 0;
-        text-align: center;
     }
 
     h2 {
@@ -25,26 +24,47 @@
         display: block;
         flex: 1 1 100%;
     }
+
+    section {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
 }
 
 @media (min-width: 800px) {
 
+    main {
+        margin: 1rem 15px 1rem 15px;
+        width: calc(100% - 30px);
+    }
+
+    h1 {
+        grid-column: span 2;
+    }
+    
     h2 {
         text-align: left;
     }
-/* 
-    main {
-        max-width: var(--main-max-width);
-    } */
+
+    section {
+        box-shadow: 1px 1px 4px var(--box-shadow-color);
+    
+    }
 
     main h2 {
         text-align: left;
     }
 
-    section {
-        margin: 10px auto;
-        max-width: 800px;
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 75px auto auto;
+
     }
+
+   #web_and_computer_programming_certificate {
+    grid-column: span 2;
+   }
 }
 
 @media (max-width: 400px) {
