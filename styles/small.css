@@ -9,6 +9,7 @@
     --box-shadow-color: #00000064;
     --main-max-width: 800px;
     --highlight-text-color: #f3f437;
+    --incomplete-class-background-color: #d0d0d0;
 }
 
 * {
@@ -237,19 +238,21 @@ section img {
 
 figure {
     width: 100%;
-    color: #fff;
-    background-color: black;
+    color: black;
+    background-color: var(--incomplete-class-background-color);
     width: calc(100% - 20px);
     border-radius: 4px;
     display: block;
     margin: 10px;
+}
 
+.completed_class {
+    background-color: var(--dark-blue-emphasis-color);
+    color: white;
 }
 
 figcaption {
     width: 100%;
-    color: #fff;
-    background-color: black;
     width: 100%;
     border-radius: 4px;
     display: block;
