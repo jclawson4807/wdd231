@@ -77,3 +77,49 @@ const courses = [
         completed: false
     }
 ]
+
+const allButton = document.querySelector('#all');
+const cseButton = document.querySelector('#cse');
+const wddButton = document.querySelector('#wdd');
+
+allButton.addEventListener('click', () => {
+    generateCourseFigures(courses);
+});
+
+cseButton.addEventListener('click', () => {
+
+    const cseCourses = courses.filter((course) => course.subject == "CSE");
+
+    generateCourseFigures(cseCourses);
+});
+
+wddButton.addEventListener('click', () => {
+
+    const wddCourses = courses.filter((course) => course.subject == "WDD");
+
+    generateCourseFigures(wddCourses);
+});
+
+function generateCourseFigure(course) {
+    let classString = "";
+
+    if (course.completed == true) {
+        classString = 'class="completed_class"';
+    }
+    
+    return `<figure ${classString}>
+                <figcaption>${ course.title }</figcaption>
+            </figure>`;
+}
+
+function generateCourseFigures(selectedCourses) {
+    const courseContainerElement = document.querySelector("#course_container");
+
+    courseContainerElement.innerHTML = "";
+
+    for (let i = 0; i < selectedCourses.length; i++) {
+        courseContainerElement.innerHTML = courseContainerElement.innerHTML + generateCourseFigure(selectedCourses[i]);
+    }
+}
+
+generateCourseFigures(courses);
