@@ -171,7 +171,6 @@ section {
     margin: 0 auto;
     width: 100%;
     padding: 0;
-    border: 1px solid var(--box-shadow-color);
     border-radius: 6px 6px 0 0;
 }
 
@@ -198,11 +197,6 @@ section img {
     margin: auto;
 }
 
-#class_type_filter_buttons{
-    width: 100%;
-    margin: 0;
-}
-
 #class_type_filter_buttons {
     display: flex;
     flex-direction: row;
@@ -210,7 +204,8 @@ section img {
     list-style: none;
     color: #fff;
     gap: 10px;
-    margin: 10px 0 10px 0;
+    margin: 10px;
+    width: calc(100% - 20px);
 }
 
 #class_type_filter_buttons li{
