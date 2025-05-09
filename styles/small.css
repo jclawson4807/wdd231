@@ -192,8 +192,9 @@ section ul {
 }
 
 section p {
-    text-align: justify;
-    margin: 0 0 1.5em 0;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    width: calc(100% - 20%);
 }
 
 section img {

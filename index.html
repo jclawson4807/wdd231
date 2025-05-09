@@ -27,11 +27,11 @@
         <button type="button" id="menu" aria-label="Menu Button"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="#">Final</a></li>
-                <li><a href="#">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/jamesclawson/" target="_blank">LinkedIn</a></li>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="chamber">Chamber</a></li>
+                <li><a href="#" id="final">Final</a></li>
+                <li><a href="#" id="github_profile">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/jamesclawson/" target="_blank" id="linkedin">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
@@ -58,11 +58,14 @@
         <section id="web_and_computer_programming_certificate">
             <h2>Web and Computer Programming Certificate</h2>
             <ul id="class_type_filter_buttons">
-                <li><a href="#" title="All" id="all">All</a></li>
-                <li><a href="#" title="CSE" id="cse">CSE</a></li>
-                <li><a href="#" title="WDD" id="wdd">WDD</a></li>
+                <li><a href="#class_type_filter_buttons" title="All" id="all">All</a></li>
+                <li><a href="#class_type_filter_buttons" title="CSE" id="cse">CSE</a></li>
+                <li><a href="#class_type_filter_buttons" title="WDD" id="wdd">WDD</a></li>
             </ul>
             <hr>
+
+            <p>The total number of credits required is <span id="total_number_of_credits">6</span></p>
+
             <div id="course_container">
             </div>
         </section>

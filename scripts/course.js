@@ -84,6 +84,7 @@ const wddButton = document.querySelector('#wdd');
 
 allButton.addEventListener('click', () => {
     generateCourseFigures(courses);
+    calculateAndDisplayTotalNumberOfCreditsRequired(courses);
 });
 
 cseButton.addEventListener('click', () => {
@@ -91,6 +92,7 @@ cseButton.addEventListener('click', () => {
     const cseCourses = courses.filter((course) => course.subject == "CSE");
 
     generateCourseFigures(cseCourses);
+    calculateAndDisplayTotalNumberOfCreditsRequired(cseCourses);
 });
 
 wddButton.addEventListener('click', () => {
@@ -98,6 +100,7 @@ wddButton.addEventListener('click', () => {
     const wddCourses = courses.filter((course) => course.subject == "WDD");
 
     generateCourseFigures(wddCourses);
+    calculateAndDisplayTotalNumberOfCreditsRequired(wddCourses);
 });
 
 function generateCourseFigure(course) {
@@ -122,4 +125,15 @@ function generateCourseFigures(selectedCourses) {
     }
 }
 
+function calculateTotalCredits(total, course) {
+    return total + course.credits;
+}
+
+function calculateAndDisplayTotalNumberOfCreditsRequired(selectedCourses) {
+
+    const totalNumberOfCreditsRequiredElement = document.querySelector("#total_number_of_credits");
+    totalNumberOfCreditsRequiredElement.textContent = ` ${ selectedCourses.reduce(calculateTotalCredits, 0) } `;
+}
+
 generateCourseFigures(courses);
+calculateAndDisplayTotalNumberOfCreditsRequired(courses);
