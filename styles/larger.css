@@ -1,7 +1,7 @@
 
 /* large view navigation ************************************/
 
-@media (min-width: 301px) {
+@media (min-width: 321px) {
     section {
         width: calc(100% - 20px);
         margin: 10px;
