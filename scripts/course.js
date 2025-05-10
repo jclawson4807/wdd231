@@ -85,10 +85,6 @@ const wddButton = document.querySelector('#wdd');
 allButton.addEventListener('click', () => {
     generateCourseFigures(courses);
     calculateAndDisplayTotalNumberOfCreditsRequired(courses);
-
-    allButton.classList.add("active");
-    cseButton.classList.remove("active");
-    wddButton.classList.remove("active");
 });
 
 cseButton.addEventListener('click', () => {
@@ -97,10 +93,6 @@ cseButton.addEventListener('click', () => {
 
     generateCourseFigures(cseCourses);
     calculateAndDisplayTotalNumberOfCreditsRequired(cseCourses);
-
-    allButton.classList.remove("active");
-    cseButton.classList.add("active");
-    wddButton.classList.remove("active");
 });
 
 wddButton.addEventListener('click', () => {
@@ -109,10 +101,6 @@ wddButton.addEventListener('click', () => {
 
     generateCourseFigures(wddCourses);
     calculateAndDisplayTotalNumberOfCreditsRequired(wddCourses);
-
-    allButton.classList.remove("active");
-    cseButton.classList.remove("active");
-    wddButton.classList.add("active");
 });
 
 function generateCourseFigure(course) {
