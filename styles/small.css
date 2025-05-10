@@ -207,6 +207,7 @@ section img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: center;
     list-style: none;
     color: #fff;
     gap: 10px;
@@ -231,6 +232,7 @@ section img {
     width: 100%;
     border-radius: 4px;
     display: block;
+    height: 65px;
 }
 
 #course_container {
