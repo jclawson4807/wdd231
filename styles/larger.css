@@ -1,6 +1,10 @@
 
 /* large view navigation ************************************/
 @media (min-width: 615px) {
+    .header_content span {
+        font-size: 2.5em;
+    }
+    
     h1 {
         font-size: 2.5rem;
         margin-left: 0;

@@ -82,7 +82,7 @@ nav {
 
 .header_content span {
     font-family: var(--header-font), sans-serif;
-    font-size: 2.5em;
+    font-size: 1em;
 }
 
 /* small view navigation */
@@ -146,7 +146,7 @@ main {
     margin: 0 auto;
     background-color: var(--main-background-color);
     color: var(--main-aside-text-color);
-    margin: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -158,13 +158,13 @@ main h2 {
     grid-column: span 1;
 }
 
-main picture {
-    margin: 0 auto 20px;
+#us_state_of_interest picture {
+    margin: 0 auto;
     width: 100%;
 }
 
-main picture img {
-    margin: 0;
+picture img {
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -173,8 +173,8 @@ hr {
 }
 
 section {
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 10px 0 10px;
+    width: 280px;
     padding: 0;
     border-radius: 6px 6px 0 0;
 }
