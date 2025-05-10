@@ -121,7 +121,7 @@ nav {
     color: #fff;
 }
 
-.navigation a:hover, #class_type_filter_buttons a:hover {
+.navigation a:hover, #classTypeFilterButtons a:hover {
     background-color: #bbb;
     color: #333;
 }
@@ -203,7 +203,7 @@ section img {
     margin: auto;
 }
 
-#class_type_filter_buttons {
+#classTypeFilterButtons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -215,14 +215,14 @@ section img {
     max-width: 500px;
 }
 
-#class_type_filter_buttons li{
+#classTypeFilterButtons li{
     flex: 1 1 100%;
     border-radius: 4px;
     display: block;
     margin: 0;
 }
 
-#class_type_filter_buttons a {
+#classTypeFilterButtons a {
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
