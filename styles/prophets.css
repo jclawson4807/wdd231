@@ -73,5 +73,8 @@ section img {
     width: calc(100% - 20px);
     height: auto;
     max-width: 362px;
+    max-height: 447px;
+    aspect-ratio: calc(362px / 447px);
     object-fit: fill;
+
 }
