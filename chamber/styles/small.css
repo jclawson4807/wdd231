@@ -272,7 +272,7 @@ figcaption {
 footer {
     padding: 10px;
     text-align: left;
-    font-size: 0.85em;
+    font-size: 0.75em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -307,8 +307,7 @@ footer img {
 #coc_contact_info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     max-width: 320px;
     padding: 20px;
@@ -322,18 +321,17 @@ footer img {
 #coc_social_media_icon_container {
     display: flex;
     flex-direction: row;
-    gap: 35px;
-    justify-content: space-around;
+    gap: 25px;
+    justify-content: center;
     width: 100%;
     max-width: 320px;
-    padding: 20px;
+    padding: 15px;
 }
 
 #coc_class_project_info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     max-width: 320px;
     padding: 20px;
