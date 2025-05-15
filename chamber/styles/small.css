@@ -158,15 +158,6 @@ main h2 {
     grid-column: span 1;
 }
 
-#coc_social_media_icon_container {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 182px;
-    padding: 20px;
-}
 
 
 
@@ -280,7 +271,12 @@ figcaption {
 
 footer {
     padding: 10px;
-    text-align: center;
+    text-align: left;
+    font-size: 0.85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer p {
@@ -305,4 +301,41 @@ footer img {
 
 .highlight {
     color: var(--highlight-text-color);
+}
+
+
+#coc_contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    text-align: left;
+}
+
+#coc_name {
+    font-weight: 700;
+}
+
+#coc_social_media_icon_container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+}
+
+#coc_class_project_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    text-align: left;
 }
