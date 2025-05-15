@@ -1,6 +1,9 @@
 :root {
     --header-font: Roboto;
     --body-font: Domine;
+    --sun-prairie-green-background-color:rgb(50, 130, 132);
+    --sun-prairie-light-green-emphasis-color: rgb(121, 155, 62);
+    --sun-prairie-highlight-color: rgb(255, 207, 1);
     --dark-blue-emphasis-color: #0D2149;
     --header-footer-background-color: #1d4d73;
     --header-footer-nav-text-color: #fff;
@@ -8,7 +11,6 @@
     --main-aside-text-color: #000;
     --box-shadow-color: #00000064;
     --main-max-width: 800px;
-    --highlight-text-color: #f3f437;
     --incomplete-class-background-color: #d0d0d0;
 }
 
@@ -42,7 +44,7 @@ a:hover {
 header,
 footer,
 nav {
-    background-color: var(--header-footer-background-color);
+    background-color: var(--sun-prairie-green-background-color);
     color: var(--header-footer-nav-text-color);
     font-family: var(--header-font), sans-serif;
 }
@@ -300,7 +302,7 @@ footer img {
 }
 
 .highlight {
-    color: var(--highlight-text-color);
+    color: var(--sun-prairie-highlight-color);
 }
 
 
