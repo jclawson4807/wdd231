@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 928 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-14.75,-56.4516)">
+        <g transform="matrix(1,0,0,1,0,-3.75943)">
+            <g transform="matrix(1,0,0,1,176,-85)">
+                <g transform="matrix(95.8333,0,0,95.8333,770.562,261.777)">
+                </g>
+                <text x="73.103px" y="261.777px" style="font-family:'Arial-Black', 'Arial Black', sans-serif;font-weight:900;font-size:95.833px;fill:rgb(50,130,132);">SUN PRAIRIE</text>
+            </g>
+            <g transform="matrix(1,0,0,1,176.757,-26)">
+                <g transform="matrix(54.1667,0,0,54.1667,754.392,261.777)">
+                </g>
+                <text x="73.103px" y="261.777px" style="font-family:'Arial-Black', 'Arial Black', sans-serif;font-weight:900;font-size:54.167px;fill:rgb(50,130,132);">Chamber of<tspan x="416.379px 434.444px " y="261.777px 261.777px "> C</tspan>ommer<tspan x="682.134px 718.263px " y="261.777px 261.777px ">ce</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-76,-227)">
+            <path d="M207,302.131C256.559,304.734 296,345.797 296,396C296,446.203 256.559,487.266 207,489.869L207,302.131Z" style="fill:none;stroke:rgb(54,86,61);stroke-width:12.5px;"/>
+            <g transform="matrix(1.35398,0,0,1.35398,-74.8894,209.827)">
+                <path d="M208.193,81.119C237.658,83.024 261,107.557 261,137.5C261,167.443 237.658,191.976 208.193,193.881L208.193,81.119Z" style="fill:none;stroke:rgb(121,155,63);stroke-width:9.23px;"/>
+            </g>
+            <g transform="matrix(1.0531,0,0,1.0531,-13.3584,251.199)">
+                <path d="M209.248,81.197C238.213,83.612 261,107.916 261,137.5C261,167.084 238.213,191.388 209.248,193.803L209.248,81.197Z" style="fill:none;stroke:rgb(184,190,53);stroke-width:11.87px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-110,-1)">
+                <path d="M207,393.702L296,396" style="fill:none;stroke:rgb(255,207,0);stroke-width:12.5px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-110,-26)">
+                <path d="M210,377.702L278,395.251" style="fill:none;stroke:rgb(232,117,35);stroke-width:12.5px;"/>
+            </g>
+            <g transform="matrix(-1,0,0,1,378,43)">
+                <path d="M210,377.702L278,395.251" style="fill:none;stroke:rgb(232,117,35);stroke-width:12.5px;"/>
+            </g>
+            <g transform="matrix(-1,0,0,1,402,92)">
+                <path d="M211,373.702L235,408.251" style="fill:none;stroke:rgb(232,117,35);stroke-width:12.5px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-44,-84)">
+                <path d="M211,373.702L235,408.251" style="fill:none;stroke:rgb(232,117,35);stroke-width:12.5px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-110,-45)">
+                <path d="M229,358.702L296,396" style="fill:none;stroke:rgb(255,207,0);stroke-width:12.5px;"/>
+            </g>
+            <g transform="matrix(-1,0,0,1,415,82)">
+                <path d="M229,358.702L296,396" style="fill:none;stroke:rgb(255,207,0);stroke-width:12.5px;"/>
+            </g>
+        </g>
+    </g>
+</svg>
