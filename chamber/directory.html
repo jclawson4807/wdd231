@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     <meta property="og:title" content="WDD 231 - Sun Prairie WI Chamber of Commerce Site">
     <meta property="og:description" content="WDD 231 - Web Frontend Development 1 Sun Prairie WI Chamber of Commerce directory site for James Clawson">
     <meta property="og:image" content="https://jclawson4807.github.io/wdd231/images/prophets_site_preview.webp">
@@ -26,7 +27,14 @@
 <header>
     <img src="images/sp-chamber-of-commerce-logo.svg" alt="Sun Prairie Wisconsin Chamber of Commerce" width="182" height="42" loading="lazy">
     <img src="images/mode-switch.svg" alt="Mode switch" width="44" height="44" loading="lazy">
+    <button type="button" id="menu" aria-label="Menu Button"></button>
     <nav>
+        <ul class="navigation">
+            <li><a href="index.html" id="home" class="active">Home</a></li>
+            <li><a href="discovery.html" id="discovery">Discovery</a></li>
+            <li><a href="directory.html" id="directory">Business Directory</a></li>
+            <li><a href="join.html" id="join">Join</a></li>
+        </ul>
     </nav>
 </header>
 <main></main>
