@@ -14,6 +14,59 @@ mode_switch_button.addEventListener('click', () => {
     getBusinessData(displayBusinessStyle);
 });
 
+const displayLogoCards = (members) => {
+    members.forEach((member) => {
+        const card = document.createElement("section");
+        card.className = "logo_card";
+
+        const companyLogo = document.createElement("img");
+        companyLogo.setAttribute("src", `images/${member.icon_image}`);
+        companyLogo.setAttribute("alt", `${member.name} Main Image`);
+        companyLogo.setAttribute("width", "140");
+        companyLogo.setAttribute("height", "140");
+        companyLogo.setAttribute("loading", "lazy");
+
+        const businessInfoContainer = document.createElement("div");
+
+        businessInfoContainer.className = "centered_info_container";
+
+        const p1 = document.createElement("p");
+        const p2 = document.createElement("p");
+        const p3 = document.createElement("p");
+        const p4 = document.createElement("p");
+
+        p1.textContent = `${member.address.street1} ${member.address.city} ${member.address.state} ${member.address.zip}`;
+
+        const a2 = document.createElement("a");
+        const a3 = document.createElement("a");
+        const a4 = document.createElement("a");
+
+        a2.setAttribute("href", `mailto:${member.company_image_url}`);
+        a3.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
+        a4.setAttribute("href", `https://${member.company_image_url}`);
+
+        a2.textContent = member.email;
+        a3.textContent = member.phone_number;
+        a4.textContent = member.website_url;
+
+        p2.appendChild(a2);
+
+        p3.appendChild(a3);
+
+        p4.appendChild(a4);
+
+        businessInfoContainer.appendChild(p1);
+        businessInfoContainer.appendChild(p2);
+        businessInfoContainer.appendChild(p3);
+        businessInfoContainer.appendChild(p4);
+
+        card.appendChild(companyLogo);
+        card.appendChild(businessInfoContainer);
+
+        cards.appendChild(card);
+    });
+}
+
 const displayBusinessCards = (members) => {
     members.forEach((member) => {
         const card = document.createElement("section");
@@ -155,7 +208,7 @@ const getBusinessData = async (displayBusinessStyleValue) => {
         // console.log(displayBusinessStyle.value)
 
         if (displayBusinessStyleValue.value == "card") {
-            displayBusinessCards(data.members);
+            displayLogoCards(data.members);
         } else if (displayBusinessStyleValue.value == "list") {
             displayBusinessList(data.members);
         }
