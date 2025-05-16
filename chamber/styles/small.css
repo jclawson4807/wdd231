@@ -30,6 +30,7 @@ body {
     width: 100%;
     min-width: 320px;
     color: var(--dark-body-blue-text-color);
+    background-color: var(--sp-logo-text-color);
 }
 
 a {
@@ -159,7 +160,6 @@ nav {
 main {
     width: 100%;
     margin: 10px auto;
-    background-color: var(--main-background-color);
     color: var(--main-aside-text-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));;
@@ -215,13 +215,16 @@ section h3 {
     align-items: center;
     text-align: center;
     border: 10px;
-    height: 285px;
+    height: 300px;
+    background-color: white;
+    border-radius: 6px;
 }
 
 .logo_card img {
-    padding: 10px;
+    margin: 10px;
     width: 140px;
     height: 140px;
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
 .business_info_container {
