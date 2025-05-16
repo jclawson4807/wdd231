@@ -1,0 +1,132 @@
+{
+  "Array" : [
+    {
+      "name" : "Sun City Cyclery and Skates ",
+      "website_url" : "http://www.suncitycyclery.com",
+      "phone_number" : "(608) 837-2453",
+      "tag_line" : "Bike repair, fitting and selling new and used bikes is what we do",
+      "address" : {
+        "street1" : "235 E Main St",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/sun-city-cyclery-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/sun-city-cyclery-main-logo.webp",
+      "membership_level" : 3
+    },
+    {
+      "name" : "Day In Whyte",
+      "website_url" : "https://www.dayinwhyte.com",
+      "phone_number" : "(608) 473-5903",
+      "tag_line" : "Be Your Best Self",
+      "address" : {
+        "street1" : "385 E. Main St",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/day-in-whyte-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/day-in-whyte-main-logo.webp",
+      "membership_level" : 3
+    },
+    {
+      "name" : "Nest Interior Design",
+      "website_url" : "https://anestedhome.com",
+      "phone_number" : "(608) 825-2524",
+      "tag_line" : "Introducing new arrivals designed to craft a daily haven for your family!",
+      "address" : {
+        "street1" : "223 East Main Street",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/nest-interior-design-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/nest-interior-design-main-logo.webp",
+      "membership_level" : 2
+    },
+    {
+      "name" : "Salvatore's Tomato Pies",
+      "website_url" : "https://www.salvatorestomatopies.com",
+      "phone_number" : "(608) 318-1761",
+      "tag_line" : "Serving up the best authentic jersey-style pizza, right here in the heart of Wisconsin!",
+      "address" : {
+        "street1" : "121 E. Main St",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/salvatores-tomato-pies-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/salvatores-tomato-pies-logo-small.webp",
+      "membership_level" : 2
+    },
+    {
+      "name" : "Sugar River Pizza Company",
+      "website_url" : "https://www.sugarriverpizza.com/sun-prairie",
+      "phone_number" : "(608) 478-5950",
+      "tag_line" : "Italian Comfort Food. The best pizza, sandwiches, pasta, salads, appetizers and desserts around. Local ingredients with scratch kitchen offerings!",
+      "address" : {
+        "street1" : "1390 Cabela Dr",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/suger-river-pizza-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/sugar-river-pizza-logo-small.webp",
+      "membership_level" : 1
+    },
+    {
+      "name" : "Washington Mills",
+      "website_url" : "https://www.washingtonmills.com",
+      "phone_number" : "(716) 278-6600",
+      "tag_line" : "The applications for our materials are diverse, but what we produce for each customer is specific.",
+      "address" : {
+        "street1" : "165 King Street",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/washington-mills-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/washington-mills-main-logo.webp",
+      "membership_level" : 1
+    },
+    {
+      "name" : "Syverson Automotive",
+      "website_url" : "https://www.syversonautomotive.com",
+      "phone_number" : "(608) 825-6868",
+      "tag_line" : "At Syverson Automotive, we are a family-owned and operated local business dedicated to providing quality auto repair services to the Sun Prairie community.",
+      "address" : {
+        "street1" : "148 S Bristol Street",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/syverson-automotive-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/syverson-automotive-logo-small.webp",
+      "membership_level" : 1
+    },
+    {
+      "name" : "I'm Board Games",
+      "website_url" : "https://imboardgames.com",
+      "phone_number" : "(608) 318-2642",
+      "tag_line" : "Unplug. Interact. Reconnect.",
+      "address" : {
+        "street1" : "2816 Prairie Lakes Dr",
+        "street2" : "",
+        "city" : "Sun Prairie",
+        "state" : "Wisconsin",
+        "zip" : "53590"
+      },
+      "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/imboard-main-small.webp",
+      "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/imboard-logo-small.webp",
+      "membership_level" : 2
+    }
+  ]
+}
