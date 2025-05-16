@@ -228,6 +228,10 @@ section h3 {
     box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
+.centered_info_container {
+    font-size: 0.80em;
+}
+
 .business_info_container {
     width: 100%;
     margin: 0;
