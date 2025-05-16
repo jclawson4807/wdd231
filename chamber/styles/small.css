@@ -151,10 +151,9 @@ nav {
 
 main {
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     background-color: var(--main-background-color);
     color: var(--main-aside-text-color);
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));;
     grid-template-rows: auto;
