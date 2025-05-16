@@ -156,8 +156,9 @@ main {
     color: var(--main-aside-text-color);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));;
     grid-template-rows: auto;
+    grid-gap: 0.5rem;
 }
 
 main h2 {
@@ -172,9 +173,11 @@ hr {
 
 section {
     margin: 0 10px 0 10px;
-    width: 300px;
+    width: calc(100% - 20px);
     padding: 0;
     border-radius: 6px 6px 0 0;
+    max-width: 382px;
+    height: 200px;
 }
 
 section h2 {
