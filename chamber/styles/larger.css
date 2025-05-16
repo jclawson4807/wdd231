@@ -1,0 +1,53 @@
+
+/* large view navigation ************************************/
+
+@media (min-width: 400px) {
+    section {
+        max-width: 640px;
+        height: 200px;
+    }
+
+    .business_card_in_list {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 650px) {
+
+    .business_card_in_list {
+        font-size: 0.85em;
+    }
+}
+
+@media (min-width: 615px) {
+    .header_content span {
+        font-size: 2.5em;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+
+    /* section {
+        box-shadow: 1px 1px 4px var(--box-shadow-color);
+    
+    } */
+}
+
