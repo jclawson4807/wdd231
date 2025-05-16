@@ -42,11 +42,16 @@ a:hover {
     text-decoration: none;
 }
 
-header,
-footer,
-nav {
+footer {
     background-color: var(--sun-prairie-green-background-color);
     color: var(--header-footer-nav-text-color);
+    font-family: var(--header-font), sans-serif;
+}
+
+header,
+nav {
+    background-color: white;
+    color: black;
     font-family: var(--header-font), sans-serif;
 }
 

@@ -2,17 +2,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 928 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g transform="matrix(1,0,0,1,-14.75,-56.4516)">
-        <g transform="matrix(1,0,0,1,0,-3.75943)">
-            <g transform="matrix(1,0,0,1,176,-85)">
-                <g transform="matrix(95.8333,0,0,95.8333,770.562,261.777)">
-                </g>
-                <text x="73.103px" y="261.777px" style="font-family:'Arial-Black', 'Arial Black', sans-serif;font-weight:900;font-size:95.833px;fill:rgb(50,130,132);">SUN PRAIRIE</text>
+        <g transform="matrix(1,0,0,1,249.103,173.018)">
+            <text x="0px" y="0px" style="font-family:'Arial-Black', 'Arial Black', sans-serif;font-weight:900;font-size:95.833px;fill:rgb(50,130,132);">SUN PRAIRIE</text>
+        </g>
+        <g transform="matrix(1,0,0,1,249.86,232.018)">
+            <g transform="matrix(54.167,0,0,54.167,681.293,0)">
             </g>
-            <g transform="matrix(1,0,0,1,176.757,-26)">
-                <g transform="matrix(54.1667,0,0,54.1667,754.392,261.777)">
-                </g>
-                <text x="73.103px" y="261.777px" style="font-family:'Arial-Black', 'Arial Black', sans-serif;font-weight:900;font-size:54.167px;fill:rgb(50,130,132);">Chamber of<tspan x="416.379px 434.444px " y="261.777px 261.777px "> C</tspan>ommer<tspan x="682.134px 718.263px " y="261.777px 261.777px ">ce</tspan></text>
-            </g>
+            <text x="0px" y="0px" style="font-family:'Arial-Black', 'Arial Black', sans-serif;font-weight:900;font-size:54.167px;fill:rgb(50,130,132);">Chamber of<tspan x="343.278px 361.343px " y="0px 0px "> C</tspan>ommer<tspan x="609.035px 645.164px " y="0px 0px ">ce</tspan></text>
         </g>
         <g transform="matrix(1,0,0,1,-76,-227)">
             <path d="M207,302.131C256.559,304.734 296,345.797 296,396C296,446.203 256.559,487.266 207,489.869L207,302.131Z" style="fill:none;stroke:rgb(54,86,61);stroke-width:12.5px;"/>
