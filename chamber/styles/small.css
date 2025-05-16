@@ -59,6 +59,11 @@ header {
     padding: 20px 0 0 0;
 }
 
+header img {
+    box-shadow: none;
+    margin: 10px;
+}
+
 h1 {
     text-align: left;
     font-size: 1.5rem;
@@ -142,11 +147,6 @@ nav {
 .active::before {
     content: "📍";
     /* just a wayfinding symbol for the user */
-}
-
-header img {
-    box-shadow: 1px 1px 4px var(--box-shadow-color);
-    margin: 10px;
 }
 
 main {
