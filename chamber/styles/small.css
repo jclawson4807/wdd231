@@ -166,17 +166,6 @@ main h2 {
     grid-column: span 1;
 }
 
-
-
-
-#us_state_of_interest picture {
-    margin: 0 auto;
-}
-
-picture img {
-    margin: 0 auto;
-}
-
 hr {
     margin: 10px;
 }
@@ -189,15 +178,35 @@ section {
 }
 
 section h2 {
-    background-color: var(--header-footer-background-color);
+    background-color: var(--sp-logo-text-color);
     color: white;
     padding: 0.5em;
     border-radius: 6px 6px 0 0;
+    border: 1px solid var(--sp-logo-text-color);
+    margin: 0;
+    padding: 10px 10px 0 10px;
+}
+section h3 {
+    background-color: var(--sp-logo-text-color);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0 0 0 0;
+    border: 1px solid var(--sp-logo-text-color);
+    margin: 0;
+    text-align: left;
+    font-size: 0.75em;
+    padding: 0 10px 10 10px;
 }
 
-section ul {
-    width: calc(100% - 70px);
-    margin: 15px 35px;
+section .business_info_container {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+
+section img {
+    width: 120px;
+    height: 120px;
 }
 
 section p {
@@ -206,11 +215,7 @@ section p {
     width: calc(100% - 20%);
 }
 
-section img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
+
 
 #class_filter_buttons {
     display: flex;

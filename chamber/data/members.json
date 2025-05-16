@@ -14,7 +14,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/sun-city-cyclery-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/sun-city-cyclery-main-logo.webp",
-      "membership_level" : 3
+      "membership_level" : 3,
+      "email" : "help@suncitycyclery.com"
     },
     {
       "name" : "Day In Whyte",
@@ -30,7 +31,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/day-in-whyte-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/day-in-whyte-main-logo.webp",
-      "membership_level" : 3
+      "membership_level" : 3,
+      "email" : "dayinwhyte@gmail.com"
     },
     {
       "name" : "Nest Interior Design",
@@ -46,7 +48,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/nest-interior-design-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/nest-interior-design-main-logo.webp",
-      "membership_level" : 2
+      "membership_level" : 2,
+      "email" : "info@anestedhome.com"
     },
     {
       "name" : "Salvatore's Tomato Pies",
@@ -62,7 +65,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/salvatores-tomato-pies-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/salvatores-tomato-pies-logo-small.webp",
-      "membership_level" : 2
+      "membership_level" : 2,
+      "email" : "pizza@salvatorestomatopies.com"
     },
     {
       "name" : "Sugar River Pizza Company",
@@ -78,7 +82,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/suger-river-pizza-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/sugar-river-pizza-logo-small.webp",
-      "membership_level" : 1
+      "membership_level" : 1,
+      "email" : "deb@sugarriverpizza.com"
     },
     {
       "name" : "Washington Mills",
@@ -94,7 +99,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/washington-mills-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/washington-mills-main-logo.webp",
-      "membership_level" : 1
+      "membership_level" : 1,
+      "email" : "info@washingtonmills.com"
     },
     {
       "name" : "Syverson Automotive",
@@ -110,7 +116,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/syverson-automotive-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/syverson-automotive-logo-small.webp",
-      "membership_level" : 1
+      "membership_level" : 1,
+      "email" : "syversonautomotive@gmail.com"
     },
     {
       "name" : "I'm Board Games",
@@ -126,7 +133,8 @@
       },
       "company_image_url" : "https://jclawson4807.github.io/wdd231/chamber/images/imboard-main-small.webp",
       "icon_image" : "https://jclawson4807.github.io/wdd231/chamber/images/imboard-logo-small.webp",
-      "membership_level" : 2
+      "membership_level" : 2,
+      "email" : "margaret@imboardgames.com"
     }
   ]
 }
