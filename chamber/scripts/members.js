@@ -146,6 +146,8 @@ const displayBusinessList = (members) => {
 }
 
 const getBusinessData = async (displayBusinessStyleValue) => {
+    cards.innerHTML = "";
+    
     try {
         const response = await fetch(url);
         const data = await response.json();
