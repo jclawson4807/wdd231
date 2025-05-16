@@ -8,6 +8,9 @@ const displayBusinesses = (members) => {
         const companyName = document.createElement("h2");
         const tagline = document.createElement("h3");
 
+        companyName.textContent = member.name;
+        tagline.textContent = member.tag_line;
+
         const businessInfoContainer = document.createElement("div");
         const businessDetailsContainer = document.createElement("div");
 
