@@ -2,9 +2,9 @@
   "members" : [
     {
       "name" : "Sun City Cyclery and Skates ",
-      "website_url" : "http://www.suncitycyclery.com",
+      "website_url" : "www.suncitycyclery.com",
       "phone_number" : "(608) 837-2453",
-      "tag_line" : "Bike repair, fitting and selling new and used bikes is what we do",
+      "tag_line" : "Fitting and selling new and used bikes is what we do",
       "address" : {
         "street1" : "235 E Main St",
         "street2" : "",
@@ -19,7 +19,7 @@
     },
     {
       "name" : "Day In Whyte",
-      "website_url" : "https://www.dayinwhyte.com",
+      "website_url" : "www.dayinwhyte.com",
       "phone_number" : "(608) 473-5903",
       "tag_line" : "Be Your Best Self",
       "address" : {
@@ -36,9 +36,9 @@
     },
     {
       "name" : "Nest Interior Design",
-      "website_url" : "https://anestedhome.com",
+      "website_url" : "anestedhome.com",
       "phone_number" : "(608) 825-2524",
-      "tag_line" : "Introducing new arrivals designed to craft a daily haven for your family!",
+      "tag_line" : "Designed to craft a daily haven for your family!",
       "address" : {
         "street1" : "223 East Main Street",
         "street2" : "",
@@ -53,9 +53,9 @@
     },
     {
       "name" : "Salvatore's Tomato Pies",
-      "website_url" : "https://www.salvatorestomatopies.com",
+      "website_url" : "www.salvatorestomatopies.com",
       "phone_number" : "(608) 318-1761",
-      "tag_line" : "Serving up the best authentic jersey-style pizza, right here in the heart of Wisconsin!",
+      "tag_line" : "Serving up the best authentic pizza in the heart of Wisconsin!",
       "address" : {
         "street1" : "121 E. Main St",
         "street2" : "",
@@ -70,9 +70,9 @@
     },
     {
       "name" : "Sugar River Pizza Company",
-      "website_url" : "https://www.sugarriverpizza.com/sun-prairie",
+      "website_url" : "www.sugarriverpizza.com",
       "phone_number" : "(608) 478-5950",
-      "tag_line" : "Italian Comfort Food. The best pizza, sandwiches, pasta, salads, appetizers and desserts around. Local ingredients with scratch kitchen offerings!",
+      "tag_line" : "Local ingredients with scratch kitchen offerings!",
       "address" : {
         "street1" : "1390 Cabela Dr",
         "street2" : "",
@@ -87,9 +87,9 @@
     },
     {
       "name" : "Washington Mills",
-      "website_url" : "https://www.washingtonmills.com",
+      "website_url" : "www.washingtonmills.com",
       "phone_number" : "(716) 278-6600",
-      "tag_line" : "The applications for our materials are diverse, but what we produce for each customer is specific.",
+      "tag_line" : "What we produce for each customer is specific.",
       "address" : {
         "street1" : "165 King Street",
         "street2" : "",
@@ -104,9 +104,9 @@
     },
     {
       "name" : "Syverson Automotive",
-      "website_url" : "https://www.syversonautomotive.com",
+      "website_url" : "www.syversonautomotive.com",
       "phone_number" : "(608) 825-6868",
-      "tag_line" : "At Syverson Automotive, we are a family-owned and operated local business dedicated to providing quality auto repair services to the Sun Prairie community.",
+      "tag_line" : "Dedicated to providing quality auto repair services.",
       "address" : {
         "street1" : "148 S Bristol Street",
         "street2" : "",
@@ -121,7 +121,7 @@
     },
     {
       "name" : "I'm Board Games",
-      "website_url" : "https://imboardgames.com",
+      "website_url" : "imboardgames.com",
       "phone_number" : "(608) 318-2642",
       "tag_line" : "Unplug. Interact. Reconnect.",
       "address" : {

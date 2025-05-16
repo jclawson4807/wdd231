@@ -21,8 +21,8 @@ const displayBusinesses = (members) => {
 
         companyImage.setAttribute("src", `images/${member.company_image_url}`);
         companyImage.setAttribute("alt", `${member.name} Main Image`);
-        companyImage.setAttribute("width", "80");
-        companyImage.setAttribute("height", "80");
+        companyImage.setAttribute("width", "70");
+        companyImage.setAttribute("height", "70");
         companyImage.setAttribute("loading", "lazy");
 
         const p1 = document.createElement("p");
@@ -43,7 +43,7 @@ const displayBusinesses = (members) => {
 
         a1.setAttribute("href", `mailto:${member.company_image_url}`);
         a2.setAttribute("href", `tel:+${member.phone_number}`);
-        a3.setAttribute("href", member.company_image_url);
+        a3.setAttribute("href", `https://${member.company_image_url}`);
 
         a1.textContent = member.email;
         a2.textContent = member.phone_number.match( numberPattern );
