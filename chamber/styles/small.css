@@ -230,6 +230,11 @@ section img {
     width: 100%;
 }
 
+.business_card_in_list {
+    display: inline-block;
+    font-size: 0.85em;
+}
+
 p span {
     font-size: 700;
 }

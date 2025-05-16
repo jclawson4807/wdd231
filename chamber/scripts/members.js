@@ -54,11 +54,11 @@ const displayBusinessCards = (members) => {
         const a3 = document.createElement("a");
 
         a1.setAttribute("href", `mailto:${member.company_image_url}`);
-        a2.setAttribute("href", `tel:+${member.phone_number}`);
+        a2.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
         a3.setAttribute("href", `https://${member.company_image_url}`);
 
         a1.textContent = member.email;
-        a2.textContent = member.phone_number.match( numberPattern );
+        a2.textContent = member.phone_number;
         a3.textContent = member.website_url;
 
         p1.appendChild(s1);
@@ -97,7 +97,7 @@ const displayBusinessList = (members) => {
         const businessDetailsContainer = document.createElement("div");
 
         businessInfoContainer.className = "business_info_container";
-        businessDetailsContainer.className = "business_details_container";
+        businessDetailsContainer.className = "business_card_in_list";
 
         const p1 = document.createElement("p");
         const p2 = document.createElement("p");
@@ -116,11 +116,11 @@ const displayBusinessList = (members) => {
         const a3 = document.createElement("a");
 
         a1.setAttribute("href", `mailto:${member.company_image_url}`);
-        a2.setAttribute("href", `tel:+${member.phone_number}`);
+        a2.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
         a3.setAttribute("href", `https://${member.company_image_url}`);
 
         a1.textContent = member.email;
-        a2.textContent = member.phone_number.match( numberPattern );
+        a2.textContent = member.phone_number;
         a3.textContent = member.website_url;
 
         p1.appendChild(s1);
