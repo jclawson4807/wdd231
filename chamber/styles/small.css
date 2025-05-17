@@ -216,12 +216,6 @@ section {
     box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
-section img {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-}
-
 .business_details_container {
     width: calc(100% - 100px); 
     display: inline-block;
