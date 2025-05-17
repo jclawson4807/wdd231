@@ -121,7 +121,7 @@ const displayBusinessList = (members) => {
 }
 
 const getBusinessData = async (displayBusinessStyleValue) => {
-    cards.innerHTML = "";
+    cards.innerHTML = "<h1>Business Directory</h1>";
     
     try {
         const response = await fetch(url);
