@@ -72,13 +72,10 @@
 
     footer {
         flex-direction: row;
-        height: 175px;
+        height: 195px;
     }
 
     #coc_social_media_icon_container {
-        width: 320px;
-        padding: 0;
-        height: 54px;
         margin: 50.5px auto;
     }
 }

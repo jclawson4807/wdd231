@@ -232,7 +232,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items:flex-start;
-    height: 405px;
+    height: 445px;
 }
 
 footer p {
@@ -257,7 +257,7 @@ footer img {
 .coc_info {
     width: 320px;
     padding: 20px;
-    height: 135px;
+    height: 155px;
 }
 
 #coc_name {
@@ -265,8 +265,8 @@ footer img {
 }
 
 #coc_social_media_icon_container {
-    width: 320px;
-    padding: 20px 0 10px 0;
+    width: 232px;
+    padding: 0;
     height: 54px;
     margin: 0 auto;
 }
