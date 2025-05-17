@@ -307,7 +307,7 @@ footer a:hover {
 
 footer img {
     display: inline-block;
-    margin: 40.5px 10px;
+    margin: 0 10px;
 }
 
 .coc_info {
@@ -322,6 +322,7 @@ footer img {
 
 #coc_social_media_icon_container {
     width: 320px;
-    padding: 15px;
+    padding: 20px 0 10px 0;
+    height: 54px;
     margin: 0 auto;
 }
