@@ -68,6 +68,7 @@ const displayLogoCards = (members) => {
 }
 
 const displayBusinessCards = (members) => {
+    
     members.forEach((member) => {
         const card = document.createElement("section");
         const companyName = document.createElement("h2");
@@ -137,65 +138,118 @@ const displayBusinessCards = (members) => {
     });
 }
 
+// const displayBusinessList = (members) => {
+//     members.forEach((member) => {
+//         const card = document.createElement("section");
+//         const companyName = document.createElement("h2");
+//         const tagline = document.createElement("h3");
+
+//         companyName.textContent = member.name;
+//         tagline.textContent = member.tag_line;
+
+//         const businessInfoContainer = document.createElement("div");
+//         const businessDetailsContainer = document.createElement("div");
+
+//         businessInfoContainer.className = "business_info_container";
+//         businessDetailsContainer.className = "business_card_in_list";
+
+//         const p1 = document.createElement("p");
+//         const p2 = document.createElement("p");
+//         const p3 = document.createElement("p");
+
+//         const s1 = document.createElement("span");
+//         const s2 = document.createElement("span");
+//         const s3 = document.createElement("span");
+
+//         s1.textContent = "EMAIL: ";
+//         s2.textContent = "PHONE: ";
+//         s3.textContent = "URL: ";
+
+//         const a1 = document.createElement("a");
+//         const a2 = document.createElement("a");
+//         const a3 = document.createElement("a");
+
+//         a1.setAttribute("href", `mailto:${member.company_image_url}`);
+//         a2.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
+//         a3.setAttribute("href", `https://${member.company_image_url}`);
+
+//         a1.textContent = member.email;
+//         a2.textContent = member.phone_number;
+//         a3.textContent = member.website_url;
+
+//         p1.appendChild(s1);
+//         p1.appendChild(a1);
+
+//         p2.appendChild(s2);
+//         p2.appendChild(a2);
+
+//         p3.appendChild(s3);
+//         p3.appendChild(a3);
+
+//         businessDetailsContainer.appendChild(p1);
+//         businessDetailsContainer.appendChild(p2);
+//         businessDetailsContainer.appendChild(p3);
+
+//         businessInfoContainer.appendChild(businessDetailsContainer);
+
+//         card.appendChild(companyName);
+//         card.appendChild(tagline);
+//         card.appendChild(businessInfoContainer);
+//         cards.appendChild(card);
+//     });
+// }
+
 const displayBusinessList = (members) => {
+
+    let rowNumber = 0;
+
+    const list_container = document.createElement("div");
+    list_container.className = "list_container";
+
     members.forEach((member) => {
-        const card = document.createElement("section");
-        const companyName = document.createElement("h2");
-        const tagline = document.createElement("h3");
+        const list_div = document.createElement("div");
+        const companyName = document.createElement("p");
+        const address = document.createElement("p");
+        const phoneNumber = document.createElement("p");
+        const homepage = document.createElement("p");
+
+        if (rowNumber % 2 == 0) {
+            list_div.className = "shaded_list_div";     
+        }
+        else {
+            list_div.className = "white_list_div";      
+        }
+
+        rowNumber += 1;
+
+        companyName.className = "company_name";
+        address.className = "address";
+        phoneNumber.className = "phone_number";
+        homepage.className = "website";
+
+        const a3 = document.createElement("a");
+        const a4 = document.createElement("a");
+
+        a3.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
+        a4.setAttribute("href", `https://${member.company_image_url}`);
+
+        a3.textContent = member.phone_number;
+        a4.textContent = member.website_url;
 
         companyName.textContent = member.name;
-        tagline.textContent = member.tag_line;
+        address.textContent = member.address.street1;
 
-        const businessInfoContainer = document.createElement("div");
-        const businessDetailsContainer = document.createElement("div");
+        phoneNumber.appendChild(a3);
+        homepage.appendChild(a4);
 
-        businessInfoContainer.className = "business_info_container";
-        businessDetailsContainer.className = "business_card_in_list";
-
-        const p1 = document.createElement("p");
-        const p2 = document.createElement("p");
-        const p3 = document.createElement("p");
-
-        const s1 = document.createElement("span");
-        const s2 = document.createElement("span");
-        const s3 = document.createElement("span");
-
-        s1.textContent = "EMAIL: ";
-        s2.textContent = "PHONE: ";
-        s3.textContent = "URL: ";
-
-        const a1 = document.createElement("a");
-        const a2 = document.createElement("a");
-        const a3 = document.createElement("a");
-
-        a1.setAttribute("href", `mailto:${member.company_image_url}`);
-        a2.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
-        a3.setAttribute("href", `https://${member.company_image_url}`);
-
-        a1.textContent = member.email;
-        a2.textContent = member.phone_number;
-        a3.textContent = member.website_url;
-
-        p1.appendChild(s1);
-        p1.appendChild(a1);
-
-        p2.appendChild(s2);
-        p2.appendChild(a2);
-
-        p3.appendChild(s3);
-        p3.appendChild(a3);
-
-        businessDetailsContainer.appendChild(p1);
-        businessDetailsContainer.appendChild(p2);
-        businessDetailsContainer.appendChild(p3);
-
-        businessInfoContainer.appendChild(businessDetailsContainer);
-
-        card.appendChild(companyName);
-        card.appendChild(tagline);
-        card.appendChild(businessInfoContainer);
-        cards.appendChild(card);
+        list_div.appendChild(companyName);
+        list_div.appendChild(address);
+        list_div.appendChild(phoneNumber);
+        list_div.appendChild(homepage);
+        list_container.appendChild(list_div);
     });
+
+    cards.appendChild(list_container);
 }
 
 const getBusinessData = async (displayBusinessStyleValue) => {

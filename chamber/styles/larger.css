@@ -25,6 +25,38 @@
     .business_details_container p {
         font-size: 0.35em;    
     }
+
+    .white_list_div, .shaded_list_div {
+        display: block;
+        width: 100%;
+        background-color: white;
+        height: 2em;
+        padding: 5px;
+    }
+
+    .shaded_list_div {
+        background-color: var(--sp-logo-text-color);  
+    }
+
+    .company_name, .phone_number, .website {
+        display: inline-block;
+    }
+
+    .address {
+        display: none;
+    }
+
+    .company_name {
+        width: 40%;
+    }
+
+    .phone_number {
+        width: 20%;
+    }
+
+    .website {
+        width: 40%;
+    }
 }
 
 @media (min-width: 615px) {
@@ -51,11 +83,26 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1035px) {
 
-    /* section {
-        box-shadow: 1px 1px 4px var(--box-shadow-color);
-    
-    } */
+    .company_name, .address, .phone_number, .website {
+        display: inline-block;
+    }
+
+    .company_name {
+        width: 25%;
+    }
+
+    .address {
+        width: 35%;
+    }
+
+    .phone_number {
+        width: 12%;
+    }
+
+    .website {
+        width: 16%;
+    }
 }
 
