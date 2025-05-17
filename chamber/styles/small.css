@@ -309,7 +309,7 @@ footer img {
     display: inline-block;
 }
 
-#coc_contact_info {
+.coc_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,13 +330,4 @@ footer img {
     width: 100%;
     max-width: 320px;
     padding: 15px;
-}
-
-#coc_class_project_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 320px;
-    padding: 20px;
 }
