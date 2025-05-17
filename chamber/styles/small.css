@@ -5,6 +5,7 @@
     --sun-prairie-light-green-emphasis-color: rgb(121, 155, 62);
     --sun-prairie-highlight-color: rgb(255, 207, 1);
     --sp-logo-text-color: #328284;
+    --sp-footer-color: #235f60;
     --dark-blue-emphasis-color: #0D2149;
     --header-footer-background-color: #1d4d73;
     --header-footer-nav-text-color: #fff;
@@ -41,12 +42,6 @@ a {
 a:hover {
     color: var(--dark-blue-emphasis-color);
     text-decoration: none;
-}
-
-footer {
-    background-color: var(--sun-prairie-green-background-color);
-    color: var(--header-footer-nav-text-color);
-    font-family: var(--header-font), sans-serif;
 }
 
 header,
@@ -189,21 +184,21 @@ section {
 }
 
 section h2 {
-    background-color: var(--sp-logo-text-color);
+    background-color: var(--sp-footer-color);
     color: white;
     padding: 0.5em;
     border-radius: 6px 6px 0 0;
-    border: 1px solid var(--sp-logo-text-color);
+    border: 1px solid var(--sp-footer-color);
     margin: 0;
     text-align: center;
     padding: 10px 10px 0 10px;
 }
 section h3 {
-    background-color: var(--sp-logo-text-color);
+    background-color: var(--sp-footer-color);
     color: white;
     padding: 0.5em;
     border-radius: 0 0 0 0;
-    border: 1px solid var(--sp-logo-text-color);
+    border: 1px solid var(--sp-footer-color);
     margin: 0;
     text-align: center;
     font-size: 0.55em;
@@ -272,6 +267,9 @@ p span {
 }
 
 footer {
+    background-color: var(--sp-footer-color);
+    color: var(--header-footer-nav-text-color);
+    font-family: var(--header-font), sans-serif;
     padding: 10px;
     text-align: left;
     font-size: 0.75em;
