@@ -1,5 +1,5 @@
 const url = "data/members.json";
-const cards = document.querySelector('main');
+const cards = document.querySelector('#business_content_container');
 const displayBusinessStyle = document.querySelector('#business_display_style');
 const mode_switch_button = document.querySelector("#mode_switch_button");
 const numberPattern = /\d+/g;
@@ -121,7 +121,7 @@ const displayBusinessList = (members) => {
 }
 
 const getBusinessData = async (displayBusinessStyleValue) => {
-    cards.innerHTML = "<h1>Business Directory</h1>";
+    cards.innerHTML = "";
     
     try {
         const response = await fetch(url);
