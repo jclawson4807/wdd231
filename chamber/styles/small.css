@@ -3,7 +3,7 @@
     --body-font: Domine;
     --sun-prairie-green-background-color:rgb(50, 130, 132);
     --sun-prairie-light-green-emphasis-color: rgb(121, 155, 62);
-    --sun-prairie-highlight-color: rgb(255, 207, 1);
+    --sun-prairie-highlight-color: rgb(255, 250, 230);
     --sp-logo-text-color: #328284;
     --sp-footer-color: #235f60;
     --dark-blue-emphasis-color: #0D2149;
@@ -314,11 +314,6 @@ footer a:hover {
 footer img {
     display: inline-block;
 }
-
-.highlight {
-    color: var(--sun-prairie-highlight-color);
-}
-
 
 #coc_contact_info {
     display: flex;
