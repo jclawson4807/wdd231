@@ -10,20 +10,12 @@
     .business_card_in_list {
         font-size: 1em;
     }
-
-    .business_details_container p {
-        font-size: 1em;    
-    }
 }
 
 @media (min-width: 650px) {
 
     .business_card_in_list {
         font-size: 0.85em;
-    }
-
-    .business_details_container p {
-        font-size: 0.35em;    
     }
 
     .white_list_div, .shaded_list_div {
