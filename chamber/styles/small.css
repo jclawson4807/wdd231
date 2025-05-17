@@ -202,7 +202,7 @@ section h3 {
     margin: 0;
     text-align: center;
     font-size: 0.55em;
-    padding: 0 10px 10 10px;
+    padding: 0 10px 10px 10px;
 }
 
 .white_list_div, .shaded_list_div {
@@ -279,7 +279,7 @@ section img {
 }
 
 p span {
-    font-size: 700;
+    font-weight: 700;
 }
 
 footer {
