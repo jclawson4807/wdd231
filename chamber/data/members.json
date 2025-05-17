@@ -9,7 +9,7 @@
         "street1" : "235 E Main St",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "sun-city-cyclery-main-small.webp",
@@ -26,7 +26,7 @@
         "street1" : "385 E. Main St",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "day-in-whyte-main-small.webp",
@@ -40,10 +40,10 @@
       "phone_number" : "(608) 825-2524",
       "tag_line" : "Designed to craft a daily haven for your family!",
       "address" : {
-        "street1" : "223 East Main Street",
+        "street1" : "223 East Main St",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "nest-interior-design-main-small.webp",
@@ -60,7 +60,7 @@
         "street1" : "121 E. Main St",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "salvatores-tomato-pies-main-small.webp",
@@ -77,7 +77,7 @@
         "street1" : "1390 Cabela Dr",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "suger-river-pizza-main-small.webp",
@@ -91,10 +91,10 @@
       "phone_number" : "(716) 278-6600",
       "tag_line" : "What we produce for each customer is specific.",
       "address" : {
-        "street1" : "165 King Street",
+        "street1" : "165 King St",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "washington-mills-main-small.webp",
@@ -108,10 +108,10 @@
       "phone_number" : "(608) 825-6868",
       "tag_line" : "Dedicated to providing quality auto repair services.",
       "address" : {
-        "street1" : "148 S Bristol Street",
+        "street1" : "148 S Bristol St",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "syverson-automotive-main-small.webp",
@@ -128,7 +128,7 @@
         "street1" : "2816 Prairie Lakes Dr",
         "street2" : "",
         "city" : "Sun Prairie",
-        "state" : "Wisconsin",
+        "state" : "WI",
         "zip" : "53590"
       },
       "company_image_url" : "imboard-main-small.webp",

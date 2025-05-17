@@ -26,10 +26,6 @@ const displayLogoCards = (members) => {
         companyLogo.setAttribute("height", "140");
         companyLogo.setAttribute("loading", "lazy");
 
-        const businessInfoContainer = document.createElement("div");
-
-        businessInfoContainer.className = "centered_info_container";
-
         const p1 = document.createElement("p");
         const p2 = document.createElement("p");
         const p3 = document.createElement("p");
@@ -55,13 +51,11 @@ const displayLogoCards = (members) => {
 
         p4.appendChild(a4);
 
-        businessInfoContainer.appendChild(p1);
-        businessInfoContainer.appendChild(p2);
-        businessInfoContainer.appendChild(p3);
-        businessInfoContainer.appendChild(p4);
-
         card.appendChild(companyLogo);
-        card.appendChild(businessInfoContainer);
+        card.appendChild(p1);
+        card.appendChild(p2);
+        card.appendChild(p3);
+        card.appendChild(p4);
 
         cards.appendChild(card);
     });
