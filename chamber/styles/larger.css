@@ -80,6 +80,7 @@
 
     footer {
         flex-direction: row;
+        height: 175px;
     }
 }
 
