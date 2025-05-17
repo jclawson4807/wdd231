@@ -52,9 +52,6 @@
 }
 
 @media (min-width: 615px) {
-    .header_content span {
-        font-size: 2.5em;
-    }
 
     #menu {
         display: none;

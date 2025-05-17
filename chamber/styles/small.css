@@ -68,31 +68,9 @@ h1 {
     padding: 1.1rem; 
 }
 
-h2 {
-    font-size: 1.2rem;
-    color: navy;
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-    line-height: 1.5em;
-}
-
 nav {
     width: 100%;
     margin: 0 auto 0 auto;
-}
-
-.header_content {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    color: #fff;
-}
-
-.header_content span {
-    font-family: var(--header-font), sans-serif;
-    font-size: 1em;
 }
 
 /* small view navigation */
@@ -213,7 +191,7 @@ section {
     padding: 10px;
     width: 140px;
     height: 140px;
-    box-shadow: 1px 1px 4px var(--box-shadow-color);
+    /* box-shadow: 1px 1px 4px var(--box-shadow-color); */
 }
 
 p span {
