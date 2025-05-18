@@ -135,11 +135,18 @@ main {
 #business_content_container {
     margin: 10px auto;
     color: var(--main-aside-text-color);
+}
+
+.card_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: auto;
     grid-gap: 0.75rem;
     height: 2804px;
+}
+
+.list_container {
+    height: 944px;
 }
 
 section {

@@ -44,6 +44,10 @@
         font-size: 0.85em;
     }
 
+    .list_container {
+        height: 256px;
+    }
+
     .white_list_div, .shaded_list_div {
         display: block;
         width: 100%;
@@ -78,13 +82,13 @@
 }
 
 @media (min-width: 652px) {
-    #business_content_container {
+    .card_container {
         height: 1396px;
     }
 }
 
 @media (min-width: 984px) {
-    #business_content_container {
+    .card_container {
         height: 1044px;
     }
 }
@@ -114,7 +118,7 @@
 }
 
 @media (min-width: 1316px) {
-    #business_content_container {
+    .card_container {
         height: 692px;
     }
 }

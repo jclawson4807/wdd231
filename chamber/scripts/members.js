@@ -15,6 +15,10 @@ mode_switch_button.addEventListener('click', () => {
 });
 
 const displayLogoCards = (members) => {
+
+    cards.classList.add("card_container");
+    cards.classList.remove("list_container");
+
     members.forEach((member) => {
         const card = document.createElement("section");
         card.className = "logo_card";
@@ -65,8 +69,8 @@ const displayBusinessList = (members) => {
 
     let rowNumber = 0;
 
-    const list_container = document.createElement("div");
-    list_container.className = "list_container";
+    cards.classList.remove("card_container");
+    cards.classList.add("list_container");
 
     members.forEach((member) => {
         const list_div = document.createElement("div");
@@ -76,10 +80,10 @@ const displayBusinessList = (members) => {
         const homepage = document.createElement("p");
 
         if (rowNumber % 2 == 0) {
-            list_div.className = "shaded_list_div";     
+            list_div.className = "white_list_div";     
         }
         else {
-            list_div.className = "white_list_div";      
+            list_div.className = "shaded_list_div";      
         }
 
         rowNumber += 1;
@@ -108,10 +112,8 @@ const displayBusinessList = (members) => {
         list_div.appendChild(address);
         list_div.appendChild(phoneNumber);
         list_div.appendChild(homepage);
-        list_container.appendChild(list_div);
+        cards.appendChild(list_div);
     });
-
-    cards.appendChild(list_container);
 }
 
 const getBusinessData = async (displayBusinessStyleValue) => {
