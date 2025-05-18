@@ -6,8 +6,13 @@ const displayProphets = (prophets) => {
         const card = document.createElement("section");
         const fullName = document.createElement("h2");
 
+        fullName.setAttribute("tabindex", "0");
+
         const p1 = document.createElement("p");
         const p2 = document.createElement("p");
+
+        p1.setAttribute("tabindex", "0");
+        p2.setAttribute("tabindex", "0");
 
         const portrait = document.createElement("img");
 
@@ -23,6 +28,7 @@ const displayProphets = (prophets) => {
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "362");
         portrait.setAttribute("height", "447");
+        portrait.setAttribute("tabindex", "0");
 
         card.appendChild(fullName);
         card.appendChild(p1);
