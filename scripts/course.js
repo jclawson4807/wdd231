@@ -111,7 +111,7 @@ function generateCourseFigure(course) {
     }
     
     return `<figure ${classString}>
-                <figcaption>${ course.title }</figcaption>
+                <figcaption tabindex="0">${ course.title }</figcaption>
             </figure>`;
 }
 
