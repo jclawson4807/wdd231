@@ -22,8 +22,8 @@ const displayLogoCards = (members) => {
         const companyLogo = document.createElement("img");
         companyLogo.setAttribute("src", `images/${member.icon_image}`);
         companyLogo.setAttribute("alt", `${member.name} Main Image`);
-        companyLogo.setAttribute("width", "140");
-        companyLogo.setAttribute("height", "140");
+        companyLogo.setAttribute("width", "180");
+        companyLogo.setAttribute("height", "180");
         companyLogo.setAttribute("loading", "lazy");
 
         const p1 = document.createElement("p");

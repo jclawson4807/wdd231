@@ -79,13 +79,13 @@
 
 @media (min-width: 652px) {
     #business_content_container {
-        height: 1236px;
+        height: 1396px;
     }
 }
 
 @media (min-width: 984px) {
     #business_content_container {
-        height: 924px;
+        height: 1044px;
     }
 }
 
@@ -115,7 +115,7 @@
 
 @media (min-width: 1316px) {
     #business_content_container {
-        height: 612px;
+        height: 692px;
     }
 }
 
