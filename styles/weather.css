@@ -1,0 +1,25 @@
+main {
+    width: calc(100% - 20px);
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 10px auto;
+}
+
+p, h1, footer, figcaption, figure {
+    width: calc(100% - 20px);
+    text-align: center;
+    padding: 10px;
+    word-wrap: normal;
+    margin: 10px auto;
+}
+
+figure {
+    width: ;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
