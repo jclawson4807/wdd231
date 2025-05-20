@@ -8,15 +8,20 @@ const lon = "6.64";
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
-const getWeatherData = async () => {
+const apiFetch = async () => {
     try {
         const response = await fetch(url);
-        const data = await response.json();
+            if (response.ok) {
+                const data = await response.json();
 
-        console.log(data);
+                console.log(data); // testing only
+                // displayResults(data); // uncomment when ready
+            } else {
+                throw Error(await response.text());
+            }
     } catch (error) {
-        console.error(`Error fetching data: ${response.text()}`, error); // Handle any errors    
+        console.error("Error fetching data:", error); // Handle any errors    
     }
 }
 
-getWeatherData();
+apiFetch();
