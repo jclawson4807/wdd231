@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/index_members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/events.js" defer></script>
     <meta property="og:title" content="WDD 231 - Sun Prairie WI Chamber of Commerce Site Home">
     <meta property="og:description" content="WDD 231 - Web Frontend Development 1 Sun Prairie WI Chamber of Commerce landing page for James Clawson">
     <meta property="og:image" content="https://jclawson4807.github.io/wdd231/chamber/images/sp-coc-site-preview.webp">
@@ -37,8 +39,36 @@
         </ul>
     </nav>
 </header>
-<main>
-    <h1>Business Directory</h1>
+<main id="index_main">
+    <picture id="hero">
+        <source srcset="images/hero_1200_562.webp" media="(min-width: 800px)">
+        <source srcset="images/hero_640_300.webp" media="(min-width: 500px)">
+        <img src="images/hero_320_150.webp" alt="Sun Prairie, WI Hero Image Placeholder" width="auto" height="auto" tabindex="0">
+    </picture>
+    <div id="hero_cta">
+        <p>Call to Action Text</p>
+    </div>
+    <h1>Home</h1>
+    <section id="events">
+        <h2>Events</h2>
+    </section>
+    <section id="current_weather">
+        <h2>Current Weather</h2>
+        <img id="weather_icon">
+        <div id="current_weather_information">
+            <p><span id="temperature"></span>&deg; F</p>
+            <p id="current_weather_conditions"></p>
+            <p>High: <span id="current_weather_high_temperature"></span>&deg;</p>
+            <p>Low: <span id="current_weather_low_temperature"></span>&deg;</p>
+            <p id="current_weather_low_temperature">&deg;</p>
+        </div>
+
+    </section>
+    <section id="weather_forecast">
+         <h2>Weather Forecast</h2>
+    </section>
+    <section id="index_business_content_container" class="index_card_container">
+    </section>
 </main>
 <footer>
     <div class="coc_info">
