@@ -27,7 +27,6 @@
 <body>
 <header>
     <img src="images/sp-chamber-logo.svg" alt="Sun Prairie Wisconsin Chamber of Commerce" width="182" height="42" loading="lazy">
-    <img src="images/mode-switch.svg" alt="Mode switch" width="44" height="44" loading="lazy" id="mode_switch_button" tabindex="0">
     <button type="button" id="menu" aria-label="Menu Button" tabindex="0"></button>
     <nav>
         <ul class="navigation">
@@ -37,10 +36,13 @@
             <li><a href="join.html" id="join" tabindex="0">Join</a></li>
         </ul>
     </nav>
-    <input id="business_display_style" value="card">
 </header>
 <main>
     <h1>Business Directory</h1>
+    <div id="view_switch_button_container">
+        <img src="images/card-view-no-fill.svg" id="card-view-button" alt="Card View Button" width="44" height="44" tabindex="0">
+        <img src="images/list-view.svg" id="list-view-button" alt="List View Button" width="44" height="44" tabindex="0">
+    </div>
     <div id="business_content_container" class="card_container">
     </div>
 </main>

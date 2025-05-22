@@ -1,17 +1,15 @@
 const url = "data/members.json";
 const cards = document.querySelector('#business_content_container');
-const displayBusinessStyle = document.querySelector('#business_display_style');
-const mode_switch_button = document.querySelector("#mode_switch_button");
+const cardViewButton = document.querySelector("#card-view-button");
+const listViewButton = document.querySelector("#list-view-button");
 const numberPattern = /\d+/g;
 
-mode_switch_button.addEventListener('click', () => {
-    if (displayBusinessStyle.value == "card") {
-        displayBusinessStyle.value = "list";
-    } else if (displayBusinessStyle.value == "list") {
-        displayBusinessStyle.value = "card";
-    }
-   
-    getBusinessData(displayBusinessStyle);
+cardViewButton.addEventListener('click', () => {
+    getBusinessData("card");
+});
+
+listViewButton.addEventListener('click', () => {
+    getBusinessData("list");
 });
 
 const displayLogoCards = (members) => {
@@ -139,9 +137,9 @@ const getBusinessData = async (displayBusinessStyleValue) => {
         // console.table(data.members);
         // console.log(displayBusinessStyle.value)
 
-        if (displayBusinessStyleValue.value == "card") {
+        if (displayBusinessStyleValue == "card") {
             displayLogoCards(data.members);
-        } else if (displayBusinessStyleValue.value == "list") {
+        } else if (displayBusinessStyleValue == "list") {
             displayBusinessList(data.members);
         }
     } catch (error) {
@@ -149,4 +147,4 @@ const getBusinessData = async (displayBusinessStyleValue) => {
     }
 }
 
-getBusinessData(displayBusinessStyle);
+getBusinessData("card");
