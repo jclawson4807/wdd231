@@ -42,43 +42,57 @@ const displayLogoCards = (members) => {
         companyLogo.setAttribute("loading", "lazy");
         companyLogo.setAttribute("tabindex", "0");
 
+        // logo, company name, address, website, email address, phone, and membership level
+
         const p1 = document.createElement("p");
         const p2 = document.createElement("p");
         const p3 = document.createElement("p");
         const p4 = document.createElement("p");
+        const p5 = document.createElement("p");
+        const p6 = document.createElement("p");
 
         p1.setAttribute("tabindex", "0");
+        p1.textContent = member.name;
 
-        p1.textContent = `${member.address.street1} ${member.address.city} ${member.address.state} ${member.address.zip}`;
+        p2.textContent = `${member.address.street1} ${member.address.city} ${member.address.state} ${member.address.zip}`;
+        p2.setAttribute("tabindex", "0");
 
-        const a2 = document.createElement("a");
         const a3 = document.createElement("a");
         const a4 = document.createElement("a");
+        const a5 = document.createElement("a");
 
-        a2.setAttribute("href", `mailto:${member.company_image_url}`);
-        a2.setAttribute("tabindex", "0");
-
-        a3.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
+        a3.setAttribute("href", `mailto:${member.email}`);
         a3.setAttribute("tabindex", "0");
 
-        a4.setAttribute("href", `https://${member.company_image_url}`);
+        a4.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
         a4.setAttribute("tabindex", "0");
 
-        a2.textContent = member.email;
-        a3.textContent = member.phone_number;
-        a4.textContent = member.website_url;
+        a5.setAttribute("href", `https://${member.website_url}`);
+        a5.setAttribute("tabindex", "0");
 
-        p2.appendChild(a2);
+        a3.textContent = member.email;
+        a4.textContent = member.phone_number;
+        a5.textContent = member.website_url;
+
+        if (member.membership_level == 1) {
+            p6.textContent = "Member";
+        } else if (member.membership_level == 2) {
+            p6.textContent = "Silver";
+        } else if (member.membership_level == 3) {
+            p6.textContent = "Gold";
+        }
 
         p3.appendChild(a3);
-
         p4.appendChild(a4);
+        p5.appendChild(a5);
 
         card.appendChild(companyLogo);
         card.appendChild(p1);
         card.appendChild(p2);
         card.appendChild(p3);
         card.appendChild(p4);
+        card.appendChild(p5);
+        card.appendChild(p6);
 
         cards.appendChild(card);
     });

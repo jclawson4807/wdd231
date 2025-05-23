@@ -42,13 +42,13 @@ const displayLogoCards = (members) => {
         const a3 = document.createElement("a");
         const a4 = document.createElement("a");
 
-        a2.setAttribute("href", `mailto:${member.company_image_url}`);
+        a2.setAttribute("href", `mailto:${member.email}`);
         a2.setAttribute("tabindex", "0");
 
         a3.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
         a3.setAttribute("tabindex", "0");
 
-        a4.setAttribute("href", `https://${member.company_image_url}`);
+        a4.setAttribute("href", `https://${member.website_url}`);
         a4.setAttribute("tabindex", "0");
 
         a2.textContent = member.email;
