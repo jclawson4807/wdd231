@@ -155,6 +155,10 @@ main {
     background-color: white;
 }
 
+picture {
+    position: relative;
+}
+
 #hero {
     width: 100%;
     padding: 0;
@@ -165,6 +169,18 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
+}
+
+#hero_cta {
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 1.5em;
 }
 
 #business_content_container, #index_business_content_container {
