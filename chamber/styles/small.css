@@ -131,7 +131,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.75rem;
-    height: 1177px;
+    height: 2177px;
 }
 
 #view_switch_button_container {
@@ -193,6 +193,12 @@ picture {
     grid-template-rows: auto;
     grid-gap: 0.75rem;
     height: 2804px;
+}
+
+.index_card_container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.75rem;
 }
 
 .list_container {
@@ -257,7 +263,7 @@ section h2 {
     width: 100%;
 }
 
-.logo_card {
+.logo_card, .index-logo-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,12 +275,16 @@ section h2 {
     font-size: 0.9em;
 }
 
-.logo_card img {
+.logo_card img, .index-logo-card img {
     margin: 10px;
     padding: 10px;
     width: 180px;
     height: 180px;
-    /* box-shadow: 1px 1px 4px var(--box-shadow-color); */
+}
+
+.index-logo-card {
+    font-size: 0.75em;
+    height: 382px;
 }
 
 p span {

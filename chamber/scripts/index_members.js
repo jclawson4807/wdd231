@@ -32,7 +32,7 @@ const displayLogoCards = (members) => {
         const member = members[indexValue];
 
         const card = document.createElement("section");
-        card.className = "logo_card";
+        card.className = "index-logo-card";
 
         const companyLogo = document.createElement("img");
         companyLogo.setAttribute("src", `images/${member.icon_image}`);
