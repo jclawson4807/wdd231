@@ -10,12 +10,12 @@ const lat = "43.187640";
 const lon = "-89.236768";
 
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial&cnt=3`;
 
-function displayResults(data) {
+function displayCurrentDayResults(data) {
     currentDateTempSpan.innerHTML = `${data.main.temp}&deg;F`;
     currentDateHighTempSpan.innerHTML = `${data.main.temp_max}`;
     currentDateLowTempSpan.innerHTML = `${data.main.temp_min}`;
-    currentDateTemperature.innerHTML = `${data.main.feels_like}&deg;F`;
     const description = data.weather[0].description; // @TASK - capitalization
     currentDateWeatherConditions.textContent = description;
     const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -28,14 +28,53 @@ function displayResults(data) {
     // figCaption.textContent = description;
 }
 
+function displayForcastResults(data)
+{
+    if (data.cnt > 2) {
+        const dataList = data.list;
+
+        let dayCounter = 0;
+
+        dataList.forEach((day) => {
+            console.log(day.dt);
+
+            const dayTemperature = document.querySelector(`#day${dayCounter}temp`);
+
+            dayTemperature.innerHTML = `${day.main.temp}`;
+
+            if (dayCounter > 0) {
+                let dayOfWeek = (new Date(day.dt)).getDay();
+
+                const dayOfWeekSpan = document.querySelector(`#day${dayCounter}-day-of-week`);
+                dayOfWeekSpan.textContent = dayOfWeek;
+            }
+
+            dayCounter += 1;
+        });
+    }
+    else {
+        console.log("Error - insufficient data returned by the forecast API")
+    }
+}
+
 const apiFetch = async () => {
     try {
-        const response = await fetch(weatherUrl);
+        // current date
+        let response = await fetch(weatherUrl);
             if (response.ok) {
                 const data = await response.json();
 
                 console.log(data); // testing only
-                displayResults(data); // uncomment when ready
+                displayCurrentDayResults(data); // uncomment when ready
+            } else {
+                throw Error(await response.text());
+            }
+        response = await fetch(forecastUrl);
+            if (response.ok) {
+                const data = await response.json();
+
+                console.log(data); // testing only
+                displayForcastResults(data); // uncomment when ready
             } else {
                 throw Error(await response.text());
             }
