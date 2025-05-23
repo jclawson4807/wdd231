@@ -194,6 +194,15 @@ section {
     box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
+section h2 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+}
+
 .white_list_div, .shaded_list_div {
     display: block;
     width: 100%;
