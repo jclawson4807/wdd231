@@ -32,7 +32,7 @@ function displayForcastResults(data)
 {
     if (data.cnt > 2) {
         const dataList = data.list;
-
+        const days = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
         let dayCounter = 0;
         let lastDay = -1;
@@ -44,16 +44,14 @@ function displayForcastResults(data)
 
             const newDay = a.getDay();
 
-            if (lastDay != newDay) {
+            if (lastDay != newDay && (dayCounter < 3)) {
                 const dayTemperature = document.querySelector(`#day${dayCounter}temp`);
 
                 dayTemperature.innerHTML = `${day.main.temp}`;
 
                 if (dayCounter > 0) {
                     
-                    const days = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
                     const dayOfWeek = days[newDay];
-
                     const dayOfWeekSpan = document.querySelector(`#day${dayCounter}-day-of-week`);
                     dayOfWeekSpan.textContent = dayOfWeek;
                 }
