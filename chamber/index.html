@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/index_members.js" defer></script>
+    <!-- <script src="scripts/index_members.js" defer></script> -->
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/events.js" defer></script>
+    <!-- <script src="scripts/events.js" defer></script> -->
     <meta property="og:title" content="WDD 231 - Sun Prairie WI Chamber of Commerce Site Home">
     <meta property="og:description" content="WDD 231 - Web Frontend Development 1 Sun Prairie WI Chamber of Commerce landing page for James Clawson">
     <meta property="og:image" content="https://jclawson4807.github.io/wdd231/chamber/images/sp-coc-site-preview.webp">
@@ -54,18 +54,21 @@
     </section>
     <section id="current_weather">
         <h2>Current Weather</h2>
-        <img id="weather_icon">
+        <img id="weather-icon">
         <div id="current_weather_information">
-            <p><span id="temperature"></span>&deg; F</p>
+            <p><span id="current-date-temp"></span>&deg; F</p>
             <p id="current_weather_conditions"></p>
-            <p>High: <span id="current_weather_high_temperature"></span>&deg;</p>
-            <p>Low: <span id="current_weather_low_temperature"></span>&deg;</p>
+            <p>High: <span id="current-date-high-temp"></span>&deg;</p>
+            <p>Low: <span id="current-date-low-temp"></span>&deg;</p>
             <p id="current_weather_low_temperature">&deg;</p>
         </div>
 
     </section>
     <section id="weather_forecast">
-         <h2>Weather Forecast</h2>
+        <h2>Weather Forecast</h2>
+        <p>Today: <span id="current_date_temperature"></span>&deg; F</p>
+        <p><span id="next_day_day_of_week"></span>: <span id="next_day_temperature"></span>&deg; F</p>
+        <p><span id="second_day_day_of_week"></span>: <span id="second_day_temperature"></span>&deg; F</p>
     </section>
     <section id="index_business_content_container" class="index_card_container">
     </section>
