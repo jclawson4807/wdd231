@@ -233,7 +233,7 @@ section h2 {
     display: inline-block;
 }
 
- #events div p {
+#events div p {
     font-size: 0.75em;
     width: calc(100% - 65px);
     text-align: left;
@@ -244,6 +244,23 @@ section h2 {
 .calendar-icon {
     width: 44px;
     height: 44px;
+    margin: 5px;
+}
+
+#current_weather {
+    display: grid;
+    grid-template-columns: 105px auto;
+    grid-template-rows: 47px auto;
+    grid-gap: 0.75rem;
+}
+
+#current_weather h2 {
+    grid-column: span 2;
+}
+
+#weather-icon {
+    width: 95px;
+    height: 95px;
     margin: 5px;
 }
 
