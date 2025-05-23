@@ -10,7 +10,7 @@ const lat = "43.187640";
 const lon = "-89.236768";
 
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial&cnt=3`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
 function displayCurrentDayResults(data) {
     currentDateTempSpan.innerHTML = `${data.main.temp}&deg;F`;
@@ -33,23 +33,35 @@ function displayForcastResults(data)
     if (data.cnt > 2) {
         const dataList = data.list;
 
+
         let dayCounter = 0;
+        let lastDay = -1;
 
         dataList.forEach((day) => {
-            console.log(day.dt);
+            console.log(day.dt_txt);
 
-            const dayTemperature = document.querySelector(`#day${dayCounter}temp`);
+            const a = new Date(day.dt_txt);
 
-            dayTemperature.innerHTML = `${day.main.temp}`;
+            const newDay = a.getDay();
 
-            if (dayCounter > 0) {
-                let dayOfWeek = (new Date(day.dt)).getDay();
+            if (lastDay != newDay) {
+                const dayTemperature = document.querySelector(`#day${dayCounter}temp`);
 
-                const dayOfWeekSpan = document.querySelector(`#day${dayCounter}-day-of-week`);
-                dayOfWeekSpan.textContent = dayOfWeek;
+                dayTemperature.innerHTML = `${day.main.temp}`;
+
+                if (dayCounter > 0) {
+                    
+                    const days = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+                    const dayOfWeek = days[newDay];
+
+                    const dayOfWeekSpan = document.querySelector(`#day${dayCounter}-day-of-week`);
+                    dayOfWeekSpan.textContent = dayOfWeek;
+                }
+
+                lastDay = newDay;
+
+                dayCounter += 1;
             }
-
-            dayCounter += 1;
         });
     }
     else {
