@@ -2,6 +2,10 @@ const currentDateTempSpan = document.querySelector("#current-date-temp");
 const currentDateHighTempSpan = document.querySelector("#current-date-high-temp");
 const currentDateLowTempSpan = document.querySelector("#current-date-low-temp");
 const currentDateTemperature = document.querySelector("#current-date-temperature");
+const currentWeatherHumidity = document.querySelector("#current-weather-humidity");
+const currentWeatherSunriseTime = document.querySelector("#current-weather-sunrise-time");
+const currentWeatherSunsetTime = document.querySelector("#current-weather-sunset-time");
+
 const currentDateWeatherConditions = document.querySelector("#current-weather-conditions");
 const weatherIconImg = document.querySelector("#weather-icon");
 
@@ -18,6 +22,14 @@ function displayCurrentDayResults(data) {
     currentDateLowTempSpan.innerHTML = `${data.main.temp_min}`;
     const description = data.weather[0].description; // @TASK - capitalization
     currentDateWeatherConditions.textContent = description;
+
+    const sunriseDateStr = new Date(data.sys.sunrise).toLocaleTimeString('en-US', { timeZone: 'America/Chicago' }, { hour12: true });
+    const sunsetDateStr = new Date(data.sys.sunset).toLocaleTimeString('en-US', { timeZone: 'America/Chicago' }, { hour12: true });
+
+    currentWeatherHumidity.innerHTML = `${data.main.humidity}`;
+    currentWeatherSunriseTime.innerHTML = `${sunriseDateStr}`;
+    currentWeatherSunsetTime.innerHTML = `${sunsetDateStr}`;
+
     const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
 
     weatherIconImg.setAttribute("src", icon);
