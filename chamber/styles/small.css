@@ -132,6 +132,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.75rem;
+    height: 1177px;
 }
 
 #view_switch_button_container {
@@ -201,6 +202,28 @@ section h2 {
     text-align: center;
     padding: 10px;
     border-radius: 6px 6px 0 0;
+}
+
+#events {
+    height: 235px;
+}
+
+#events div img, #events div p {
+    display: inline-block;
+}
+
+ #events div p {
+    font-size: 0.75em;
+    width: calc(100% - 65px);
+    text-align: left;
+    padding: 5px;
+    vertical-align: top;
+ }
+
+.calendar-icon {
+    width: 44px;
+    height: 44px;
+    margin: 5px;
 }
 
 .white_list_div, .shaded_list_div {
