@@ -1,6 +1,8 @@
 const currentDateTempSpan = document.querySelector("#current-date-temp");
 const currentDateHighTempSpan = document.querySelector("#current-date-high-temp");
 const currentDateLowTempSpan = document.querySelector("#current-date-low-temp");
+const currentDateTemperature = document.querySelector("#current-date-temperature");
+const currentDateWeatherConditions = document.querySelector("#current-weather-conditions");
 const weatherIconImg = document.querySelector("#weather-icon");
 
 const apiKey = "34d341efa6a94c1b8066b3239d6203e1";
@@ -11,9 +13,11 @@ const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&l
 
 function displayResults(data) {
     currentDateTempSpan.innerHTML = `${data.main.temp}&deg;F`;
-    currentDateHighTempSpan.innerHTML = `${data.main.temp_max}&deg;F`;
-    currentDateLowTempSpan.innerHTML = `${data.main.temp_min}&deg;F`;
-    const description = data.weather[0].description;
+    currentDateHighTempSpan.innerHTML = `${data.main.temp_max}`;
+    currentDateLowTempSpan.innerHTML = `${data.main.temp_min}`;
+    currentDateTemperature.innerHTML = `${data.main.feels_like}&deg;F`;
+    const description = data.weather[0].description; // @TASK - capitalization
+    currentDateWeatherConditions.textContent = description;
     const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
 
     weatherIconImg.setAttribute("src", icon);
