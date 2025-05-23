@@ -166,7 +166,7 @@ main {
     padding: 0;
 }
 
-#business_content_container {
+#business_content_container, #index_business_content_container {
     margin: 10px auto;
     color: var(--main-aside-text-color);
 }

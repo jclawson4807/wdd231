@@ -21,7 +21,7 @@ function populateArrayOfRandomInts(maxValue) {
 const displayLogoCards = (members) => {
 
     const arrayLength = members.length;
-    const selectedItemsArray = populateArrayOfRandomInts(displayLimit, arrayLength);
+    const selectedItemsArray = populateArrayOfRandomInts(arrayLength);
 
     console.log(selectedItemsArray);
 
