@@ -1,23 +1,36 @@
 const url = "data/members.json";
-const cards = document.querySelector('#business_content_container');
-const cardViewButton = document.querySelector("#card-view-button");
-const listViewButton = document.querySelector("#list-view-button");
+const cards = document.querySelector('#index_business_content_container');
 const numberPattern = /\d+/g;
+const displayLimit = 3;
 
-cardViewButton.addEventListener('click', () => {
-    getBusinessData("card");
-});
+function populateArrayOfRandomInts(maxValue) {
+    const selectedItemsArray = Array();
 
-listViewButton.addEventListener('click', () => {
-    getBusinessData("list");
-});
+    while (selectedItemsArray.length < 3)
+    {
+        const randomValue = Math.floor(Math.random() * maxValue);
+
+        if (!selectedItemsArray.includes(randomValue)) {
+            selectedItemsArray.push(randomValue);
+        }       
+    }
+
+    return selectedItemsArray;
+}
 
 const displayLogoCards = (members) => {
 
-    cards.classList.add("card_container");
-    cards.classList.remove("list_container");
+    const arrayLength = members.length;
+    const selectedItemsArray = populateArrayOfRandomInts(displayLimit, arrayLength);
 
-    members.forEach((member) => {
+    console.log(selectedItemsArray);
+
+    cards.classList.add("index_card_container");
+
+    selectedItemsArray.forEach((indexValue) => {
+
+        const member = members[indexValue];
+
         const card = document.createElement("section");
         card.className = "logo_card";
 
@@ -71,80 +84,23 @@ const displayLogoCards = (members) => {
     });
 }
 
-const displayBusinessList = (members) => {
-
-    let rowNumber = 0;
-
-    cards.classList.remove("card_container");
-    cards.classList.add("list_container");
-
-    members.forEach((member) => {
-        const list_div = document.createElement("div");
-        const companyName = document.createElement("p");
-        const address = document.createElement("p");
-        const phoneNumber = document.createElement("p");
-        const homepage = document.createElement("p");
-
-        if (rowNumber % 2 == 0) {
-            list_div.className = "white_list_div";     
-        }
-        else {
-            list_div.className = "shaded_list_div";      
-        }
-
-        rowNumber += 1;
-
-        companyName.className = "company_name";
-        address.className = "address";
-        phoneNumber.className = "phone_number";
-        homepage.className = "website";
-
-        companyName.setAttribute("tabindex", "0");
-        address.setAttribute("tabindex", "0");
-
-        const a3 = document.createElement("a");
-        const a4 = document.createElement("a");
-
-        a3.setAttribute("href", `tel:+${member.phone_number.match( numberPattern )}`);
-        a3.setAttribute("tabindex", "0");
-
-        a4.setAttribute("href", `https://${member.company_image_url}`);
-        a4.setAttribute("tabindex", "0");
-
-        a3.textContent = member.phone_number;
-        a4.textContent = member.website_url;
-
-        companyName.textContent = member.name;
-        address.textContent = member.address.street1;
-
-        phoneNumber.appendChild(a3);
-        homepage.appendChild(a4);
-
-        list_div.appendChild(companyName);
-        list_div.appendChild(address);
-        list_div.appendChild(phoneNumber);
-        list_div.appendChild(homepage);
-        cards.appendChild(list_div);
-    });
-}
-
-const getBusinessData = async (displayBusinessStyleValue) => {
+const getBusinessData = async () => {
     cards.innerHTML = "";
     
     try {
         const response = await fetch(url);
         const data = await response.json();
+
+        const premiereMembersArray = data.members.filter((member) => member.membership_level > 1);
+
         // console.table(data.members);
         // console.log(displayBusinessStyle.value)
 
-        if (displayBusinessStyleValue == "card") {
-            displayLogoCards(data.members);
-        } else if (displayBusinessStyleValue == "list") {
-            displayBusinessList(data.members);
-        }
+        displayLogoCards(premiereMembersArray);
+
     } catch (error) {
         console.error("Error fetching data:", error); // Handle any errors    
     }
 }
 
-getBusinessData("card");
+getBusinessData();
