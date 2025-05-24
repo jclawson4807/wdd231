@@ -57,7 +57,7 @@ header img {
 }
 
 h1 {
-    width: 100%;
+    width: 300px;
     font-size: 1.5rem;
     text-align: center;
     margin:  0 auto;
@@ -130,10 +130,22 @@ main {
 }
 
 #index_main {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.75rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#index-content-container {
+    width: 100%;
+    margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.75rem;
     height: 2177px;
+    padding: 10px;
 }
 
 #view_switch_button_container {
@@ -239,7 +251,14 @@ section h2 {
     border-radius: 6px 6px 0 0;
 }
 
+#index-content-container section {
+    margin: 0;
+    width: 100%;
+}
+
 #events {
+    width: 300px;
+    margin: 0;
     height: 235px;
 }
 
@@ -290,8 +309,6 @@ section h2 {
     padding: 10px;
     text-align: left;
 }
-
-
 
 .white_list_div, .shaded_list_div {
     display: block;
