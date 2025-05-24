@@ -10,6 +10,7 @@ const homeButton = document.querySelector('#home');
 const discoveryButton = document.querySelector('#discovery');
 const directoryButton = document.querySelector('#directory');
 const joinProfileButton = document.querySelector('#join');
+const joinNowButton = document.querySelector('#join-now-button');
 
 homeButton.addEventListener('click', () => {
     homeButton.classList.add("active");
@@ -37,4 +38,12 @@ joinProfileButton.addEventListener('click', () => {
     discoveryButton.classList.remove("active");
     directoryButton.classList.remove("active");
     joinProfileButton.classList.add("active");
+});
+
+joinNowButton.addEventListener('click', () => {
+    homeButton.classList.remove("active");
+    discoveryButton.classList.remove("active");
+    directoryButton.classList.remove("active");
+    joinProfileButton.classList.add("active");
+    window.location.replace('join.html');
 });

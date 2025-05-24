@@ -31,13 +31,9 @@
     #index_main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 288px 47px 235px 270px 362px;
+        grid-template-rows: auto 47px 235px 270px 362px;
         grid-gap: 10px;
-        height: 1282px;
-    }
-
-    picture, #hero, #hero img {
-        max-height: 294px;
+        height: auto;
     }
 
     #hero img {
@@ -51,6 +47,10 @@
     #events, .index_card_container {
         width: calc(100% - 20px);
         margin: 0 auto;
+    }
+
+    #events {
+        max-width: 963px;
     }
 
     #current_weather, #weather_forecast {
@@ -167,12 +167,10 @@
 
 @media (min-width: 800px) {
     #index_main {
-        grid-template-rows: 375px 47px 270px 362px;
-        height: 1100px;
-    }
-
-    picture, #hero, #hero img {
-        max-height: 375px;
+        grid-template-rows: auto 47px 270px 362px;
+        height: auto;
+        max-width: 800px;
+        height: 1200px;
     }
 }
 
@@ -180,13 +178,13 @@
     
     #index_main {
         grid-template-columns: auto auto auto;
-        grid-template-rows: 461px 47px 270px 362px;
+        grid-template-rows: auto 47px 270px 362px;
         height: 1200px;
     }
 
-    picture, #hero, #hero img {
+    /* picture, #hero, #hero img {
         max-height: 461px;
-    }
+    } */
 
     h2 {
         font-size: 0.85em;

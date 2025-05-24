@@ -137,7 +137,6 @@ main {
 }
 
 #view_switch_button_container {
-    
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -188,6 +187,13 @@ picture {
     line-height: 1.5em;
     padding: 10px;
     text-shadow: 0 0 4px black; 
+    left: 0px;
+}
+
+#join-now-button {
+    padding: 10px;
+    background-color: var(--sp-logo-text-color);
+    color: white;
 }
 
 #business_content_container, .index_card_container {
