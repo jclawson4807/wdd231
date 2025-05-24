@@ -125,6 +125,8 @@ nav {
 
 main {
     width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 #index_main {
@@ -156,15 +158,22 @@ main {
 
 picture {
     position: relative;
+    max-width: 1024px;
+    max-height: 461px;
+    margin: 0 auto;
 }
 
 #hero {
     width: 100%;
+    max-width: 1024px;
+    max-height: 461px;
     padding: 0;
 }
 
 #hero img {
     width: 100%;
+    max-width: 1024px;
+    max-height: 461px;
     margin: 0 auto;
     padding: 0;
 }

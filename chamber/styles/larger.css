@@ -226,18 +226,19 @@
     }
 }
 
-
-@media (min-width: 1035px) {
-
+@media (min-width: 1024px) {
     #index_main {
         grid-template-columns: auto auto auto;
-        grid-template-rows: 486px 47px 270px 362px;
+        grid-template-rows: 480px 47px 270px 362px;
         height: 1220px;
     }
 
     picture, #hero, #hero img {
-        max-height: 486px;
-    }
+        max-height: 480px;
+    }    
+}
+
+@media (min-width: 1035px) {
     
     .company_name, .address, .phone_number, .website {
         display: inline-block;
@@ -260,41 +261,13 @@
     }
 }
 
-@media (min-width: 1100px) {
-    #hero, picture {
-        height: 562px;
-    }
-    
-    #index_main {
-        grid-template-rows: 562px 47px 270px 362px;
-        height: 1300px;
-    }
-}
-
 @media (min-width: 1316px) {
-    #hero, picture {
-        height: 617px;
-    }
-    
-    #index_main {
-        grid-template-rows: 617px 47px 270px 362px;
-        height: 1400px;
-    }
-    
     .card_container {
         height: 692px;
     }
 }
 
-@media (min-width: 1440px) {
-    #hero, picture {
-        height: 674px;
-    }
-    
-    #index_main {
-        grid-template-rows: 674px 47px 270px 362px;
-        height: 1500px;
-    }
+@media (min-width: 1440px) {}
     
     .card_container {
         height: 692px;
