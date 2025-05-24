@@ -160,6 +160,7 @@ picture {
     max-width: 1024px;
     max-height: 461px;
     margin: 0 auto;
+    height: auto;
 }
 
 #hero {
@@ -167,6 +168,7 @@ picture {
     max-width: 1024px;
     max-height: 461px;
     padding: 0;
+    height: auto;
 }
 
 #hero img {
@@ -175,6 +177,7 @@ picture {
     max-height: 461px;
     margin: 0 auto;
     padding: 0;
+    height: auto;
 }
 
 #hero_cta {
