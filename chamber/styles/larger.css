@@ -1,6 +1,13 @@
 
 /* large view navigation ************************************/
 
+@media (min-width: 387px) {
+    #index_main {
+        height: 2300px;
+    }
+}
+
+
 @media (min-width: 400px) {
     section {
         max-width: 640px;
@@ -35,9 +42,9 @@
     #index_main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 47px 235px 270px 362px;
+        grid-template-rows: 288px 47px 235px 270px 362px;
         grid-gap: 10px;
-        height: auto;
+        height: 1291px;
     }
 
     #hero img {
