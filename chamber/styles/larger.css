@@ -157,7 +157,41 @@
     }
 }
 
+@media (min-width: 800px) {
+    #index_main {
+        grid-template-rows: 375px 47px 270px 362px;
+        height: 1100px;
+    }
+}
+
 @media (min-width: 984px) {
+    
+    #index_main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 461px 47px 270px 362px;
+        grid-gap: 10px;
+        height: 1200px;
+    }
+
+    h2 {
+        font-size: 0.85em;
+    }
+
+    picture, h1, #index_business_content_container {
+         grid-column: span 4;
+    }
+
+    .index_card_container {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+
+    #events, #current_weather, #weather_forecast {
+        height: 270px;
+        width: calc(100% - 20px);
+    }
+
     .card_container {
         height: 1044px;
     }
@@ -199,6 +233,13 @@
 
     .website {
         width: 16%;
+    }
+}
+
+@media (min-width: 1100px) {
+    #index_main {
+        grid-template-rows: 562px 47px 270px 362px;
+        height: 1300px;
     }
 }
 
