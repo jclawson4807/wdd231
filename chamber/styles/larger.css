@@ -28,15 +28,6 @@
         flex: 1 1 100%;
     }
 
-    footer {
-        flex-direction: row;
-        height: 195px;
-    }
-
-    #coc_social_media_icon_container {
-        margin: 50.5px auto;
-    }
-
     #index_main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -85,6 +76,38 @@
         height: 120px;
     }
 
+    h1 {
+        margin:  10px auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 54px 1fr;
+        height: 216px;
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: unset;
+        grid-gap: 10px;
+    }
+
+    #coc_social_media_icon_container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        width: 54px;
+        height: 196px;
+        padding: 0px;
+    }
+
+    .coc_info {
+        width: 100%;
+        padding: 10px;
+        max-width: 250px;
+    }
+
 @media (min-width: 650px) {
 
     .business_card_in_list {
@@ -125,6 +148,10 @@
 
     .website {
         width: 40%;
+    }
+
+    #coc_social_media_icon_container {
+        margin: 50.5px auto;
     }
 }
 
