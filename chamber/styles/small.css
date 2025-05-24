@@ -132,7 +132,8 @@ main {
 #index_main {
     display: flex;
     flex-direction: column;
-    grid-gap: 0.75rem;
+    justify-content: flex-start;
+    grid-gap: 10px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -140,11 +141,11 @@ main {
 
 #index-content-container {
     width: 100%;
-    margin: 10px auto;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0.75rem;
-    height: 2177px;
+    grid-gap: 10px;
+    /* height: 2077px; */
     padding: 10px;
 }
 
