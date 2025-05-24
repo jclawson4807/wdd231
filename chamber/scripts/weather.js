@@ -34,8 +34,8 @@ function displayCurrentDayResults(data) {
 
     weatherIconImg.setAttribute("src", icon);
     weatherIconImg.setAttribute("alt", description);
-    weatherIconImg.setAttribute("width", 50);
-    weatherIconImg.setAttribute("height", 50);
+    weatherIconImg.setAttribute("width", 95);
+    weatherIconImg.setAttribute("height", 95);
 
     // figCaption.textContent = description;
 }
