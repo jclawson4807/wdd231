@@ -190,7 +190,7 @@ picture {
     text-shadow: 0 0 4px black; 
 }
 
-#business_content_container, #index_business_content_container {
+#business_content_container, .index_card_container {
     margin: 10px auto;
     color: var(--main-aside-text-color);
 }

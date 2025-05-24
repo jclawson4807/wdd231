@@ -44,7 +44,7 @@
         object-fit: cover;
     }
 
-    picture, h1, #index_business_content_container, #events {
+    picture, h1, .index_card_container, #events {
          grid-column: span 2;
     }
 
@@ -192,7 +192,7 @@
         font-size: 0.85em;
     }
 
-    picture, h1, #index_business_content_container {
+    picture, h1, .index_card_container {
          grid-column: span 4;
     }
 
@@ -230,12 +230,17 @@
     #index_main {
         grid-template-columns: auto auto auto;
         grid-template-rows: 480px 47px 270px 362px;
-        height: 1220px;
+        height: 1240px;
     }
 
     picture, #hero, #hero img {
         max-height: 480px;
-    }    
+    }
+    
+    .index_card_container {
+        width: 100%;
+        margin: 20px auto;
+    }
 }
 
 @media (min-width: 1035px) {
