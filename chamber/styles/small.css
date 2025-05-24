@@ -176,7 +176,7 @@ picture {
 #hero {
     width: 100%;
     max-width: 1024px;
-    max-height: 293px;
+    /* max-height: 293px; */
     padding: 0;
     height: auto;
 }
@@ -184,7 +184,7 @@ picture {
 #hero img {
     width: 100%;
     max-width: 1024px;
-    max-height: 293px;
+    /* max-height: 293px; */
     margin: 0 auto;
     padding: 0;
     height: auto;
