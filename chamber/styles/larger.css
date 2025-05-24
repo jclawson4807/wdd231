@@ -149,10 +149,6 @@
     .website {
         width: 40%;
     }
-
-    #coc_social_media_icon_container {
-        margin: 50.5px auto;
-    }
 }
 
 @media (min-width: 652px) {
@@ -164,6 +160,21 @@
 @media (min-width: 984px) {
     .card_container {
         height: 1044px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    #coc_social_media_icon_container {
+        display: flex;
+        flex-direction: row;
+        width: 232px;
+        padding: 0;
+        height: 54px;
+        margin: 50.5px auto;
     }
 }
 
