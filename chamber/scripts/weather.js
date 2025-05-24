@@ -23,8 +23,8 @@ function displayCurrentDayResults(data) {
     const description = data.weather[0].description; // @TASK - capitalization
     currentDateWeatherConditions.textContent = description;
 
-    const sunriseDateStr = new Date(data.sys.sunrise).toLocaleTimeString('en-US', { timeZone: 'America/Chicago' }, { hour12: true });
-    const sunsetDateStr = new Date(data.sys.sunset).toLocaleTimeString('en-US', { timeZone: 'America/Chicago' }, { hour12: true });
+    const sunriseDateStr = new Date(data.sys.sunrise * 1000).toLocaleTimeString('en-US');
+    const sunsetDateStr = new Date(data.sys.sunset * 1000).toLocaleTimeString('en-US');
 
     currentWeatherHumidity.innerHTML = `${data.main.humidity}`;
     currentWeatherSunriseTime.innerHTML = `${sunriseDateStr}`;
