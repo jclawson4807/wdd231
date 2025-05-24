@@ -206,7 +206,7 @@ picture {
 #join-now-button {
     padding: 10px;
     margin: 5px;
-    background-color: var(--sp-logo-text-color);
+    background-color: var(--sp-footer-color);
     color: white;
 }
 
