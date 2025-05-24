@@ -265,6 +265,20 @@ section h2 {
     margin: 5px;
 }
 
+#weather_forecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;
+}
+
+#weather_forecast p {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
 .white_list_div, .shaded_list_div {
     display: block;
     width: 100%;

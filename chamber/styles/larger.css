@@ -54,7 +54,7 @@
         margin: 0 auto;
     }
 
-    #current_weather, #weather_forecast{
+    #current_weather, #weather_forecast {
         height: 270px;
         width: calc(100% - 20px);
     }
