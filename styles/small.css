@@ -294,3 +294,26 @@ footer img {
 .highlight {
     color: var(--highlight-text-color);
 }
+
+dialog {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0;
+    color: var(--header-footer-background-color);
+    font-family: var(--body-font), serif;
+    border: 1px solid var(--dark-blue-emphasis-color);
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+    max-width: 780px;
+}
+
+dialog::backdrop {
+    background-color: white;
+}
+
+dialog button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px;
+    border: 1px solid var(--box-shadow-color);
+}

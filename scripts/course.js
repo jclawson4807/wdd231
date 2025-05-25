@@ -103,6 +103,10 @@ wddButton.addEventListener('click', () => {
     calculateAndDisplayTotalNumberOfCreditsRequired(wddCourses);
 });
 
+function displayCourseDetailsModal(course) {
+    console.log(course);
+}
+
 function generateCourseFigure(course) {
     let classString = "";
 
@@ -110,7 +114,7 @@ function generateCourseFigure(course) {
         classString = 'class="completed_class"';
     }
     
-    return `<figure ${classString}>
+    return `<figure ${classString} id="course-${course.number}">
                 <figcaption tabindex="0">${ course.title }</figcaption>
             </figure>`;
 }
@@ -122,6 +126,19 @@ function generateCourseFigures(selectedCourses) {
 
     for (let i = 0; i < selectedCourses.length; i++) {
         courseContainerElement.innerHTML = courseContainerElement.innerHTML + generateCourseFigure(selectedCourses[i]);
+    }
+
+    for (let i = 0; i < selectedCourses.length; i++) {
+        const courseNumber = selectedCourses[i].number;
+        
+        const courseID = `#course-${courseNumber}`;
+        console.log(courseID);
+
+        const courseFigure = document.querySelector(courseID);
+        
+        courseFigure.addEventListener('click', function() {
+            displayCourseDetailsModal(selectedCourses[i]);
+        });
     }
 }
 
