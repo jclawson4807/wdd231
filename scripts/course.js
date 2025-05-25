@@ -78,6 +78,7 @@ const courses = [
     }
 ]
 
+const html = document.querySelector('html');
 const allButton = document.querySelector('#all');
 const cseButton = document.querySelector('#cse');
 const wddButton = document.querySelector('#wdd');
@@ -105,12 +106,26 @@ wddButton.addEventListener('click', () => {
     calculateAndDisplayTotalNumberOfCreditsRequired(wddCourses);
 });
 
+function conditionalCloseDialog(event) {
+
+    const bondingRect = dialog.getBoundingClientRect();
+
+    if ((event.x < bondingRect.left || event.x > bondingRect.right) || (event.y < bondingRect.top || event.y > bondingRect.bottom)) {
+        dialog.close();
+        html.removeEventListener('click', conditionalCloseDialog, true);
+    }
+}
+
 function displayCourseDetailsModal(course) {
+    html.addEventListener('click', conditionalCloseDialog, true);
+    
     dialog.innerHTML = "";
 
     const closeButton = document.createElement("button");
+    closeButton.id = "close-dialog-button";
 
     closeButton.addEventListener('click', function() {
+        // dialog.removeEventListener('click');
         dialog.close();
     });
 
