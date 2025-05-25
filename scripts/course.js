@@ -125,7 +125,6 @@ function displayCourseDetailsModal(course) {
     closeButton.id = "close-dialog-button";
 
     closeButton.addEventListener('click', function() {
-        // dialog.removeEventListener('click');
         dialog.close();
     });
 
