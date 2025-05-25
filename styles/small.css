@@ -10,6 +10,7 @@
     --main-max-width: 800px;
     --highlight-text-color: #f3f437;
     --incomplete-class-background-color: #d0d0d0;
+    --dialog-background-color: #00000097;
 }
 
 * {
@@ -307,7 +308,7 @@ dialog {
 }
 
 dialog::backdrop {
-    background-color: white;
+    background-color: var(--dialog-background-color);
 }
 
 dialog button {
