@@ -82,6 +82,8 @@ const allButton = document.querySelector('#all');
 const cseButton = document.querySelector('#cse');
 const wddButton = document.querySelector('#wdd');
 
+const dialog = document.querySelector("dialog");
+
 allButton.addEventListener('click', () => {
     generateCourseFigures(courses);
     calculateAndDisplayTotalNumberOfCreditsRequired(courses);
@@ -104,19 +106,43 @@ wddButton.addEventListener('click', () => {
 });
 
 function displayCourseDetailsModal(course) {
-    console.log(course);
-}
+    dialog.innerHTML = "";
 
-function generateCourseFigure(course) {
-    let classString = "";
+    const closeButton = document.createElement("button");
 
-    if (course.completed == true) {
-        classString = 'class="completed_class"';
-    }
-    
-    return `<figure ${classString} id="course-${course.number}">
-                <figcaption tabindex="0">${ course.title }</figcaption>
-            </figure>`;
+    closeButton.addEventListener('click', function() {
+        dialog.close();
+    });
+
+    const dialogHeader = document.createElement("h2");
+    dialogHeader.textContent = `${course.subject} ${course.number}`;
+    dialogHeader.appendChild(closeButton);
+
+    const title = document.createElement("h3");
+
+    title.textContent = course.title;
+
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const p3 = document.createElement("p");
+    const p4 = document.createElement("p");
+
+    p1.textContent = `${course.credits} credits`;
+    p2.textContent = `Certtificate: ${course.certificate}`;
+    p3.textContent = course.description;
+    p4.textContent = `Technology: ${course.technology.join(", ")}`;
+
+    dialog.appendChild(dialogHeader);
+    dialog.appendChild(title);
+    dialog.appendChild(p1);
+    dialog.appendChild(p2);
+    dialog.appendChild(p3);
+    dialog.appendChild(p4);
+
+    dialog.showModal();
+
+    // event listener to close the modal when the user clicks outside of the modal.
+
 }
 
 function generateCourseFigures(selectedCourses) {
@@ -125,20 +151,27 @@ function generateCourseFigures(selectedCourses) {
     courseContainerElement.innerHTML = "";
 
     for (let i = 0; i < selectedCourses.length; i++) {
-        courseContainerElement.innerHTML = courseContainerElement.innerHTML + generateCourseFigure(selectedCourses[i]);
-    }
 
-    for (let i = 0; i < selectedCourses.length; i++) {
-        const courseNumber = selectedCourses[i].number;
+        const course = selectedCourses[i];
         
-        const courseID = `#course-${courseNumber}`;
-        console.log(courseID);
+        const figure = document.createElement("figure");
+        const figureCaption = document.createElement("figcaption");
 
-        const courseFigure = document.querySelector(courseID);
-        
-        courseFigure.addEventListener('click', function() {
-            displayCourseDetailsModal(selectedCourses[i]);
+        if (course.completed == true) {
+            figure.className = "completed_class";
+        }
+
+        figure.id = `#course-${course.number}`;
+
+        figureCaption.textContent = course.title
+
+        figure.addEventListener('click', function() {
+            displayCourseDetailsModal(course);
         });
+
+        figure.appendChild(figureCaption);
+
+        courseContainerElement.appendChild(figure);
     }
 }
 
