@@ -123,6 +123,7 @@ function displayCourseDetailsModal(course) {
 
     const closeButton = document.createElement("button");
     closeButton.id = "close-dialog-button";
+    closeButton.textContent = "X";
 
     closeButton.addEventListener('click', function() {
         dialog.close();
