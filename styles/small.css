@@ -132,9 +132,8 @@ nav {
     display: block;
 }
 
-.active::before {
-    content: "📍";
-    /* just a wayfinding symbol for the user */
+.active {
+    border-bottom: solid #1789fb;
 }
 
 header img {
