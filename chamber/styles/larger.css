@@ -124,6 +124,10 @@
         max-width: 250px;
     }
 
+    #membership-main {
+        height: 2300px;
+    }
+
 @media (min-width: 650px) {
 
     .business_card_in_list {
@@ -164,6 +168,30 @@
 
     .website {
         width: 40%;
+    }
+
+    #membership-main {
+        grid-template-columns: 1fr 1fr;
+        height: 1470px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+    }
+
+    input[type="email"] {
+        display: inline-block;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    select,
+    input[type="number"] {
+        display: inline-block;
     }
 }
 
@@ -243,6 +271,11 @@
     
     #index_main {
         max-height: 1502px;
+    }
+
+    #membership-main {
+        max-width: 1240px;
+        height: 1450px;
     }
 }
 
