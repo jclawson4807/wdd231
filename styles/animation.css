@@ -11,10 +11,6 @@
     animation: 1s infinite linear spinner;
 }
 
-@keyframes spinner {
-    100% {transform: rotate(360deg);}
-}
-
 #animation-1::after {
     content: '⚙️';
     position: absolute;
@@ -24,6 +20,10 @@
     animation: pulse 1.5s ease-in-out infinite;
 }
 
+@keyframes spinner {
+    100% {transform: rotate(360deg);}
+}
+
 @keyframes pulse {
     0%, 100% {
         transform: translate(-50%, -50%) scale(1);
@@ -31,4 +31,35 @@
     50% {
         transform: translate(-50%, -50%) scale(2.25);
     }
+}
+
+#animation-2 {
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: transform 1.5s linear;
+}
+
+#animation-2::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+#animation-2:hover {
+    transform: rotate(360deg);
+}
+
+#animation-2:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
 }
