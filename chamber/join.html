@@ -36,27 +36,11 @@
         </ul>
     </nav>
 </header>
-<main>
+<main id="membership-main">
+    <dialog></dialog>
+    <h1>Membership Application Form</h1>    
     <form method="GET" action="thankyou.html" autocomplete="on" >
         <input name="timestamp" type="hidden" id="timestamp">
-       
-        <!-- 
-            applicant's first name, text type, required, name, title, and correct autocomplete value so this field autofills with the first name
-            applicant's last name, text type, required, name, title, and correct autocomplete value so this field autofills with the last name
-            applicant's organizational title within their organization, text type, name, title, autocomplete value of "organization-title", and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7) characters using a regular expression
-            an email address, email type, required, name, title, correct autocomplete value, and placeholder which contains an example email input.
-            a mobile phone number, telephone type, required, name, title, and correct autocomplete value
-        
-            the business/organization's name, text type, required, name, title, and correct autocomplete value of "organization".
-        a membership level selection using an appropriate form field of your choosing to allow the user to select a membership level. There are four membership levels.
-            NP Membership is for non profit organizations and there is no fee.
-            Bronze Membership
-            Silver Membership
-            Gold Membership
-            a business/organization's description, text area, title, and name
-            the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user.
-        A form submission button using input of type submit that is properly labeled in the text node of the button.
-         -->
 
         <fieldset>
             <legend>Applicant Information</legend>
@@ -91,6 +75,33 @@
         <input type="submit" value="Request Membership">
 
     </form>
+    <div id="membership-level-information">
+        <p id="membership-level-label">Membership Levels</p>
+        <section>
+            <h2>Non Profit Membership Level</h2>
+            <div>
+                <button id="np-membership-button">Learn More</button>
+            </div>
+        </section>
+        <section>
+            <h2>Bronze Membership Level</h2>
+            <div>
+                <button id="bronze-membership-button">Learn More</button>
+            </div>
+        </section>
+        <section>
+            <h2>Silver Membership Level</h2>
+            <div>
+                <button id="silver-membership-button">Learn More</button>
+            </div>
+        </section>
+         <section>
+            <h2>Gold Membership Level</h2>
+            <div>
+                <button id="gold-membership-button">Learn More</button>
+            </div>
+        </section>
+    </div>
 </main>
 <footer>
     <div class="coc_info">

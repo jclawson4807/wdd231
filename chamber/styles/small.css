@@ -7,13 +7,15 @@
     --sp-logo-text-color: #328284;
     --sp-footer-color: #235f60;
     --dark-blue-emphasis-color: #0D2149;
-    --header-footer-background-color: #1d4d73;
+    --dark-green-emphasis-color: #0d4924;
+    --header-footer-background-color: #1d7327;
     --header-footer-nav-text-color: #fff;
     --main-background-color: #ffffff;
     --main-aside-text-color: #000;
     --box-shadow-color: #00000064;
     --main-max-width: 800px;
     --incomplete-class-background-color: #d0d0d0;
+    --required-red: #9c2c13;
 }
 
 * {
@@ -402,4 +404,120 @@ footer img {
     padding: 0;
     height: 54px;
     margin: 0 auto;
+}
+
+#membership-main h1, 
+#membership-main p {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#membership-main p {
+    font-size: 1.5em;
+}
+
+form {
+    background-color: var(--header-footer-nav-text-color);
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px auto;
+    width: 100%;
+    border-bottom: 1px solid var(--dark-blue-emphasis-color);
+}
+
+fieldset {
+    margin: 0 0 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+legend {
+    color: var(--header-footer-background-color);
+    padding: 0 .5rem;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    min-height: 44px;
+    width: 100%;
+    margin: 15px auto;
+}
+
+input[type="email"] {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+select,
+input[type="number"] {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+    appearance: none;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+    appearance: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+    display: block;
+    border: none;
+    background-image: linear-gradient(var(--dark-green-emphasis-color), var(--header-footer-background-color));
+    color: var(--header-footer-nav-text-color);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 426px;
+    margin: 1.5rem auto;
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+} 
+
+.required-asterisk {
+    color: var(--required-red);
+}
+
+#membership-main section div{
+    width: 100%;
+    height: calc(100% - 47px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#membership-main section div button {
+    background-image: linear-gradient(var(--dark-green-emphasis-color), var(--header-footer-background-color));
+    color: var(--header-footer-nav-text-color);
+    border-radius: 6px;
+    padding: .75rem;
 }
