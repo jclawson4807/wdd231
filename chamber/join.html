@@ -37,6 +37,60 @@
     </nav>
 </header>
 <main>
+    <form method="GET" action="thankyou.html" autocomplete="on" >
+        <input name="timestamp" type="hidden" id="timestamp">
+       
+        <!-- 
+            applicant's first name, text type, required, name, title, and correct autocomplete value so this field autofills with the first name
+            applicant's last name, text type, required, name, title, and correct autocomplete value so this field autofills with the last name
+            applicant's organizational title within their organization, text type, name, title, autocomplete value of "organization-title", and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7) characters using a regular expression
+            an email address, email type, required, name, title, correct autocomplete value, and placeholder which contains an example email input.
+            a mobile phone number, telephone type, required, name, title, and correct autocomplete value
+        
+            the business/organization's name, text type, required, name, title, and correct autocomplete value of "organization".
+        a membership level selection using an appropriate form field of your choosing to allow the user to select a membership level. There are four membership levels.
+            NP Membership is for non profit organizations and there is no fee.
+            Bronze Membership
+            Silver Membership
+            Gold Membership
+            a business/organization's description, text area, title, and name
+            the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user.
+        A form submission button using input of type submit that is properly labeled in the text node of the button.
+         -->
+
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label>First Name<span class="required-asterisk">*</span> <input type="text" name="fname"
+                    required></label>
+            <label>Last Name<span class="required-asterisk">*</span> <input type="text" name="lname"
+                    required></label>
+            <label>Organizational Title <input type="text" name="organization-title" pattern="[A-Za-z\s-]{7,}"></label>
+            <label>Email<span class="required-asterisk">*</span> <input type="email" name="email"
+                    placeholder="someone@gmail.com" required></label>
+
+            <label>Mobile Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Business Information</legend>
+            <label>Organization Name<span class="required-asterisk">*</span> <input type="text" name="organization"
+                    required></label>
+            <label>Membership Level 
+                <select name="membership-level" id="membership-level">
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>Business Description<textarea name="business-description" id="business-description"
+                    rows="10"></textarea></label>
+        </fieldset>
+
+        <input type="submit" value="Request Membership">
+
+    </form>
 </main>
 <footer>
     <div class="coc_info">
