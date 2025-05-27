@@ -506,7 +506,7 @@ input[type="submit"] {
     color: var(--required-red);
 }
 
-#membership-main section div{
+.membership-button-container {
     width: 100%;
     height: calc(100% - 47px);
     display: flex;
@@ -515,9 +515,41 @@ input[type="submit"] {
     align-items: center;
 }
 
-#membership-main section div button {
-    background-image: linear-gradient(var(--dark-green-emphasis-color), var(--header-footer-background-color));
-    color: var(--header-footer-nav-text-color);
+.membership-button-container button {
     border-radius: 6px;
     padding: .75rem;
+    background-image: linear-gradient(var(--dark-green-emphasis-color), var(--header-footer-background-color));
+    color: var(--header-footer-nav-text-color);
+    backface-visibility: hidden;
+    position: relative;
+    z-index: 1;
+    width: 120px;
+    height: 50px;
+}
+
+#bronze-membership-button-wrapper {
+    background-image: linear-gradient(180deg,#fea 0%,rgb(229, 203, 101) 49%,rgb(171, 150, 66) 51%,rgb(235, 205, 86) 100%);
+    border-radius: 6px;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 130px;
+    height: 60px;
+}
+
+#silver-membership-button-wrapper  {
+    background-image: linear-gradient(180deg,#e6e6e6 0%,rgba(0, 0, 0, 0.25) 49%, rgba(38, 38, 38, 0.6) 51%,rgba(0, 0, 0, 0.25) 100%);
+    border-radius: 6px;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 130px;
+    height: 60px;
+}
+
+#gold-membership-button-wrapper  {
+    background-image: linear-gradient(180deg,#fea 0%,#dc8 49%,#a95 51%,#dc8 100%);
+    border-radius: 6px;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 130px;
+    height: 60px;
 }
