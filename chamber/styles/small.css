@@ -447,7 +447,7 @@ fieldset {
 }
 
 legend {
-    color: var(--header-footer-background-color);
+    color: black;
     padding: 0 .5rem;
     font-weight: 600;
 }
