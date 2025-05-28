@@ -46,31 +46,31 @@
 
         <fieldset>
             <legend>Applicant Information</legend>
-            <label>First Name<span class="required-asterisk">*</span> <input type="text" name="fname"
+            <label>First Name<span class="required-asterisk">*</span> <input type="text" title="Applicant's first name." name="fname"
                     required></label>
-            <label>Last Name<span class="required-asterisk">*</span> <input type="text" name="lname"
+            <label>Last Name<span class="required-asterisk">*</span> <input type="text" title="Applicant's last name." name="lname"
                     required></label>
-            <label>Organizational Title <input type="text" name="organization-title" pattern="[A-Za-z\s-]{7,}"></label>
-            <label>Email<span class="required-asterisk">*</span> <input type="email" name="email"
+            <label>Organizational Title <input type="text" title="Title of the applicant in his or her company." name="organization-title" pattern="[A-Za-z\s-]{7,}"></label>
+            <label>Email<span class="required-asterisk">*</span> <input type="email" title="Applicant's email address." name="email"
                     placeholder="someone@gmail.com" required></label>
 
-            <label>Mobile Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+            <label>Mobile Phone <input type="tel" title="Applicant's mobile phone number." name="phone" placeholder="1235551234"></label>
             
         </fieldset>
 
         <fieldset>
             <legend>Business Information</legend>
-            <label>Organization Name<span class="required-asterisk">*</span> <input type="text" name="organization"
+            <label>Organization Name<span class="required-asterisk">*</span> <input type="text" title="The name of the organization or company." name="organization"
                     required></label>
             <label>Membership Level 
-                <select name="membership-level" id="membership-level">
+                <select name="membership-level" id="membership-level" title="Requested membership level." >
                     <option value="np">NP Membership</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
                 </select>
             </label>
-            <label>Business Description<textarea name="business-description" id="business-description"
+            <label>Business Description<textarea name="business-description" title="Description of the organization." id="business-description"
                     rows="10"></textarea></label>
         </fieldset>
 
