@@ -40,10 +40,13 @@ joinProfileButton.addEventListener('click', () => {
     joinProfileButton.classList.add("active");
 });
 
-joinNowButton.addEventListener('click', () => {
-    homeButton.classList.remove("active");
-    discoveryButton.classList.remove("active");
-    directoryButton.classList.remove("active");
-    joinProfileButton.classList.add("active");
-    window.location.replace('join.html');
-});
+if (joinNowButton != null) {
+    joinNowButton.addEventListener('click', () => {
+        homeButton.classList.remove("active");
+        discoveryButton.classList.remove("active");
+        directoryButton.classList.remove("active");
+        joinProfileButton.classList.add("active");
+        window.location.replace('join.html');
+    });
+
+}

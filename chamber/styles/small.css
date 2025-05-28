@@ -15,6 +15,7 @@
     --box-shadow-color: #00000064;
     --main-max-width: 800px;
     --incomplete-class-background-color: #d0d0d0;
+    --dialog-background-color: #00000097;
     --required-red: #9c2c13;
 }
 
@@ -562,3 +563,49 @@ input[type="submit"] {
     width: 130px;
     height: 60px;
 }
+
+
+dialog {
+    width: calc(100% - 20px);
+    margin: 100px auto;
+    padding: 0;
+    color: var(--header-footer-background-color);
+    font-family: var(--body-font), serif;
+    border: 1px solid var(--dark-green-emphasis-color);
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+    max-width: 780px;
+    border-radius: 6px;
+}
+
+dialog h2 {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    background-color: var(--dark-green-emphasis-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+dialog h3, dialog p {
+    padding: 10px;
+}
+
+dialog::backdrop {
+    background-color: var(--dialog-background-color);
+}
+
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    margin: 5px;
+    border: 1px solid var(--box-shadow-color);
+}
+
+
+/*
+Metal button border colors from https://codepen.io/yuhomyan/pen/jOqvjZq
+*/
