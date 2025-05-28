@@ -70,6 +70,10 @@ const membershipLevels = [
     }
 ]
 
+const timestamp = document.querySelector("#timestamp");
+
+timestamp.textContent = Date.now();
+
 const html = document.querySelector('html');
 const dialog = document.querySelector("dialog");
 
