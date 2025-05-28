@@ -8,13 +8,10 @@ const membershipLevels = [
             'Featured in yearly dinner honoring Sun Prairie Non-Profit organizations',
             'Featured on the Sun Prairie Chamber of Commerce sub-site for non-profits in the community',
             'Opportunity to speak at the City Council\'s Best of Sun Prairie meetings',
-            'Membership in the Sun Prairie Non-Profit services Facebook group',
+            'Membership in the Sun Prairie Business services Facebook group',
             'Opportunity to play in the Sun Prairie charity golf tournament',
-            'Opportunity to apply for city, county, and state grants through our \'Building Wisconsin\' initiative',
             'Opportunity to apply for sponsorships or grants from companies in Sun Prairie',
-            'Opportunity to particpate in the UW Madison intership pool',
             'Free booth space at our semi-annual Sun Prairie Non-Profit convention',
-            'Free booth space at our annual Sun Prairie community builder convention',
             'Advertising opportunities on the Sun Prairie city website',
             'Member referrals'
         ]
@@ -27,16 +24,12 @@ const membershipLevels = [
         benefits: [
             'Featured in yearly dinner honoring Sun Prairie Chamber of Commerce member organizations',
             'Featured on the Sun Prairie Chamber of Commerce sub-site for companies in the community',
-            'Opportunity to speak at the City Council\'s Best of Sun Prairie meetings',
             'Membership in the Sun Prairie Businesses Facebook group',
             'Opportunity to play in the Sun Prairie charity golf tournament',
             'Opportunity to apply for city, county, and state grants through our \'Building Wisconsin\' initiative',
             'Opportunity to particpate in the UW Madison intership pool',
-            'Free booth space at our semi-annual Sun Prairie Business leadership convention',
-            'Free booth space at our annual Sun Prairie community builder convention',
             'Advertising opportunities on the Sun Prairie city website',
             'Opportunity to have a company representative appear on the Sun Pairie City podcast',
-            'Opportunity to participate in competitive bidding for city and county contracts in your business domain if relevant',
             'Member referrals',
             'Opportunity to attend quarterly Toastmaster dinners',
         ]
@@ -47,23 +40,13 @@ const membershipLevels = [
         levelNumber: 2,
         numberOfPositionsAvaialble: 50,
         benefits: [
-            'Featured in yearly dinner honoring Sun Prairie Chamber of Commerce member organizations',
-            'Featured on the Sun Prairie Chamber of Commerce sub-site for companies in the community',
+            'Everything in the bronze level, plus....',
             'Opportunity to submit articles to the Sun Prairie Chamber of Commerce sub-site for companies in the community',
             'Opportunity to speak at the City Council\'s Best of Sun Prairie meetings',
-            'Membership in the Sun Prairie Businesses Facebook group',
-            'Opportunity to play in the Sun Prairie charity golf tournament',
-            'Opportunity to apply for city, county, and state grants through our \'Building Wisconsin\' initiative',
-            'Opportunity to particpate in the UW Madison intership pool',
             'Opportunity to present at our semi-annual Sun Prairie Business leadership convention',
             'Free medium booth space at our semi-annual Sun Prairie Business leadership convention',
             'Free medium booth space at our annual Sun Prairie community builder convention',
-            'Advertising opportunities on the Sun Prairie city website',
-            'Opportunity to have a company representative appear on the Sun Pairie City podcast',
-            'Opportunity to participate in competitive bidding for city and county contracts in your business domain if relevant',
-            'Member referrals',
             'Opportunity to attend monthly business leader lunches',
-            'Opportunity to attend quarterly Toastmaster dinners',
             'Monthly training sessions for business leaders by industry experts'
         ]
     },
@@ -73,26 +56,16 @@ const membershipLevels = [
         levelNumber: 3,
         numberOfPositionsAvaialble: 12,
         benefits: [
+            'Everything in the silver level, plus....',
             'Opportunity for C-Suite member to be a featured speaker at yearly dinner honoring Sun Prairie Chamber of Commerce member organizations',
             'Featured on the Sun Prairie Chamber of Commerce sub-site for companies in the community',
             'Opportunity to submit articles to the Sun Prairie Chamber of Commerce sub-site for companies in the community',
             'Opportunity to speak at the City Council\'s Best of Sun Prairie meetings',
-            'Participation in Managing Member group for the Sun Prairie Businesses Facebook group',
             'Company wil be listed as a sponsor for the Sun Prairie charity golf tournament',
-            'Opportunity to play in the Sun Prairie charity golf tournament',
-            'Opportunity to apply for city, county, and state grants through our \'Building Wisconsin\' initiative',
-            'Opportunity to particpate in the UW Madison intership pool',
             'Opportunity for C-Suite member to be a featured speaker at our semi-annual Sun Prairie Business leadership convention',
-            'Free large booth space at our semi-annual Sun Prairie Business leadership convention',
-            'Free large booth space at our annual Sun Prairie community builder convention',
+            'Free large booth space at our annual Sun Prairie community builder convention and semi-annual Sun Prairie Business leadership convention',
             'Be listed as a featured advertiser on the Sun Prairie city website',
             'Opportunity to have a company representative appear twice per year on the Sun Pairie City podcast',
-            'Opportunity to participate in competitive bidding for city and county contracts in your business domain if relevant',
-            'Member referrals',
-            'Opportunity to attend monthly business leader lunches',
-            'Opportunity to attend quarterly Toastmaster dinners',
-            'Opportunity for C-Suite member to attend yearly Governor\s ball',
-            'Monthly training sessions for business leaders by industry experts'
         ]
     }
 ]
@@ -156,7 +129,7 @@ function displayMembershpLevelDetailsModal(membershipDetail) {
     });
 
     const dialogHeader = document.createElement("h2");
-    dialogHeader.textContent = `${membershipDetail.levelName} Membership`;
+    dialogHeader.textContent = membershipDetail.levelName;
     dialogHeader.appendChild(closeButton);
 
     const numberOfSpots = document.createElement("h3");
@@ -181,6 +154,7 @@ function displayMembershpLevelDetailsModal(membershipDetail) {
 
     membershipDetail.benefits.forEach(benefit => {
         const p = document.createElement("p");
+        p.className = "dialog-paragraphs";
         p.textContent = benefit
 
         dialog.appendChild(p);    

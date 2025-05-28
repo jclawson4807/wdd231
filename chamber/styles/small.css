@@ -408,13 +408,13 @@ footer img {
 }
 
 #membership-main h1, 
-#membership-main p {
+#membership-level-label {
     width: 100%;
     text-align: center;
     padding: 10px;
 }
 
-#membership-main p {
+#membership-level-label {
     font-size: 1.5em;
 }
 
@@ -589,6 +589,11 @@ dialog h2 {
 
 dialog h3, dialog p {
     padding: 10px;
+}
+
+.dialog-paragraphs {
+    font-size: 0.65rem;
+    text-align: left;
 }
 
 dialog::backdrop {
