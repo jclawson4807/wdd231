@@ -516,6 +516,10 @@ input[type="submit"] {
     color: var(--required-red);
 }
 
+#membership-level-information section {
+    margin: 15px auto;
+}
+
 .membership-button-container {
     width: 100%;
     height: calc(100% - 47px);
@@ -610,6 +614,14 @@ dialog button {
     border: 1px solid var(--box-shadow-color);
 }
 
+.animated-card-fade {
+    animation: fade-in 1.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 /*
 Metal button border colors from https://codepen.io/yuhomyan/pen/jOqvjZq
