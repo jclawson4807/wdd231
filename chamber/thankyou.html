@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description"
+        content="WDD 231 - Web Frontend Development 1 Sun Prairie WI Chamber of Commerce join request confirmation page for James Clawson">
+    <meta name="author" content="James Winston Clawson">
+    <title>WDD 231 - Sun Prairie WI Chamber of Commerce Site - Join request confirmation</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <meta property="og:title" content="WDD 231 - Sun Prairie WI Chamber of Commerce Site - Join request confirmation">
+    <meta property="og:description" content="WDD 231 - Web Frontend Development 1 Sun Prairie WI Chamber of Commerce join request confirmation page for James Clawson">
+    <meta property="og:image" content="https://jclawson4807.github.io/wdd231/chamber/images/sp-coc-site-home-preview.webp">
+    <meta property="og:url" content="https://jclawson4807.github.io/wdd231/chamber/join.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="images/sp-chamber-logo.svg" alt="Sun Prairie Wisconsin Chamber of Commerce" width="182" height="42" loading="lazy">
+    <button type="button" id="menu" aria-label="Menu Button" tabindex="0"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" id="home" tabindex="0">Home</a></li>
+            <li><a href="discovery.html" id="discovery" tabindex="0">Discovery</a></li>
+            <li><a href="directory.html" id="directory" tabindex="0">Business Directory</a></li>
+            <li><a href="join.html" id="join" tabindex="0" class="active">Join</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="join-request-confirmation-main">
+    <div id="join-request-confirmation-container">
+    <h1>Thank you</h1>
+    <p>Your Sun Prairie Chamber of Commerce application has been received.  Your application will be reviewed, and we will contact you within five business days.</p>
+    <div id="join-request-confirmation"></div>
+</div>
+</main>
+<footer>
+    <div class="coc_info">
+        <p tabindex="0">Sun Prairie Chamber of Commerce</p>
+        <p tabindex="0">2598 W Main St</p>
+        <p tabindex="0">Sun Prairie, WI 53590</p>
+        <p tabindex="0">info@sunprairiewichamber.org</p>
+        <p><a href="tel:+16085551212" tabindex="0">1 (608) 555-1212</a></p>
+    </div>
+
+    <div id="coc_social_media_icon_container">
+        <img src="images/youtube.svg" id="youtube_logo" alt="YouTube logo" width="54" height="54" tabindex="0">
+        <img src="images/twitter-x.svg" id="x_logo" alt="X logo" width="54" height="54" tabindex="0">
+        <img src="images/linkedin.svg" id="linkediin_logo" alt="LinkedIn logo" width="54" height="54" tabindex="0">
+    </div>
+
+    <div class="coc_info">
+        <p tabindex="0">WDD231 Class Project</p>
+        <p tabindex="0">James W Clawson</p>
+        <p tabindex="0">@<span id="currentyear" tabindex="0"></span> Sun Prairie Chamber of Commerce</p>
+        <p id="lastModified" tabindex="0"></p>
+    </div>
+</footer>
+</body>
+</html>

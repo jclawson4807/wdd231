@@ -623,6 +623,20 @@ dialog button {
   100% { opacity: 1; }
 }
 
+#join-request-confirmation-container {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+#join-request-confirmation-container p {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    text-align: left;
+}
+
 /*
 Metal button border colors from https://codepen.io/yuhomyan/pen/jOqvjZq
 */
