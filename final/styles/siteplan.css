@@ -1,0 +1,170 @@
+:root {
+    --nav-font: Roboto;
+    --body-font: Domine;
+    --cursive-sample-font: Ballet;
+    --dark-blue-emphasis-color: #0D2149;
+    --header-footer-background-color: #1d4d73;
+    --hr-color: #a3a3a3;
+    --header-footer-nav-text-color: #fff;
+    --header-font: Roboto;
+    --header-font-size: 1.5em;
+    --nav-background-color: #000000;
+    --main-and-card-background-color: #ffffff;
+    --main-aside-text-color: #000;
+    --header-height: 7.15em;
+    --nav-height: 3em;
+    --main-max-width: 800px;
+    --main-min-width: 250px;
+    --footer-height: 8.2em;
+    --figure-height: 200px;
+    --figure-width: 250px;
+
+    --highlight-text-color: #f3f437;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: var(--body-font), serif;
+    font-weight: 300;
+    line-height: 1.7em;
+    min-width: var(--main-min-width);
+    color: var(--dark-body-blue-text-color);
+}
+
+header,
+footer,
+nav {
+    background-color: var(--header-footer-background-color);
+    color: var(--header-footer-nav-text-color);
+    font-family: var(--header-font), sans-serif;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: navy;
+    text-align: left;
+    margin: 1rem;
+}
+
+main {
+    max-width: var(--main-max-width);
+    margin: 0 auto;
+    background-color: var(--main-and-card-background-color);
+    color: var(--main-aside-text-color);
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    text-align: center;
+    color: var(--header-footer-background-color);
+    grid-column: span 1;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    padding: 5px;
+}
+
+.highlight {
+    color: var(--highlight-text-color);
+}
+
+section {
+    margin: 30px auto;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+section table {
+    margin: 15px auto;
+}
+
+.font-name-and-sample-col {
+    width: 200px;
+    text-align: center;
+}
+
+.domine-font-sample {
+    font-family: var(--body-font), serif;
+}
+
+.roboto-font-sample {
+    font-family: var(--header-font), sans-serif;
+}
+
+.ballet-font-sample {
+    font-family: var(--cursive-sample-font), 'Brush Script MT',
+        cursive;
+}
+
+.color-sample-col {
+    width: 30px;
+    margin: 20px;
+}
+
+.hex-value-col {
+    width: 120px;
+    margin: 20px;
+    text-align: center;
+}
+
+#fhdlogo {
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.0rem;
+    }
+}
