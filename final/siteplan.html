@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/date.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -31,9 +31,6 @@
             </picture>
             <h2>Site Name: Family Heritage Discovery
             </h2>
-            <p>This site focuses on helping people discover their family heritage. After the completion of the
-                assignment, the site will be hosted at familyheritagediscovery.org. The logo shown below will be adapted
-                to become a favicon as well.</p>
             <picture>
                 <source srcset="images/fhdlogo-292.webp" media="(max-width: 292px)">
                 <source srcset=" images/fhdlogo-487.webp" media="(min-width: 487px)">
@@ -43,11 +40,18 @@
         </section>
         <section>
             <h2>Purpose</h2>
-            <p>familyheritagediscovery.org will be a persistent resource for people who want to learn about family
-                history generally, and about their families specifically. The page will include a form which will allow
-                visitors to join our mailing list. Eventually, after the assignment is done, the site will include a
-                moderated community space where people can ask for research help, as well as basic
-                productivity tools focused on doing family history research.</p>
+            <p>Once this site is complete and launched publicly, it site will be a resource for people who want to learn about family history, 
+                and will include how-to articles on gathering family history related information about your family, how to use online family 
+                history tools such as familysearch.org, reviews of online family history sites, and more.  The page will include a CTA form 
+                which will allow visitors to join our mailing list. It will also include a form which allows users to request research help.
+                Eventually, after the assignment is done, the site will include a moderated community space where people can ask for 
+                research help from othe rmembers, as well as basic productivity tools focused on doing family history research.</p>
+            <p>I have been working on the idea behind this site for some time.  I ran a not-for-profit family history research group for many years,
+                and will invite some of the people I worked with on that team to help run this site once it launches. I have previously built two pre-launch 
+                versions of this site, and with what I am learning in this course, the site functionality will be substantially improved.  I no longer
+                have to use page builder tools.  One could say that a purpose of this site, and this assignment, is to help me learn to build something real
+                and useful for other people.  I am very grateful for the opportunity to do this, and for what I am learning at BYU Idaho.  Thank you.
+            </p>
         </section>
         <section>
             <h2>Scenarios</h2>
@@ -152,9 +156,21 @@
             </h2>
             <p>The three content screens will all display content using the same section template. The body of
                 an article may contain an image. For the purposes of this assignment, the article data will be included
-                in an array of Javascript objects. The selection of different screens from the menu will result in the
-                array being filtered by a screen type value. In later iterations of this page, the content will be
-                stored in a database and loaded based on user search queries or by page association.</p>
+                in an array of Javascript objects, which will be loaded from a JSON file on the server. The selection of 
+                different screens from the menu will result in the array being filtered by a screen type value. In later 
+                iterations of this page, the content will be stored in a database and loaded based on user search queries 
+                or by page association.</p>
+            <p>Page selection information will be stored in local storage, and if the user returns to the page, he or she
+                will be directed to the last page viewed.</p>
+            <p>The Research Help screen contains a form which allows the user to request help with family history research.
+                After the form is submitted, a form submission response page will be displayed which will summarize the submitted
+                information.</p>
+            <p>Two modals will be used.  One will thank the user for submitting the CTA form.  The other will provide information 
+                about the author of the articles.</p>
+            <p>
+                I plan on building a dark mode/light mode switch feature into the page.  The display mode status will also be stored
+                in local storage.
+            </p>
         </section>
         <section>
             <h2>Mobile Home Page Wireframe</h2>
