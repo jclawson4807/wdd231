@@ -1,6 +1,9 @@
 const cssRef = document.querySelector("#theme");
 const themeSwitchButton = document.querySelector("#themeswitch");
 
+const darkModeSection = document.querySelector("#darkmode");
+const lightModeSection = document.querySelector("#lightmode");
+
 let currentTheme = "dark-root.css";
 
 if (localStorage.getItem("theme") !== null) {
@@ -27,4 +30,13 @@ themeSwitchButton.addEventListener('click', () => {
 
 function setTheme(themeName) {
     cssRef.setAttribute('href', `styles/${themeName}`);
+
+    if (themeName == "dark-root.css")
+    {
+        lightModeSection.className = "hidden";
+        darkModeSection.className = "";
+    } else {
+        lightModeSection.className = "";
+        darkModeSection.className = "hidden";
+    }
 }

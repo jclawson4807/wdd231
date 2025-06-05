@@ -78,6 +78,10 @@ footer p {
     color: var(--highlight-text-color);
 }
 
+.hidden {
+    display: none;
+}
+
 section {
     margin: 30px auto;
 }
