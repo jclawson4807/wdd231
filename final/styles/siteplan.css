@@ -27,7 +27,9 @@ header {
 }
 
 header img {
-    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
     margin: 10px;
     width: 44px;
     height: 44px;
