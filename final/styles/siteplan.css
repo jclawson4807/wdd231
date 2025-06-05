@@ -2,6 +2,23 @@
     --nav-font: Roboto;
     --body-font: Domine;
     --cursive-sample-font: Ballet;
+    --color-sample-1: #3174c5;
+    --color-sample-2: #fbfbfb;
+    --color-sample-3: #0170e3;
+    --color-sample-4: #4a7aa2;
+    --color-sample-5: #032749;
+    --color-sample-6: #d7ebf6;
+    --color-sample-7: #f5f5f7;
+    --color-sample-8: #ffffff;
+    --color-sample-9: #666666;
+    --color-sample-10: #333333;
+    --color-sample-11: #808080;
+    --color-sample-12: #8c8c8c;
+    --color-sample-13: #c37d16;
+    --color-sample-14: #f9c982;
+    --color-sample-15: #bbb1a1;
+
+
     --dark-blue-emphasis-color: #0D2149;
     --header-footer-background-color: #1d4d73;
     --hr-color: #a3a3a3;
@@ -50,10 +67,18 @@ header {
     padding: 20px;
 }
 
+header img {
+    display: inline-block;
+    margin: 10px;
+    width: 44px;
+    height: 44px;
+}
+
 h1 {
     text-align: center;
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin: 0 auto;
+    width: 100%;
 }
 
 h2 {
@@ -140,31 +165,4 @@ section table {
 #fhdlogo {
     width: 100%;
     margin: 20px auto;
-}
-
-
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-    h1 {
-        font-size: 2.5rem;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-}
-
-@media (max-width: 640px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    h1 {
-        font-size: 1.0rem;
-    }
 }
