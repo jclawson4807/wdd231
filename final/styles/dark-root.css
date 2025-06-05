@@ -1,0 +1,46 @@
+:root {
+    --nav-font: Roboto;
+    --body-font: Domine;
+    --cursive-sample-font: Ballet;
+    --body-hover-color-emphasis-color: #0D2149;
+    --header-footer-background-color: #1d4d73;
+    --header-footer-nav-text-color: #ffffff;
+    --body-text-color: #000;
+    --accent-color: #F3F437;
+
+    --color-sample-1: #3174c5;
+    --color-sample-2: #fbfbfb;
+    --color-sample-3: #0170e3;
+    --color-sample-4: #4a7aa2;
+    --color-sample-5: #032749;
+    --color-sample-6: #d7ebf6;
+    --color-sample-7: #f5f5f7;
+    --color-sample-8: #ffffff;
+    --color-sample-9: #666666;
+    --color-sample-10: #333333;
+    --color-sample-11: #808080;
+    --color-sample-12: #8c8c8c;
+    --color-sample-13: #c37d16;
+    --color-sample-14: #f9c982;
+    --color-sample-15: #bbb1a1;
+
+
+    
+    
+    --hr-color: #a3a3a3;
+    
+    --header-font: Roboto;
+    --header-font-size: 1.5em;
+    --nav-background-color: #000000;
+    --main-and-card-background-color: #ffffff;
+    
+    --header-height: 7.15em;
+    --nav-height: 3em;
+    --main-max-width: 800px;
+    --main-min-width: 250px;
+    --footer-height: 8.2em;
+    --figure-height: 200px;
+    --figure-width: 250px;
+
+    --highlight-text-color: #f3f437;
+}
