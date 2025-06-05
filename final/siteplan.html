@@ -13,15 +13,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles/dark-root.css"> -->
-    <link rel="stylesheet" href="styles/light-root.css">
+    <link rel="stylesheet" href="styles/dark-root.css" id="theme">
     <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/theme-switch.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Site Plan for familyheritagediscovery.org <img src="images/dark-mode-switch.svg" alt="dark mode switch button" width="44" height="44"></h1>
+        <h1>Site Plan for familyheritagediscovery.org <img src="images/dark-mode-switch.svg" id="themeswitch" alt="dark mode switch button" width="44" height="44"></h1>
     </header>
     <main>
         <h2>Site Name: Family Heritage Discovery</h2>
@@ -64,8 +64,8 @@
                 <li>What kind of free resources exist that will help me find my ancestors?</li>
             </ul>
         </section>
-        <section>
-            <h2>Color Schema - Dark Mode</h2>
+        <section id="darkmode">
+            <h2>Color Scheme - Dark Mode</h2>
             <table>
                 <thead>
                     <tr>
@@ -117,11 +117,18 @@
                         <td class="hex-value-col">#F3F437</td>
                         <td class="usage_col">Accent Color</td>
                     </tr>
+                    <tr>
+                        <td class="color-sample-col"><img src="images/dm-color-15.svg" alt="#1789fb" width="30" height="30"
+                                loading="lazy">
+                        </td>
+                        <td class="hex-value-col">#1789fb</td>
+                        <td class="usage_col">Wayfinding Color</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
-        <section>
-            <h2>Color Schema - Light Mode</h2>
+        <section id="lightmode">
+            <h2>Color Scheme - Light Mode</h2>
             <table>
                 <thead>
                     <tr>
@@ -171,7 +178,7 @@
                                 loading="lazy">
                         </td>
                         <td class="hex-value-col">#f9c982</td>
-                        <td class="usage_col">Accent Color</td>
+                        <td class="usage_col">Accent Color, Wayfinding Color</td>
                     </tr>
                 </tbody>
             </table>
