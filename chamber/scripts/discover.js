@@ -31,10 +31,19 @@ const displayLocationCards = (discoverData) => {
         address.setAttribute("tabindex", "0")
         address.textContent = discoverItem.address;
 
+        const learnMoreButton = document.createElement("button")
+        
+        learnMoreButton.addEventListener('click', () => {
+            window.open(discoverItem.learnMoreURL, "_blank");
+        });
+        learnMoreButton.setAttribute("tabindex", "0");
+        learnMoreButton.textContent = "Learn More"
+
         card.appendChild(title);
         card.appendChild(discoverFigure);
         card.appendChild(description);
         card.appendChild(address);
+        card.appendChild(learnMoreButton);
 
         cards.appendChild(card);
     });

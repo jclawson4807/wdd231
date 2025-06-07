@@ -217,7 +217,7 @@ picture {
     color: var(--main-aside-text-color);
 }
 
-.card_container {
+.card_container, #discover-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: auto;
@@ -234,6 +234,40 @@ picture {
 
 .list_container {
     height: 944px;
+}
+
+.discover-card {
+    background-color: white;
+    height: 1200px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "address"
+    "learnMoreButton";
+    align-self: start;
+}
+
+.discover-card h2 {
+    grid-area: "name";
+}
+
+.discover-card figure {
+    grid-area: "photo";
+}
+
+.discover-card p {
+    margin: 10px;
+    grid-area: "description";
+}
+
+.discover-card address {
+    grid-area: "address"
+}
+
+.discover-card button {
+    grid-area: "learnMoreButton"
 }
 
 section {
