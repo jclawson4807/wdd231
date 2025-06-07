@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <meta property="og:title" content="WDD 231 - Sun Prairie WI Chamber of Commerce Site - Discover Page">
     <meta property="og:description" content="WDD 231 - Web Frontend Development 1 Sun Prairie WI Chamber of Commerce discover site for James Clawson">
     <meta property="og:image" content="https://jclawson4807.github.io/wdd231/chamber/images/sp-coc-site-preview.webp">
@@ -31,19 +31,15 @@
     <nav>
         <ul class="navigation">
             <li><a href="index.html" id="home" tabindex="0">Home</a></li>
-            <li><a href="discover.html" id="discovery" tabindex="0">Discovery</a></li>
-            <li><a href="directory.html" id="directory" class="active" tabindex="0">Business Directory</a></li>
+            <li><a href="discover.html" id="discovery" class="active" tabindex="0">Discovery</a></li>
+            <li><a href="directory.html" id="directory" tabindex="0">Business Directory</a></li>
             <li><a href="join.html" id="join" tabindex="0">Join</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <h1>Business Directory</h1>
-    <div id="view_switch_button_container">
-        <img src="images/card-view-no-fill.svg" id="card-view-button" alt="Card View Button" width="44" height="44" tabindex="0">
-        <img src="images/list-view.svg" id="list-view-button" alt="List View Button" width="44" height="44" tabindex="0">
-    </div>
-    <div id="business_content_container" class="card_container">
+    <h1>Discover</h1>
+    <div id="discover-content">
     </div>
 </main>
 <footer>
