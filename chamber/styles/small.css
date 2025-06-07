@@ -230,6 +230,8 @@ picture {
     font-size: 1.4em;
     text-align: center;
     padding: 10px;
+    background-color: white;
+    margin: 10px 0 20px 0;
 }
 
 .card_container,
