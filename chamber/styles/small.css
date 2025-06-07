@@ -38,7 +38,7 @@ body {
 }
 
 a {
-    color: var(--header-footer-background-color);
+    color: var(--dark-green-emphasis-color);
     text-decoration: none;
 }
 
