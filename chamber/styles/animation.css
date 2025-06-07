@@ -1,4 +1,4 @@
-@media (max-width: 639px) {
+@media (min-width: 640px) {
     .animation {
         width: 300px;
         height: 200px;
@@ -14,33 +14,6 @@
 
     .animation:hover {
         transform: scale(1.2);
-    }
-
-    .animation:hover::after {
-        transform: translate(-50%, -50%) scale(1.5);
-    }
-}
-
-
-@media (min-width: 1024px) {
-    .animation {
-        width: 300px;
-        height: 200px;
-        transition: transform 1.0s linear,
-            opacity 0.3s ease;
-        transition: transform 1.0s linear;
-    }
-
-    .animation::after {
-        content: '';
-        position: absolute;
-        transform: translate(-50%, -50%) scale(0);
-        transition: transform 1.0s ease-in-out;
-    }
-
-    .animation:hover {
-        transform: scale(1.2);
-        opacity: 0.85;
     }
 
     .animation:hover::after {
