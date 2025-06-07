@@ -1,0 +1,42 @@
+@media (max-width: 639px) {
+    .animation {
+        transition: transform 1.5s linear;
+    }
+
+    .animation::after {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 1.5s ease-in-out;
+    }
+
+    .animation:hover {
+        transform: rotate(360deg);
+    }
+
+    .animation:hover::after {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .animation {
+        transition: transform 1.5s linear;
+    }
+
+    .animation::after {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 1.5s ease-in-out;
+    }
+
+    .animation:hover {
+        transform: rotate(360deg);
+    }
+
+    .animation:hover::after {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}

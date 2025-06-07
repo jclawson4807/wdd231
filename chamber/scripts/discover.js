@@ -15,6 +15,7 @@ const displayLocationCards = (discoverData) => {
         const discoverFigure = document.createElement("figure");
 
         const discoverImage = document.createElement("img");
+        discoverImage.className = "animation";
         discoverImage.setAttribute("src", discoverItem.imageUrl);
         discoverImage.setAttribute("alt", `${discoverItem.name} Image`);
         discoverImage.setAttribute("width", "300");
@@ -33,7 +34,7 @@ const displayLocationCards = (discoverData) => {
         address.textContent = discoverItem.address;
 
         const learnMoreButton = document.createElement("button")
-        
+
         learnMoreButton.addEventListener('click', () => {
             window.open(discoverItem.learnMoreURL, "_blank");
         });
@@ -52,7 +53,7 @@ const displayLocationCards = (discoverData) => {
 
 const getDiscoverData = async () => {
     cards.innerHTML = "";
-    
+
     try {
         const response = await fetch(url);
         const data = await response.json();
