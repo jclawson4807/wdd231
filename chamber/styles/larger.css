@@ -100,13 +100,8 @@
     }
 
     footer {
-        display: grid;
-        grid-template-columns: 1fr 54px 1fr;
         height: 216px;
         flex-direction: unset;
-        justify-content: unset;
-        align-items: unset;
-        grid-gap: 10px;
     }
 
     #coc_social_media_icon_container {
