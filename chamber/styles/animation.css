@@ -22,8 +22,7 @@
 
 @media (min-width: 1024px) {
     .animation {
-        transition: transform 1.0s linear,
-            opacity 0.3s ease;
+        transition: transform 1.0s linear;
     }
 
     .animation::after {
@@ -35,7 +34,6 @@
 
     .animation:hover {
         transform: scale(1.2);
-        opacity: 0.85;
     }
 
     .animation:hover::after {
