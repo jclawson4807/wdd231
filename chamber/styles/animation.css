@@ -1,5 +1,7 @@
 @media (max-width: 639px) {
     .animation {
+        width: 300px;
+        height: 200px;
         transition: transform 1.0s linear;
     }
 
@@ -22,6 +24,8 @@
 
 @media (min-width: 1024px) {
     .animation {
+        width: 300px;
+        height: 200px;
         transition: transform 1.0s linear,
             opacity 0.3s ease;
         transition: transform 1.0s linear;
