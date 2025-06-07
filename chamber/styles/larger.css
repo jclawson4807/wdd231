@@ -131,17 +131,8 @@
         height: 2300px;
     }
 
-    #discover-content {
-        height: 6500px;
-    }
-
-    #discover-main {
-        height: auto;
-    }
-
     @media (min-width: 640px) {
         #discover-content {
-            height: 6500px;
             grid-template-columns: 1fr;
         }
 
@@ -158,10 +149,6 @@
         }
 
         .discover-card-name {
-            height: auto;
-            padding: 10px;
-            grid-area: name;
-            text-align: center;
             background-color: inherit;
             color: var(--dark-body-blue-text-color);
         }
@@ -174,28 +161,6 @@
             width: 300px;
             height: 200px;
             margin: 0;
-        }
-
-        .discover-card p {
-            margin: 10px;
-            grid-area: description;
-            text-align: justify;
-        }
-
-        .discover-card address {
-            grid-area: address;
-            padding: 10px;
-            margin: 5px;
-            text-align: center;
-        }
-
-        .discover-card button {
-            grid-area: learnMoreButton;
-            text-align: center;
-            background-color: var(--dark-green-emphasis-color);
-            padding: 10px;
-            margin: 10px;
-            color: white;
         }
     }
 
@@ -368,6 +333,10 @@
         #membership-main {
             max-width: 1240px;
             height: 1450px;
+        }
+
+        #discover-content {
+            grid-template-columns: 1fr 1fr;
         }
     }
 

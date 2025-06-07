@@ -219,6 +219,11 @@ picture {
     color: var(--main-aside-text-color);
 }
 
+#discover-main {
+    height: auto;
+    max-width: 100%;
+}
+
 .card_container,
 #discover-content {
     display: grid;
@@ -230,7 +235,7 @@ picture {
 
 #discover-content {
     margin: 10px auto;
-    height: 5600px;
+    height: auto;
     width: 100%;
 }
 
@@ -260,6 +265,7 @@ picture {
         "address"
         "learnMoreButton";
     align-content: first baseline;
+    font-size: 0.85rem;
 }
 
 .discover-card-name {
@@ -297,8 +303,9 @@ picture {
     text-align: center;
     background-color: var(--dark-green-emphasis-color);
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     color: white;
+    max-width: 250px;
 }
 
 section {
@@ -433,7 +440,7 @@ p span {
 }
 
 #discover-content section {
-    max-width: calc(100% - 20px);
+    max-width: 100%;
 }
 
 footer {
