@@ -1,3 +1,5 @@
+const welcomeMessageParagraph = document.querySelector("#welcome-message");
+
 const msToDays = 86400000;
 const today = Date.now();
 
@@ -11,19 +13,19 @@ if (localStorage.getItem("lastVisitMS") !== null) {
     console.log(elapsedDays);
 
     if (elapsedDays < 1) {
-        console.log("Back so soon! Awesome!")
+        welcomeMessageParagraph.textContent = "Back so soon! Awesome!";
     } else {
         elapsedDays = Math.round(elapsedDays);
 
         if (elapsedDays == 1) {
-            console.log("You last visited 1 day ago.")
+            welcomeMessageParagraph.textContent = "You last visited 1 day ago.";
         } else {
-            console.log(`You last visited ${elapsedDays} days ago.`);
+            welcomeMessageParagraph.textContent = `You last visited ${elapsedDays} days ago.`;
         }
 
     }
 } else {
-    console.log("Welcome! Let us know if you have any questions.");
+    welcomeMessageParagraph.textContent = "Welcome! Let us know if you have any questions.";
 }
 
 localStorage.setItem("lastVisitMS", today);

@@ -224,6 +224,14 @@ picture {
     max-width: 100%;
 }
 
+#discover-main #welcome-message {
+    color: white;
+    width: 100%;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px;
+}
+
 .card_container,
 #discover-content {
     display: grid;
