@@ -228,6 +228,7 @@ picture {
 #discover-content {
     margin: 10px auto;
     height: 7300px;
+    width: 100;
 }
 
 .index_card_container {
@@ -242,6 +243,10 @@ picture {
 }
 
 .discover-card {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
     background-color: white;
     height: auto;
     display: grid;
@@ -254,32 +259,38 @@ picture {
     align-content:first baseline;
 }
 
-.discover-card h2 {
+.discover-card-name {
     height: auto;
     padding: 10px;
-    grid-area: "name";
+    grid-area: name;
     text-align: center;
 }
 
 .discover-card figure {
-    grid-area: "photo";
+    grid-area: photo;
+}
+
+.discover-card figure img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .discover-card p {
     margin: 10px;
-    grid-area: "description";
+    grid-area: description;
     text-align: justify;
 }
 
 .discover-card address {
-    grid-area: "address";
+    grid-area: address;
     padding: 10px;
     margin: 5px;
     text-align: center;
 }
 
 .discover-card button {
-    grid-area: "learnMoreButton";
+    grid-area: learnMoreButton;
     text-align: center;
     background-color: var(--dark-green-emphasis-color);
     padding: 10px;

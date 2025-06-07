@@ -8,6 +8,7 @@ const displayLocationCards = (discoverData) => {
         card.setAttribute("tabindex", "0");
 
         const title = document.createElement("h2");
+        title.className = "discover-card-name";
         title.textContent = discoverItem.name;
         title.setAttribute("tabindex", "0");
 
