@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - James Clawson Project - familyheritagediscovery.org</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development 1 week 5 project for James Clawson familyheritagediscovery.org">
+    <meta name="author" content="James Winston Clawson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/basic_navigation.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Family Heritage Discovery</h1>
+
+        <button type="button" id="menu" aria-label="Menu Button"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" id="home" class="active">Home</a></li>
+                <li><a href="#" title="Family Information" id="familyinfo">Collect Family Information</a>
+                </li>
+                <li><a href="#" title="Online Sources" id="onlinesources">Online Sources</a>
+                </li>
+                <li><a href="#" title="Tools" id="tools">Tools</a></li>
+                <li><a href="#" title="Research Help" id="researchhelp">Research Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/fhd-hero-800.webp" media="(min-width: 800px)">
+            <source srcset=" images/fhd-hero-500.webp" media="(min-width: 500px)">
+            <img src="images/fhd-hero-300.webp" alt="Site hero image - tree with blue leaves and signs" width="300">
+        </picture>
+        <div id="cta-container">
+            <form method="get" action="#" id="cta-form">
+                <label>Email Address<span class="required-asterisk">*</span> <input type="email" name="email"
+                        id="email"></label>
+                <input type="button" id="send-me-research-tips" value="Send Me Research Tips!">
+            </form>
+            <p>Join our mailing list and get weekly research tips and genealogy news written by our team of experienced
+                researchers sent right to your inbox! Each week our researchers will provide free research assistance to
+                one mailing list member!</p>
+        </div>
+        <section>
+            <h2>Welcome to Family Heritage Discovery
+            </h2>
+            <p>Family Heritage Discovery focuses on helping people discover their family heritage. Our site is for
+                people who want to learn about family history generally, and about their families specifically. You can
+                sign up for our weekly newsletter, which will be written by experienced researchers and software
+                developers who help build family history tools. Our newsletter will provide weekly tips and family
+                history related news. We will provide articles about gathering family history information from family
+                members, step by step how-tos to help you with research, and more. We are working on a video series in
+                which our researchers will help new genealogists sign up on research sites, do family interviews, enter
+                information into online family trees, and solve difficult research dilemmas. Who knows, maybe we can
+                help you! We envision a day when the site will include a moderated community space where people can ask
+                for research help, as well as basic productivity tools focused on doing family history research.</p>
+        </section>
+        <section id="common-questions-section">
+            <h2>Common Questions</h2>
+            <div id="new-to-family-history-figure">
+                <img src="images/family-pictures-253-151.webp" alt="Collage of family pictures" width="253"
+                    loading="lazy">
+                <p id="familyinfo-p">I am new to family history. What is the best way to start learning about
+                    my family?</p>
+            </div>
+            <div id="start-building-family-tree">
+                <img src="images/familyhistorysites-masked-259-151.webp" alt="Collage of family history tree sites"
+                    width="253" loading="lazy">
+                <p id="onlinesources-p">How can I start building my family tree?</p>
+            </div>
+            <div id="resource">
+                <img src="images/familysearch-record-results-masked-268-171.webp" alt="Family Search Collection Search"
+                    width="253" loading="lazy">
+                <p id="tools-p">What kind of resources exist that will help me find my ancestors?</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>@<span id="currentyear"></span> | Family Heritage Discovery | <a href="referenced-materials.html">Referenced
+                Materials</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

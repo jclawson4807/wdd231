@@ -1,0 +1,571 @@
+:root {
+    --header-font: Roboto;
+    --body-font: Domine;
+    --dark-blue-emphasis-color: #0D2149;
+    --header-footer-background-color: #1d4d73;
+    --header-footer-nav-text-color: #fff;
+    --main-background-color: #ffffff;
+    --main-aside-text-color: #000;
+    --box-shadow-color: #0000002e;
+    --main-max-width: 800px;
+    --highlight-text-color: #f3f437;
+    --required-red: #9c2c13;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: var(--body-font), serif;
+    font-weight: 300;
+    line-height: 1.7em;
+    width: 100%;
+    min-width: 300px;
+    color: var(--dark-body-blue-text-color);
+}
+
+a {
+    color: var(--header-footer-background-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-blue-emphasis-color);
+    text-decoration: none;
+}
+
+header,
+footer,
+nav {
+    background-color: var(--header-footer-background-color);
+    color: var(--header-footer-nav-text-color);
+    font-family: var(--header-font), sans-serif;
+}
+
+header {
+    padding: 20px 20px 0px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding: 1.1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: navy;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+nav {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--main-background-color);
+    color: var(--main-aside-text-color);
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+main h2 {
+    text-align: center;
+    color: var(--header-footer-background-color);
+    grid-column: span 1;
+}
+
+main picture {
+    margin: 0 auto 20px;
+    width: 100%;
+}
+
+main picture img {
+    margin: 0;
+    width: 100%;
+}
+
+.required-asterisk {
+    color: var(--required-red);
+}
+
+#cta-container,
+#request-research-help-container {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1px solid var(--dark-blue-emphasis-color);
+}
+
+#cta-container p,
+#request-research-help-container p {
+    width: 100%;
+    padding: 1.5rem;
+    display: block;
+    font-size: 1.0rem;
+    text-align: justify;
+}
+
+#cta-form,
+#request-research-help-form {
+    padding: 1.5rem;
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#request-research-help-container fieldset {
+    margin: 0 0 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+#request-research-help-container legend {
+    color: var(--header-footer-background-color);
+    padding: 0 .5rem;
+}
+
+#cta-form label,
+#request-research-help-container label {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    min-height: 44px;
+    width: 100%;
+    margin: 15px auto;
+}
+
+#request-research-help-form div {
+    text-align: center;
+}
+
+#cta-form input[type="email"] {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+}
+
+#request-research-help-container input[type="text"],
+#request-research-help-container input[type="tel"],
+#request-research-help-container input[type="email"],
+#request-research-help-container input[type="url"],
+#request-research-help-container input[type="date"],
+#request-research-help-container select,
+#request-research-help-container input[type="number"] {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+    appearance: none;
+}
+
+#request-research-help-container textarea {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+    appearance: none;
+}
+
+#request-research-help-container input[type="radio"],
+#request-research-help-container input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+#cta-form input[type="button"],
+#request-research-help-container input[type="submit"] {
+    display: block;
+    border: none;
+    background-image: linear-gradient(var(--dark-blue-emphasis-color), var(--header-footer-background-color));
+    color: var(--header-footer-nav-text-color);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 426px;
+    margin: 1.5rem auto;
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+}
+
+#common-questions-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#common-questions-section h2 {
+    grid-column: span 1;
+}
+
+#common-questions-section div {
+    position: relative;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+#common-questions-section div p {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2.1em;
+    line-height: 1.5;
+}
+
+#common-questions-section div img {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.75em;
+}
+
+section p {
+    text-align: justify;
+    margin: 0 0 1.5em 0;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#fhdlogo {
+    width: 100%;
+    margin: 20px auto;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.highlight {
+    color: var(--highlight-text-color);
+}
+
+/* large view navigation ************************************/
+@media (min-width: 615px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #cta-form input[type="submit"] {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 800px) {
+
+    h2 {
+        text-align: left;
+    }
+
+    nav {
+        max-width: 800px;
+    }
+
+    main {
+        max-width: var(--main-max-width);
+    }
+
+    main h2 {
+        text-align: left;
+    }
+
+    #cta-container {
+        flex-direction: row;
+        padding: 0;
+        max-width: 800px;
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px 4px var(--box-shadow-color);
+        border-bottom: none;
+    }
+
+    #request-research-help-container {
+        flex-direction: row;
+        padding: 0;
+        max-width: 400px;
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px 4px var(--box-shadow-color);
+        border-bottom: none;
+        margin: auto;
+    }
+
+    #cta-container p {
+        width: 50%;
+        display: inline-block;
+    }
+
+    #cta-form {
+        padding: 1.5rem;
+        margin: 0;
+        width: 50%;
+    }
+
+    #request-research-help-form {
+        padding: 1.5rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    #request-research-help-form div {
+        text-align: left;
+    }
+
+    #cta-form label,
+    #request-research-help-container label {
+        text-align: left;
+    }
+
+    #common-questions-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px auto;
+    }
+
+    #common-questions-section h2 {
+        grid-column: span 3;
+    }
+
+    #common-questions-section div {
+        position: relative;
+        border-radius: 0.5rem;
+    }
+
+    #common-questions-section div p {
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    section {
+        margin: 10px auto;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.0rem;
+    }
+
+    #common-questions-section div {
+        max-width: 375px;
+    }
+
+    #common-questions-section div p {
+        font-size: 1.6em;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+    #common-questions-section div {
+        max-width: 400px;
+    }
+
+    #common-questions-section div p {
+        font-size: 1.9em;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 500px) {
+    #common-questions-section div {
+        max-width: 450px;
+    }
+
+    #common-questions-section div p {
+        font-size: 2em;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 600px) {
+    #common-questions-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px auto;
+        gap: 20px;
+    }
+
+    #common-questions-section h2 {
+        grid-column: span 3;
+    }
+
+    #common-questions-section div {
+        position: relative;
+        border-radius: 0.5rem;
+    }
+
+    #common-questions-section div p {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        color: white;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    #common-questions-section div img {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 550px) {
+    #common-questions-section div {
+        max-width: 500px;
+    }
+
+    #common-questions-section div p {
+        font-size: 2.5em;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 599px) {
+    #common-questions-section div {
+        max-width: 550px;
+    }
+
+    #common-questions-section div p {
+        font-size: 2.5em;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+    #common-questions-section div p {
+        font-size: 0.8em;
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - James Clawson Project - familyheritagediscovery.org</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development 1 week 5 project for James Clawson familyheritagediscovery.org">
+    <meta name="author" content="James Winston Clawson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/basic_navigation.js" defer></script>
+    <script src="scripts/joined-mailing-list.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Family Heritage Discovery</h1>
+
+        <button type="button" id="menu" aria-label="Menu Button"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" id="home">Home</a></li>
+                <li><a href="#" title="Family Information" id="familyinfo">Collect Family Information</a>
+                </li>
+                <li><a href="#" title="Online Sources" id="onlinesources">Online Sources</a>
+                </li>
+                <li><a href="#" title="Tools" id="tools">Tools</a></li>
+                <li><a href="#" title="Research Help" id="researchhelp">Research Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/fhd-hero-800.webp" media="(min-width: 800px)">
+            <source srcset=" images/fhd-hero-500.webp" media="(min-width: 500px)">
+            <img src="images/fhd-hero-300.webp" alt="Site hero image - tree with blue leaves and signs" width="300">
+        </picture>
+        <section>
+            <h2>Welcome to the Family Heritage Discovery Mailing List
+            </h2>
+            <p>You have signed up to receive messages from our Family Heritage Discovery mailing List using <span
+                    id="email-address"></span>. We promise that you will not receive spam messages from us. Each message
+                we send you will include an unsubscribe link, and we will honor unsubscribe requests. We will not sell
+                your email address.</p>
+            <p>Now that you have joined our mailing list, you will receive weekly research tips and genealogy news
+                written by our team of experienced researchers, sent right to your inbox! Each week our researchers will
+                provide free research assistance to one mailing list member!</p>
+
+        </section>
+    </main>
+    <footer>
+        <p>@<span id="currentyear"></span> | Family Heritage Discovery | <a href="referenced-materials.html">Referenced
+                Materials</a> </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
