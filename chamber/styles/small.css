@@ -285,6 +285,7 @@ picture {
 
 .discover-card figure {
     grid-area: photo;
+    overflow: hidden;
 }
 
 .discover-card figure img {

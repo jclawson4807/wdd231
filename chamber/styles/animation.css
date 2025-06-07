@@ -1,17 +1,17 @@
 @media (max-width: 639px) {
     .animation {
-        transition: transform 1.5s linear;
+        transition: transform 1.0s linear;
     }
 
     .animation::after {
         content: '';
         position: absolute;
         transform: translate(-50%, -50%) scale(0);
-        transition: transform 1.5s ease-in-out;
+        transition: transform 1.0s ease-in-out;
     }
 
     .animation:hover {
-        transform: rotate(360deg);
+        transform: scale(1.2);
     }
 
     .animation:hover::after {
@@ -22,18 +22,20 @@
 
 @media (min-width: 1024px) {
     .animation {
-        transition: transform 1.5s linear;
+        transition: transform 1.0s linear,
+            opacity 0.3s ease;
     }
 
     .animation::after {
         content: '';
         position: absolute;
         transform: translate(-50%, -50%) scale(0);
-        transition: transform 1.5s ease-in-out;
+        transition: transform 1.0s ease-in-out;
     }
 
     .animation:hover {
-        transform: rotate(360deg);
+        transform: scale(1.2);
+        opacity: 0.85;
     }
 
     .animation:hover::after {
