@@ -1,7 +1,7 @@
 :root {
     --header-font: Roboto;
     --body-font: Domine;
-    --sun-prairie-green-background-color:rgb(50, 130, 132);
+    --sun-prairie-green-background-color: rgb(50, 130, 132);
     --sun-prairie-light-green-emphasis-color: rgb(121, 155, 62);
     --sun-prairie-highlight-color: rgb(255, 250, 230);
     --sp-logo-text-color: #328284;
@@ -63,7 +63,7 @@ h1 {
     width: 300px;
     font-size: 1.5rem;
     text-align: center;
-    margin:  10px auto;
+    margin: 10px auto;
 }
 
 nav {
@@ -111,7 +111,8 @@ nav {
     color: #fff;
 }
 
-.navigation a:hover, #class_filter_buttons a:hover {
+.navigation a:hover,
+#class_filter_buttons a:hover {
     background-color: #bbb;
     color: #333;
 }
@@ -157,7 +158,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #view_switch_button_container img {
@@ -201,7 +202,7 @@ picture {
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 10px;
-    text-shadow: 0 0 4px black; 
+    text-shadow: 0 0 4px black;
     left: 0px;
 }
 
@@ -212,12 +213,14 @@ picture {
     color: white;
 }
 
-#business_content_container, .index_card_container {
+#business_content_container,
+.index_card_container {
     margin: 10px auto;
     color: var(--main-aside-text-color);
 }
 
-.card_container, #discover-content {
+.card_container,
+#discover-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: auto;
@@ -228,7 +231,7 @@ picture {
 #discover-content {
     margin: 10px auto;
     height: 7300px;
-    width: 100;
+    width: 100%;
 }
 
 .index_card_container {
@@ -250,13 +253,13 @@ picture {
     background-color: white;
     height: auto;
     display: grid;
-    grid-template-areas: 
-    "name"
-    "photo"
-    "description"
-    "address"
-    "learnMoreButton";
-    align-content:first baseline;
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "address"
+        "learnMoreButton";
+    align-content: first baseline;
 }
 
 .discover-card-name {
@@ -329,7 +332,8 @@ section h2 {
     height: 235px;
 }
 
-#events div img, #events div p {
+#events div img,
+#events div p {
     display: inline-block;
 }
 
@@ -339,7 +343,7 @@ section h2 {
     text-align: left;
     padding: 5px;
     vertical-align: top;
- }
+}
 
 .calendar-icon {
     width: 44px;
@@ -378,7 +382,8 @@ section h2 {
     text-align: left;
 }
 
-.white_list_div, .shaded_list_div {
+.white_list_div,
+.shaded_list_div {
     display: block;
     width: 100%;
     background-color: white;
@@ -386,15 +391,19 @@ section h2 {
 }
 
 .shaded_list_div {
-    background-color: var(--sp-logo-text-color);  
+    background-color: var(--sp-logo-text-color);
 }
 
-.company_name, .address, .phone_number, .website {
+.company_name,
+.address,
+.phone_number,
+.website {
     display: block;
     width: 100%;
 }
 
-.logo_card, .index-logo-card {
+.logo_card,
+.index-logo-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,7 +415,8 @@ section h2 {
     font-size: 0.9em;
 }
 
-.logo_card img, .index-logo-card img {
+.logo_card img,
+.index-logo-card img {
     margin: 10px;
     padding: 10px;
     width: 180px;
@@ -422,6 +432,10 @@ p span {
     font-weight: 700;
 }
 
+#discover-content section {
+    max-width: calc(100% - 20px);
+}
+
 footer {
     width: 100%;
     background-color: var(--sp-footer-color);
@@ -433,7 +447,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:flex-start;
+    align-items: flex-start;
     height: 445px;
 }
 
@@ -469,7 +483,7 @@ footer img {
     margin: 0 auto;
 }
 
-#membership-main h1, 
+#membership-main h1,
 #membership-level-label {
     width: 100%;
     text-align: center;
@@ -572,7 +586,7 @@ input[type="submit"] {
     max-width: 426px;
     margin: 1.5rem auto;
     box-shadow: 1px 1px 4px var(--box-shadow-color);
-} 
+}
 
 .required-asterisk {
     color: var(--required-red);
@@ -604,7 +618,7 @@ input[type="submit"] {
 }
 
 #bronze-membership-button-wrapper {
-    background-image: linear-gradient(180deg,#fea 0%,rgb(229, 203, 101) 49%,rgb(171, 150, 66) 51%,rgb(235, 205, 86) 100%);
+    background-image: linear-gradient(180deg, #fea 0%, rgb(229, 203, 101) 49%, rgb(171, 150, 66) 51%, rgb(235, 205, 86) 100%);
     border-radius: 6px;
     backface-visibility: hidden;
     position: absolute;
@@ -612,8 +626,8 @@ input[type="submit"] {
     height: 60px;
 }
 
-#silver-membership-button-wrapper  {
-    background-image: linear-gradient(180deg,#e6e6e6 0%,rgba(0, 0, 0, 0.25) 49%, rgba(38, 38, 38, 0.6) 51%,rgba(0, 0, 0, 0.25) 100%);
+#silver-membership-button-wrapper {
+    background-image: linear-gradient(180deg, #e6e6e6 0%, rgba(0, 0, 0, 0.25) 49%, rgba(38, 38, 38, 0.6) 51%, rgba(0, 0, 0, 0.25) 100%);
     border-radius: 6px;
     backface-visibility: hidden;
     position: absolute;
@@ -621,8 +635,8 @@ input[type="submit"] {
     height: 60px;
 }
 
-#gold-membership-button-wrapper  {
-    background-image: linear-gradient(180deg,#fea 0%,#dc8 49%,#a95 51%,#dc8 100%);
+#gold-membership-button-wrapper {
+    background-image: linear-gradient(180deg, #fea 0%, #dc8 49%, #a95 51%, #dc8 100%);
     border-radius: 6px;
     backface-visibility: hidden;
     position: absolute;
@@ -653,7 +667,8 @@ dialog h2 {
     font-size: 1.3em;
 }
 
-dialog h3, dialog p {
+dialog h3,
+dialog p {
     padding: 10px;
 }
 
@@ -681,8 +696,13 @@ dialog button {
 }
 
 @keyframes fade-in {
-    0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #join-request-confirmation-main {
