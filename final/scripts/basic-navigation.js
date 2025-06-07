@@ -14,7 +14,7 @@ const researchhelpButton = document.querySelector('#researchhelp');
 
 homeButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "none");
-    window.location.replace("project.html");
+    window.location.replace("index.html");
 });
 
 familyinfoButton.addEventListener('click', () => {
