@@ -1,60 +1,60 @@
 {
-  "discover" : [
+  "discover": [
     {
-      "name" : "Sassy Cow Creamery",
-      "address" : "W4192 Bristol Rd. Columbus, WI 53925",
-      "description" : "Nestled near Sun Prairie, Wisconsin, Sassy Cow Creamery is a cherished local gem run by the Baerwolf family. This working dairy farm doubles as a cozy farmhouse kitchen, serving fresh, authentic Wisconsin meals and dairy products. Its on-site facility crafts artisanal ice cream and chocolate milk daily using milk from the family’s nearby farms, ensuring every scoop and sip captures the rich, creamy essence of Wisconsin’s dairy heritage.",
-      "imageUrl" : "images/sassy-cow.webp",
-      "learnMoreURL" : "https://sassycowcreamery.com"
+      "name": "Sassy Cow Creamery",
+      "address": "W4192 Bristol Rd. Columbus, WI 53925",
+      "description": "Near Sun Prairie, Wisconsin, Sassy Cow Creamery, a Baerwolf family dairy farm, serves fresh Wisconsin meals and artisanal ice cream and chocolate milk, crafted daily with milk from their nearby farms, embodying the state’s rich dairy heritage.",
+      "imageUrl": "images/sassy-cow.webp",
+      "learnMoreURL": "https://sassycowcreamery.com"
     },
     {
-      "name" : "Wisconsin Dells",
-      "address" : "701 Superior Street, PO Box 390 Wisconsin Dells, WI 53965",
-      "description" : "Wisconsin Dells, less than an hour from Sun Prairie, is the “Waterpark Capital of the World,” blending natural beauty with family-friendly attractions. Nestled along the Wisconsin River, it boasts wetlands, forests, and sandstone formations, alongside world-class water parks, hotels, restaurants, and shopping. Drawing millions yearly, this vibrant Midwest destination offers outdoor adventures, entertainment, and relaxation, catering to families, thrill-seekers, and nature lovers with its diverse, year-round appeal.",
-      "imageUrl" : "images/wisconsin-dells.webp",
-      "learnMoreURL" : "https://www.wisdells.com"
+      "name": "Wisconsin Dells",
+      "address": "701 Superior Street, PO Box 390 Wisconsin Dells, WI 53965",
+      "description": "Wisconsin Dells, near Sun Prairie, is the “Waterpark Capital of the World,” nestled along the Wisconsin River. It blends stunning wetlands, forests, and sandstone formations with top-tier water parks, hotels, dining, and shopping, attracting millions for year-round family fun.",
+      "imageUrl": "images/wisconsin-dells.webp",
+      "learnMoreURL": "https://www.wisdells.com"
     },
     {
-      "name" : "Wisconsin State Capitol",
-      "address" : "2 East Main Street, Madison, WI 53702",
-      "description" : "The Wisconsin State Capitol, a Beaux-Arts masterpiece, stands proudly in downtown Madison’s Capitol Square. Completed in 1917, its white granite exterior, intricate interior, and towering dome define the city’s skyline. Housing the state’s legislative chambers, governor’s office, and Supreme Court, it’s a hub of political activity. This architectural gem, symbolizing civic pride, welcomes visitors from Wisconsin and beyond, showcasing its stunning design and historical significance.",
-      "imageUrl" : "images/state-capitol.webp",
-      "learnMoreURL" : "https://capitol100th.wisconsin.gov"
+      "name": "Wisconsin State Capitol",
+      "address": "2 East Main Street, Madison, WI 53702",
+      "description": "The Wisconsin State Capitol, a Beaux-Arts masterpiece in Madison’s Capitol Square, completed in 1917, features a white granite exterior and towering dome. Housing legislative chambers, the governor’s office, and Supreme Court, it symbolizes civic pride and welcomes visitors.",
+      "imageUrl": "images/state-capitol.webp",
+      "learnMoreURL": "https://capitol100th.wisconsin.gov"
     },
     {
-      "name" : "University of Wisconsin, Madison",
-      "address" : "500 Lincoln Dr. Madison, WI  53706",
-      "description" : "The University of Wisconsin–Madison, located in vibrant Madison, Wisconsin, is a premier public research university celebrated for academic excellence, innovative research, and public service. Founded in 1848 as Wisconsin gained statehood, UW–Madison is the state’s official university and flagship of the University of Wisconsin System. As the first public university in Wisconsin, it has evolved into a national leader in higher education and intellectual discovery.",
-      "imageUrl" : "images/uw-madison.webp",
-      "learnMoreURL" : "https://www.wisc.edu"
+      "name": "University of Wisconsin, Madison",
+      "address": "500 Lincoln Dr. Madison, WI  53706",
+      "description": "The University of Wisconsin–Madison, founded in 1848 in vibrant Madison, is Wisconsin’s flagship public research university. Renowned for academic excellence, innovative research, and public service, it’s a national leader in higher education and intellectual discovery.",
+      "imageUrl": "images/uw-madison.webp",
+      "learnMoreURL": "https://www.wisc.edu"
     },
     {
-      "name" : "Wisconsin History Society",
-      "address" : "816 State Street Madison, WI 53706",
-      "description" : "The Wisconsin Historical Society, based in Madison, Wisconsin, is a leading institution preserving one of the nation’s largest historical archives, with over 290 million items. Its vast collection includes rare manuscripts, photographs, maps, newspapers, government records, diaries, oral histories, and artifacts. Documenting Wisconsin’s indigenous heritage, settlement, industrial growth, and cultural evolution, this invaluable resource serves historians, researchers, educators, and the public, narrating the state’s rich history and national contributions.\r\n\r",
-      "imageUrl" : "images/wisconsin-history-society.webp",
-      "learnMoreURL" : "https://www.wisconsinhistory.org"
+      "name": "Wisconsin History Society",
+      "address": "816 State Street Madison, WI 53706",
+      "description": "The Wisconsin Historical Society in Madison preserves over 290 million items, including manuscripts, photos, maps, and artifacts. Documenting Wisconsin’s indigenous heritage, settlement, and cultural evolution, it serves historians, researchers, and the public, narrating the state’s rich history.",
+      "imageUrl": "images/wisconsin-history-society.webp",
+      "learnMoreURL": "https://www.wisconsinhistory.org"
     },
     {
-      "name" : "Wisconsin Veterans Museum",
-      "address" : "30 West Mifflin Street Madison, WI 53703",
-      "description" : "The Wisconsin Veterans Museum in Madison, Wisconsin, an outreach program of the Wisconsin Department of Veterans Affairs, honors and preserves the stories of Wisconsin veterans who served in the U.S. armed forces across eras. As a tribute to their sacrifices, it highlights their role in shaping Wisconsin’s military heritage and the nation’s history. Through engaging exhibits, the museum fosters a deeper understanding of veterans’ experiences and the impact of military service.\r\n\r",
-      "imageUrl" : "images/wisconsin-veterans-museum.webp",
-      "learnMoreURL" : "https://wisvetsmuseum.com"
+      "name": "Wisconsin Veterans Museum",
+      "address": "30 West Mifflin Street Madison, WI 53703",
+      "description": "The Wisconsin Veterans Museum in Madison, part of the Wisconsin Department of Veterans Affairs, honors veterans’ sacrifices through engaging exhibits. It preserves their stories, highlighting their role in shaping Wisconsin’s military heritage and U.S. history.",
+      "imageUrl": "images/wisconsin-veterans-museum.webp",
+      "learnMoreURL": "https://wisvetsmuseum.com"
     },
     {
-      "name" : "Sun Prairie Farmer's Market",
-      "address" : "300 E Main Sun Prairie, WI  53590",
-      "description" : "The Sun Prairie Farmers’ Market, held year-round in downtown Sun Prairie, Wisconsin, connects local farmers and artisans with customers. Vendors offer fresh produce, beef, pork, eggs, honey, plants, and handmade crafts like jewelry, pottery, candles, and soaps. The outdoor market runs Saturdays, May 3 to October 25, 2025, from 7 AM to 12 PM at Cannery Square and Market Street. The indoor winter market operates November 8, 2025, to April 11, 2026 (excluding December 27), from 9 AM to 12 PM at the Westside Community Services Building, 2598 West Main Street.",
-      "imageUrl" : "images/farmers-market.webp",
-      "learnMoreURL" : "https://cityofsunprairie.com/1318/Sun-Prairie-Farmers-Markets"
+      "name": "Sun Prairie Farmer's Market",
+      "address": "300 E Main Sun Prairie, WI  53590",
+      "description": "The Sun Prairie Farmers’ Market, held year-round in downtown Sun Prairie, Wisconsin, offers fresh produce, meats, eggs, honey, plants, and handmade crafts. Outdoor market runs Saturdays, May 3–October 25, 2025, 7 AM–12 PM; indoor winter market, November 8, 2025–April 11, 2026, 9 AM–12 PM.",
+      "imageUrl": "images/farmers-market.webp",
+      "learnMoreURL": "https://cityofsunprairie.com/1318/Sun-Prairie-Farmers-Markets"
     },
     {
-      "name" : "Dream Park",
-      "address" : "415 Park St. Sun Prairie, WI  53590",
-      "description" : "Dream Park in Sun Prairie, Wisconsin, is celebrated for its expansive, engaging playground, a family favorite. Designed with diverse play structures, it sparks imaginative play and physical activity for kids of all ages. The spacious, well-equipped area offers ample room for exploration and fun, creating a vibrant community hub where families connect and enjoy quality time together, making it a cherished destination for both locals and visitors.",
-      "imageUrl" : "images/dream-park.webp",
-      "learnMoreURL" : "https://sunprairiedreampark.com"
+      "name": "Dream Park",
+      "address": "415 Park St. Sun Prairie, WI  53590",
+      "description": "Dream Park in Sun Prairie, Wisconsin, features a spacious, engaging playground with diverse play structures, fostering imaginative play and activity for kids. A vibrant community hub, it’s a cherished destination for families to connect and enjoy quality time.",
+      "imageUrl": "images/dream-park.webp",
+      "learnMoreURL": "https://sunprairiedreampark.com"
     }
   ]
 }
