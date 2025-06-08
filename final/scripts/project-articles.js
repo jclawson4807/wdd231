@@ -18,7 +18,7 @@ const pageIdentifierName = document.querySelector("#page-identifier-name");
 
 homeButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "none");
-    window.location.replace("project.html");
+    window.location.replace("index.html");
 });
 
 familyinfoButton.addEventListener('click', () => {

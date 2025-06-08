@@ -1,5 +1,5 @@
 if (window.localStorage.getItem("emailAddress") === null) {
-    window.location.replace("project.html");
+    window.location.replace("index.html");
 }
 else {
     let storedEmailAddress = window.localStorage.getItem("emailAddress");
