@@ -342,11 +342,6 @@ footer a:hover {
     color: var(--highlight-text-color);
 }
 
-#fh-center-content section {
-    height: auto;
-    max-width: 100%;
-}
-
 #fh-center-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -357,14 +352,14 @@ footer a:hover {
     width: 100%;
 }
 
-.fh-center-card {
+#fh-center-content section {
     width: 300px;
     padding: 0;
     margin: 0 auto;
     border-radius: 6px;
     overflow: hidden;
     background-color: var(--box-shadow-color);
-    height: auto;
+    height: 570px;
     display: grid;
     grid-template-areas:
         "photo"
@@ -377,9 +372,19 @@ footer a:hover {
     font-size: 0.85rem;
 }
 
-.fh-center-card-name {
-    height: auto;
+.fh-center-card-name,
+.fh-center-card address,
+.fh-center-card-hours,
+.fh-center-card-description {
     padding: 10px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.fh-center-card-name {
+    height: 60px;
     grid-area: name;
     text-align: center;
     font-size: 0.95em;
@@ -399,27 +404,20 @@ footer a:hover {
     margin: 0 auto;
 }
 
-.fh-center-card address,
-.fh-center-card-hours {
-    padding: 10px;
-    margin: 5px auto;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-}
-
 .fh-center-card-description {
-    margin: 10px;
+    height: 85px;
     grid-area: description;
     text-align: justify;
 }
 
 .fh-center-card address {
     grid-area: address;
+    height: 75px;
 }
 
 .fh-center-card-hours {
     grid-area: hours;
+    height: 75px;
 }
 
 .fh-center-card button {
