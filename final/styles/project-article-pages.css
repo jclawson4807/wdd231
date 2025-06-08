@@ -116,9 +116,8 @@ nav {
     display: block;
 }
 
-.active::before {
-    content: "📍";
-    /* just a wayfinding symbol for the user */
+.active {
+    border-bottom: solid var(--active-color);
 }
 
 #page-identifier {

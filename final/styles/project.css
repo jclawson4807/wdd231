@@ -114,7 +114,7 @@ nav {
 }
 
 .active {
-    border-bottom: solid #1789fb;
+    border-bottom: solid var(--active-color);
 }
 
 main {
