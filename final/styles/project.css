@@ -358,7 +358,7 @@ footer a:hover {
     margin: 0 auto;
     border-radius: 6px;
     overflow: hidden;
-    background-color: var(--box-shadow-color);
+    background-color: white;
     height: 570px;
     display: grid;
     grid-template-areas:
@@ -370,6 +370,7 @@ footer a:hover {
         "learnMoreButton";
     align-content: first baseline;
     font-size: 0.85rem;
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
 .fh-center-card-name,
@@ -408,6 +409,7 @@ footer a:hover {
     height: 85px;
     grid-area: description;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 .fh-center-card address {
@@ -423,11 +425,12 @@ footer a:hover {
 .fh-center-card button {
     grid-area: learnMoreButton;
     text-align: center;
-    background-color: var(--dark-green-emphasis-color);
+    background-image: linear-gradient(var(--body-hover-color-emphasis-color), var(--header-footer-background-color));
     padding: 10px;
     margin: 10px auto;
     color: white;
     max-width: 250px;
+    border-radius: 6px;
 }
 
 /* large view navigation ************************************/
