@@ -31,12 +31,14 @@ themeSwitchButton.addEventListener('click', () => {
 function setTheme(themeName) {
     cssRef.setAttribute('href', `styles/${themeName}`);
 
-    if (themeName == "dark-root.css")
-    {
-        lightModeSection.className = "hidden";
-        darkModeSection.className = "";
-    } else {
-        lightModeSection.className = "";
-        darkModeSection.className = "hidden";
-    }
+    if (document.querySelector("#darkmode") !== null) {
+        if (themeName == "dark-root.css")
+        {
+            lightModeSection.className = "hidden";
+            darkModeSection.className = null;
+        } else {
+            lightModeSection.className = null;
+            darkModeSection.className = "hidden";
+        }
+    } 
 }
