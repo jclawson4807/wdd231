@@ -26,10 +26,12 @@ const displayLocationCards = (fhCenterData) => {
         fhCenterFigure.appendChild(fhCentermage);
 
         const description = document.createElement("p");
+        description.className = "fh-center-card-description";
         description.textContent = fhCenterItem.description;
         description.setAttribute("tabindex", "0");
 
         const hours = document.createElement("p");
+        hours.className = "fh-center-card-hours";
         hours.textContent = fhCenterItem.hours;
         hours.setAttribute("tabindex", "0");
 

@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: var(--body-hover-color-emphasis-color:);
+    color: var(--body-hover-color-emphasis-color);
     text-decoration: none;
 }
 
@@ -157,7 +157,7 @@ main picture img {
     padding: 0 0 20px 0;
     margin: 0 auto;
     width: 100%;
-    border-bottom: 1px solid var(--body-hover-color-emphasis-color:);
+    border-bottom: 1px solid var(--body-hover-color-emphasis-color);
 }
 
 #cta-container p,
@@ -340,6 +340,96 @@ footer a:hover {
 
 .highlight {
     color: var(--highlight-text-color);
+}
+
+#fh-center-content section {
+    height: auto;
+    max-width: 100%;
+}
+
+#fh-center-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0.75rem;
+    margin: 10px auto;
+    height: 4896px;
+    width: 100%;
+}
+
+.fh-center-card {
+    width: 300px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--box-shadow-color);
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "photo"
+        "name"
+        "description"
+        "hours"
+        "address"
+        "learnMoreButton";
+    align-content: first baseline;
+    font-size: 0.85rem;
+}
+
+.fh-center-card-name {
+    height: auto;
+    padding: 10px;
+    grid-area: name;
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.fh-center-card figure {
+    grid-area: photo;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+
+.fh-center-card figure img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.fh-center-card address,
+.fh-center-card-hours {
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.fh-center-card-description {
+    margin: 10px;
+    grid-area: description;
+    text-align: justify;
+}
+
+.fh-center-card address {
+    grid-area: address;
+}
+
+.fh-center-card-hours {
+    grid-area: hours;
+}
+
+.fh-center-card button {
+    grid-area: learnMoreButton;
+    text-align: center;
+    background-color: var(--dark-green-emphasis-color);
+    padding: 10px;
+    margin: 10px auto;
+    color: white;
+    max-width: 250px;
 }
 
 /* large view navigation ************************************/
