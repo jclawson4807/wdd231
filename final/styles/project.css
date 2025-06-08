@@ -249,7 +249,7 @@ main picture img {
 #request-research-help-container input[type="submit"] {
     display: block;
     border: none;
-    background-image: linear-gradient(var(--body-hover-color-emphasis-color:), var(--header-footer-background-color));
+    background-image: linear-gradient(var(--body-hover-color-emphasis-color), var(--header-footer-background-color));
     color: var(--header-footer-nav-text-color);
     border-radius: 6px;
     padding: .75rem;
