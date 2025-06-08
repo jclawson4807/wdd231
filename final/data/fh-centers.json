@@ -1,0 +1,132 @@
+{
+    "fh-centers": [
+        {
+            "name": "FamilySearch Library",
+            "address": "35 North West Temple Street, Salt Lake City, UT 84150",
+            "hours": "Mon: 9am-5pm, Tue-Fri: 9am-8pm, Sat: 9am-5pm, Sun: Closed",
+            "small_photo": "fs_family_history_library_300.webp",
+            "website": "https://www.familysearch.org/en/library",
+            "description": "World’s largest genealogical library with extensive records, microfilms, and digital resources."
+        },
+        {
+            "name": "National Archives at Washington, DC",
+            "address": "700 Pennsylvania Avenue NW, Washington, DC 20408",
+            "hours": "Mon-Sat: 10am-5pm, Sun: Closed",
+            "small_photo": "us-national-archives-300.webp",
+            "website": "https://www.archives.gov",
+            "description": "Houses federal records, including census, military, and immigration documents."
+        },
+        {
+            "name": "Allen County Public Library Genealogy Center",
+            "address": "900 Library Plaza, Fort Wayne, IN 46802",
+            "hours": "Mon-Thu: 9am-9pm, Fri-Sat: 9am-6pm, Sun: 12pm-5pm",
+            "small_photo": "allen-county-library-in-300.webp",
+            "website": "https://www.acpl.info/genealogy",
+            "description": "Renowned for its Periodical Source Index and vast genealogical collections."
+        },
+        {
+            "name": "New England Historic Genealogical Society",
+            "address": "99-101 Newbury Street, Boston, MA 02116",
+            "hours": "Tue, Thu-Sat: 10am-5pm, Wed: 10am-8pm, Sun-Mon: Closed",
+            "small_photo": "american-ancestors-site-300.webp",
+            "website": "https://www.americanancestors.org",
+            "description": "Specializes in New England records, manuscripts, and international collections."
+        },
+        {
+            "name": "Library of Congress",
+            "address": "101 Independence Ave SE, Washington, DC 20540",
+            "hours": "Mon-Sat: 8:30am-5pm, Sun: Closed",
+            "small_photo": "us-library-of-congress-300.webp",
+            "website": "https://www.loc.gov",
+            "description": "Offers extensive genealogical resources, including newspapers and manuscripts."
+        },
+        {
+            "name": "California State Archives",
+            "address": "1020 O Street, Sacramento, CA 95814",
+            "hours": "Mon-Fri: 9am-4pm, Sat-Sun: Closed",
+            "small_photo": "ca-state-archives-300.webp",
+            "website": "https://www.sos.ca.gov/archives",
+            "description": "Holds state records, including military, prison, and county documents."
+        },
+        {
+            "name": "New York Public Library",
+            "address": "476 Fifth Avenue, New York, NY 10018",
+            "hours": "Mon, Thu-Sat: 10am-6pm, Tue-Wed: 10am-8pm, Sun: 1pm-5pm",
+            "small_photo": "ny-public-library-300.webp",
+            "website": "https://www.nypl.org/research",
+            "description": "Features Milstein Division for genealogy, with New York-focused records."
+        },
+        {
+            "name": "National Archives at Atlanta",
+            "address": "5780 Jonesboro Road, Morrow, GA 30260",
+            "hours": "Tue-Sat: 9am-5pm, Sun-Mon: Closed",
+            "small_photo": "atlanta-archives-300.webp",
+            "website": "https://www.archives.gov/atlanta",
+            "description": "Stores federal records for southeastern states, including naturalization."
+        },
+        {
+            "name": "Midwest Genealogy Center",
+            "address": "3440 S. Lee’s Summit Road, Independence, MO 64055",
+            "hours": "Mon-Thu: 10am-8pm, Fri: 10am-6pm, Sat: 10am-5pm, Sun: 1pm-5pm",
+            "small_photo": "midwest-genealogy-center-300.webp",
+            "website": "https://www.mymcpl.org/genealogy",
+            "description": "Offers extensive U.S. and international genealogical resources and databases."
+        },
+        {
+            "name": "Center for Jewish History",
+            "address": "15 West 16th Street, New York, NY 10011",
+            "hours": "Mon-Thu: 10am-5pm, Fri: 10am-3pm, Sun: 11am-5pm, Sat: Closed",
+            "small_photo": "center-for-jewish-history-300.webp",
+            "website": "https://www.cjh.org",
+            "description": "Houses vast Jewish genealogical archives and reference collections."
+        },
+        {
+            "name": "Clayton Library Center for Genealogical Research",
+            "address": "5300 Caroline Street, Houston, TX 77004",
+            "hours": "Tue-Wed: 10am-6pm, Thu: 10am-8pm, Fri-Sat: 10am-5pm, Sun-Mon: Closed",
+            "small_photo": "clayton-library-genealogical-center-300.webp",
+            "website": "https://houstonlibrary.org/fhrc",
+            "description": "Specializes in Southern U.S. genealogy with microfilm and books."
+        },
+        {
+            "name": "National Archives at Chicago",
+            "address": "7358 South Pulaski Road, Chicago, IL 60629",
+            "hours": "Mon-Fri: 8am-4pm, Sat-Sun: Closed",
+            "small_photo": "chicago-archives-300.webp",
+            "website": "https://www.archives.gov/chicago",
+            "description": "Stores federal records for Midwest states, including naturalization."
+        },
+        {
+            "name": "Wisconsin Historical Society Library",
+            "address": "816 State Street, Madison, WI 53706",
+            "hours": "Mon-Fri: 8am-5pm, Sat: 9am-4pm, Sun: Closed",
+            "website": "https://www.wisconsinhistory.org",
+            "description": "Extensive Wisconsin and U.S. genealogy records, including newspapers.",
+            "small_photo": "wisconsin-historical-society-library-300.webp"
+        },
+        {
+            "name": "Cincinnati & Hamilton County Public Library",
+            "address": "800 Vine Street, Cincinnati, OH 45202",
+            "hours": "Mon-Fri: 9am-9pm, Sat: 9am-6pm, Sun: 1pm-5pm",
+            "website": "https://chpl.org/genealogy-history/",
+            "description": "Offers comprehensive genealogy resources for all U.S. states.",
+            "small_photo": "us-library-of-congress-300.webp"
+        },
+        {
+            "name": "Sutro Library",
+            "address": "1630 Holloway Avenue, San Francisco, CA 94132",
+            "hours": "Mon-Fri: 10am-5pm, Sat-Sun: Closed",
+            "small_photo": "ca-state-archives-sutro-300.webp",
+            "website": "https://www.library.ca.gov/sutro/genealogy/",
+            "description": "Specializes in genealogy with rare books and family histories."
+        },
+        {
+            "name": "Detroit Public Library",
+            "address": "5201 Woodward Avenue, Detroit, MI 48202",
+            "hours": "Tue-Wed: 12pm-8pm, Thu-Sat: 10am-6pm, Sun-Mon: Closed",
+            "small_photo": "detroit-public-library-300.webp",
+            "website": "https://detroitpubliclibrary.org/research",
+            "description": "Features census, vital records, and Michigan-specific genealogy collections."
+        }
+    ]
+}
