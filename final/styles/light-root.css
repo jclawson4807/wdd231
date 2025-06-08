@@ -8,6 +8,9 @@
     --body-text-color: #333333;
     --accent-color: #F3F437;
     --active-color: #f9c982;
+    --main-background-color: #ffffff;
+    --main-aside-text-color: #000;
+    --article-header-color: #00000010;
     
     --hr-color: #a3a3a3;
     
@@ -15,6 +18,8 @@
     --header-font-size: 1.5em;
     --nav-background-color: #000000;
     --main-and-card-background-color: #ffffff;
+
+    --box-shadow-color: #0000002e;
     
     --header-height: 7.15em;
     --nav-height: 3em;
@@ -25,4 +30,6 @@
     --figure-width: 250px;
 
     --highlight-text-color: #f3f437;
+
+    --required-red: #9c2c13;
 }
