@@ -10,6 +10,7 @@ const homeButton = document.querySelector('#home');
 const familyinfoButton = document.querySelector('#familyinfo');
 const onlinesourcesButton = document.querySelector('#onlinesources');
 const toolsButton = document.querySelector('#tools');
+const fhCenterButton = document.querySelector('#fh-centers');
 const researchhelpButton = document.querySelector('#researchhelp');
 
 homeButton.addEventListener('click', () => {
@@ -30,6 +31,11 @@ onlinesourcesButton.addEventListener('click', () => {
 toolsButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "tools");
     window.location.replace("project-articles.html");
+});
+
+fhCenterButton.addEventListener('click', () => {
+    localStorage.setItem("articleFilter", "none");
+    window.location.replace("fh-centers.html");
 });
 
 researchhelpButton.addEventListener('click', () => {
