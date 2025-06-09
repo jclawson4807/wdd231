@@ -348,7 +348,7 @@ footer a:hover {
     grid-template-rows: auto;
     grid-gap: 0.75rem;
     margin: 10px auto;
-    height: 4896px;
+    height: 9300px;
     width: 100%;
 }
 
@@ -465,6 +465,12 @@ footer a:hover {
     }
 }
 
+@media (min-width: 652px) {
+    #fh-center-content {
+        height: 4644px;
+    }
+}
+
 @media (min-width: 800px) {
 
     h2 {
@@ -550,6 +556,10 @@ footer a:hover {
     section {
         margin: 10px auto;
         max-width: 800px;
+    }
+
+    #fh-center-content {
+        max-width: 100%;
     }
 }
 
@@ -652,5 +662,29 @@ footer a:hover {
     #common-questions-section div p {
         font-size: 0.8em;
         line-height: 1.3;
+    }
+}
+
+@media (min-width: 985px) {
+    #fh-center-content {
+        height: 3480px;
+    }
+}
+
+@media (min-width: 1315px) {
+    #fh-center-content {
+        height: 2316px;
+    }
+}
+
+@media (min-width: 1649px) {
+    #fh-center-content {
+        height: 2316px;
+    }
+}
+
+@media (min-width: 1980px) {
+    #fh-center-content {
+        height: 1734px;
     }
 }
