@@ -20,26 +20,17 @@ homeButton.addEventListener('click', () => {
 
 familyinfoButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "familyinfo");
-
-    if (document.querySelector("#page-identifier-name")) {
-        populateArticles();
-    }
+    window.location.replace("project-articles.html");
 });
 
 onlinesourcesButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "onlinesources");
-
-    if (document.querySelector("#page-identifier-name")) {
-        populateArticles();
-    }
+    window.location.replace("project-articles.html");
 });
 
 toolsButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "tools");
-
-    if (document.querySelector("#page-identifier-name")) {
-        populateArticles();
-    }
+    window.location.replace("project-articles.html");
 });
 
 fhCenterButton.addEventListener('click', () => {
