@@ -20,17 +20,26 @@ homeButton.addEventListener('click', () => {
 
 familyinfoButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "familyinfo");
-    window.location.replace("project-articles.html");
+
+    if (document.querySelector("#page-identifier-name")) {
+        populateArticles();
+    }
 });
 
 onlinesourcesButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "onlinesources");
-    window.location.replace("project-articles.html");
+
+    if (document.querySelector("#page-identifier-name")) {
+        populateArticles();
+    }
 });
 
 toolsButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "tools");
-    window.location.replace("project-articles.html");
+
+    if (document.querySelector("#page-identifier-name")) {
+        populateArticles();
+    }
 });
 
 fhCenterButton.addEventListener('click', () => {
@@ -42,5 +51,3 @@ researchhelpButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "none");
     window.location.replace("request-research-help.html");
 });
-
-
