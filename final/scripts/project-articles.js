@@ -1,4 +1,4 @@
-import {articles} from '../data/articles.mjs'
+import { articles } from '../data/articles.mjs'
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -12,6 +12,7 @@ const homeButton = document.querySelector('#home');
 const familyinfoButton = document.querySelector('#familyinfo');
 const onlinesourcesButton = document.querySelector('#onlinesources');
 const toolsButton = document.querySelector('#tools');
+const fhCenterButton = document.querySelector('#fh-centers');
 const researchhelpButton = document.querySelector('#researchhelp');
 
 const pageIdentifierName = document.querySelector("#page-identifier-name");
@@ -37,6 +38,11 @@ toolsButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "tools");
 
     populateArticles();
+});
+
+fhCenterButton.addEventListener('click', () => {
+    localStorage.setItem("articleFilter", "none");
+    window.location.replace("fh-centers.html");
 });
 
 researchhelpButton.addEventListener('click', () => {
