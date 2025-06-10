@@ -439,16 +439,16 @@ dialog {
     padding: 0;
     color: var(--header-footer-background-color);
     font-family: var(--body-font), serif;
-    border: 1px solid var(--dark-blue-emphasis-color);
+    /* border: 1px solid var(--dialog-background-color); */
     box-shadow: 1px 1px 4px var(--box-shadow-color);
     max-width: 780px;
-    border-radius: 6px;
+    border-radius: 6px 6px 0 0;
 }
 
 dialog h2 {
     width: 100%;
     border-radius: 6px 6px 0 0;
-    background-color: var(--dark-blue-emphasis-color);
+    background-image: linear-gradient(var(--body-hover-color-emphasis-color), var(--header-footer-background-color));
     color: white;
     padding: 20px;
     text-align: center;

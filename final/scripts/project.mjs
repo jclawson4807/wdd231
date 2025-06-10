@@ -50,8 +50,7 @@ sendMeResearchTipsButton.addEventListener('click', () => {
 
     if (isNewEmailAddress) {
 
-        const messageBody = `<h2>Welcome to the Family Heritage Discovery Mailing List
-            </h2>
+        const messageBody = `<p>Welcome to the Family Heritage Discovery Mailing List</p>
             <p>You have signed up to receive messages from our Family Heritage Discovery mailing List using <span
                     id="email-address">${emailAddress}</span>. We promise that you will not receive spam messages from us. Each message
                 we send you will include an unsubscribe link, and we will honor unsubscribe requests. We will not sell
@@ -63,9 +62,9 @@ sendMeResearchTipsButton.addEventListener('click', () => {
         displayCourseDetailsModal("Welcome!", messageBody);     
     } else {
 
-        const messageBody = `<h2>You have signed up to receive messages from our Family Heritage Discovery mailing List using <span
+        const messageBody = `<p>You have signed up to receive messages from our Family Heritage Discovery mailing List using <span
                     id="email-address">${emailAddress}</span>. This email address is already in our mailing list database.
-            </h2>
+            </p>
             <p>We appreciate your interest in Family Heritage Discovery, and promise that you will not receive spam messages from us. Each message
                 we send you will include an unsubscribe link, and we will honor unsubscribe requests. We will not sell
                 your email address.</p>`
