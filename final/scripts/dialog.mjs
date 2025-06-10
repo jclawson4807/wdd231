@@ -12,6 +12,7 @@ export function conditionalCloseDialog(event) {
 }
 
 export function displayCourseDetailsModal(title, bodyMessage, ) {
+    console.log("displayCourseDetailsModal");
     html.addEventListener('click', conditionalCloseDialog, true);
 
     dialog.innerHTML = "";
@@ -30,7 +31,7 @@ export function displayCourseDetailsModal(title, bodyMessage, ) {
 
     const bodyText = document.createElement("p");
 
-    bodyText.textContent = bodyMessage;
+    bodyText.innerHTML = bodyMessage;
 
     dialog.appendChild(dialogHeader);
     dialog.appendChild(bodyText);

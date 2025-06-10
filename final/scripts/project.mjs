@@ -72,11 +72,5 @@ sendMeResearchTipsButton.addEventListener('click', () => {
 
         displayCourseDetailsModal("Already Subscribed", messageBody);       
     }
-
-    
-
-
-
-    window.location.replace("joined-mailing-list.html");
 });
 
