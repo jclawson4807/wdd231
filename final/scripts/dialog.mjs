@@ -1,4 +1,5 @@
 export const dialog = document.querySelector("dialog");
+export const html = document.querySelector('html');
 
 export function conditionalCloseDialog(event) {
 
@@ -24,29 +25,15 @@ export function displayCourseDetailsModal(title, bodyMessage, ) {
     });
 
     const dialogHeader = document.createElement("h2");
-    dialogHeader.textContent = `${course.subject} ${course.number}`;
+    dialogHeader.textContent = title;
     dialogHeader.appendChild(closeButton);
 
-    const title = document.createElement("h3");
+    const bodyText = document.createElement("p");
 
-    title.textContent = course.title;
-
-    const p1 = document.createElement("p");
-    const p2 = document.createElement("p");
-    const p3 = document.createElement("p");
-    const p4 = document.createElement("p");
-
-    p1.textContent = `${course.credits} credits`;
-    p2.textContent = `Certtificate: ${course.certificate}`;
-    p3.textContent = course.description;
-    p4.textContent = `Technology: ${course.technology.join(", ")}`;
+    bodyText.textContent = bodyMessage;
 
     dialog.appendChild(dialogHeader);
-    dialog.appendChild(title);
-    dialog.appendChild(p1);
-    dialog.appendChild(p2);
-    dialog.appendChild(p3);
-    dialog.appendChild(p4);
+    dialog.appendChild(bodyText);
 
     dialog.showModal();
 

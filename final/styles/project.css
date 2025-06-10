@@ -433,6 +433,46 @@ footer a:hover {
     border-radius: 6px;
 }
 
+dialog {
+    width: calc(100% - 20px);
+    margin: 100px auto;
+    padding: 0;
+    color: var(--header-footer-background-color);
+    font-family: var(--body-font), serif;
+    border: 1px solid var(--dark-blue-emphasis-color);
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+    max-width: 780px;
+    border-radius: 6px;
+}
+
+dialog h2 {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    background-color: var(--dark-blue-emphasis-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+dialog h3, dialog p {
+    padding: 10px;
+}
+
+dialog::backdrop {
+    background-color: var(--dialog-background-color);
+}
+
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    margin: 5px;
+    border: 1px solid var(--box-shadow-color);
+}
+
 /* large view navigation ************************************/
 @media (min-width: 615px) {
     h1 {
