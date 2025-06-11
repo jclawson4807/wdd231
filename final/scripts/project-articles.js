@@ -53,17 +53,17 @@ researchhelpButton.addEventListener('click', () => {
 const main = document.querySelector("main");
 
 function generateParagraphList(list) {
-    let returnString = `<h3>${list.listTitle}</h3>`;
+    let returnString = `<h3 tabindex="0">${list.listTitle}</h3>`;
 
     if (list.listType == "Numbered") {
-        returnString = returnString + "<ol>";
+        returnString = returnString + '<ol tabindex="0">';
     }
     else {
-        returnString = returnString + "<ul>";
+        returnString = returnString + '<ul tabindex="0">';
     }
 
     list.listItems.forEach(listItem => {
-        returnString = returnString + `<li>${listItem}</li>`;
+        returnString = returnString + `<li tabindex="0">${listItem}</li>`;
     });
 
     if (list.listType == "Numbered") {
@@ -77,10 +77,10 @@ function generateParagraphList(list) {
 }
 
 function generateArticleParagraph(paragraph) {
-    let returnString = "<p>";
+    let returnString = '<p tabindex="0">';
 
     if (Object.hasOwn(paragraph, "referenceURL")) {
-        returnString = returnString + `<a href="${paragraph.referenceURL}" target="blank">${paragraph.referenceText}</a> `;
+        returnString = returnString + `<a href="${paragraph.referenceURL}" target="blank" tabindex="0">${paragraph.referenceText}</a> `;
     }
 
     returnString = returnString + `${paragraph.paragraphText}`;
@@ -99,13 +99,13 @@ function generateArticleParagraph(paragraph) {
 function generateArticleSection(article) {
     let returnString = `<section class="article">
             <div class="article-header">
-                <img src="images/${article.authorImage}" alt="Author Image" width="50" height="50" loading="lazy">
-                <p><span class="article-title">${article.articleTitle}</span><span class="article-author">${article.authorName}</span></p>
+                <img src="images/${article.authorImage}" alt="Author Image" width="50" height="50" loading="lazy" tabindex="0">
+                <p tabindex="0"><span class="article-title">${article.articleTitle}</span><span class="article-author">${article.authorName}</span></p>
             </div>
-            <div class="article-body">`;
+            <div class="article-body" tabindex="0">`;
 
     if (Object.hasOwn(article, "articleImage")) {
-        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="${article.articleImageWidth}" height="${article.articleImageHeight}" loading="lazy"></img> `;
+        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="${article.articleImageWidth}" height="${article.articleImageHeight}" loading="lazy" tabindex="0"></img> `;
     }
 
     article.paragraphs.forEach(paragraph => {
