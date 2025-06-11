@@ -30,20 +30,20 @@
 
 <body>
     <header>
-        <img src="images/dark-mode-switch.svg" id="themeswitch" alt="dark mode switch button" width="44" height="44" loading="lazy">
-        <h1>Family Heritage Discovery</h1>
+        <img src="images/dark-mode-switch.svg" id="themeswitch" alt="dark mode switch button" width="44" height="44" loading="lazy" tabindex="0">
+        <h1 tabindex="0">Family Heritage Discovery</h1>
         <dialog id="thankyoudialog"></dialog>
-        <button type="button" id="menu" aria-label="Menu Button"></button>
+        <button type="button" id="menu" aria-label="Menu Button" tabindex="0"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="#" title="Home" id="home">Home</a></li>
-                <li><a href="#" title="Family Information" id="familyinfo">Blog</a>
+                <li><a href="#" title="Home" id="home" tabindex="0">Home</a></li>
+                <li><a href="#" title="Family Information" id="familyinfo" tabindex="0">Blog</a>
                 </li>
-                <li><a href="#" title="Online Sources" id="onlinesources">Online Sources</a>
+                <li><a href="#" title="Online Sources" id="onlinesources" tabindex="0">Online Sources</a>
                 </li>
-                <li><a href="#" title="Tools" id="tools">Tools</a></li>
-                <li><a href="#" title="Family History Centers" id="fh-centers">Research Centers</a></li>
-                <li><a href="#" title="Research Help" id="researchhelp" class="active">Research Help</a></li>
+                <li><a href="#" title="Tools" id="tools" tabindex="0">Tools</a></li>
+                <li><a href="#" title="Family History Centers" id="fh-centers" tabindex="0">Research Centers</a></li>
+                <li><a href="#" title="Research Help" id="researchhelp" class="active" tabindex="0">Research Help</a></li>
             </ul>
         </nav>
     </header>
@@ -51,74 +51,74 @@
         <picture>
             <source srcset="images/fhd-hero-800.webp" media="(min-width: 800px)">
             <source srcset=" images/fhd-hero-500.webp" media="(min-width: 500px)">
-            <img src="images/fhd-hero-300.webp" alt="Site hero image - tree with blue leaves and signs" width="300" loading="lazy">
+            <img src="images/fhd-hero-300.webp" alt="Site hero image - tree with blue leaves and signs" width="300" loading="lazy" tabindex="0">
         </picture>
         <section>
-            <h2>Request Research Help
+            <h2 tabindex="0">Request Research Help
             </h2>
-            <p>Though our volunteers are limited in how many research projects they can work on at any given time, we
+            <p tabindex="0">Though our volunteers are limited in how many research projects they can work on at any given time, we
                 are happy to assist you with difficult research problems. Please use the form below to tell us about the
                 research subject you are having difficulty finding. Each user may only have one active research
                 request at a time, and users are limited to two requests per year at this time. Submissions are
                 processed in the order received. We will review your submission and respond as quickly as possible.
             </p>
-            <p>When entering place names, please be as specific as possible. If you know a full street address, please
+            <p tabindex="0">When entering place names, please be as specific as possible. If you know a full street address, please
                 enter that. If you know the country, state, and city, please enter that information in that order. If
                 you know additional information, such as a hospital name, enter that after the address.</p>
-            <p>Please note the Other Sources text area. Please let us know about any other sources you have for
+            <p tabindex="0">Please note the Other Sources text area. Please let us know about any other sources you have for
                 this individual. Also let us know if you have searched for sources you have been unable to find.
             </p>
             <div id="request-research-help-container">
                 <form method="get" action="request-research-help-response.html" id="request-research-help-form">
                     <fieldset>
-                        <legend>Applicant Information</legend>
-                        <label>First Name<span class="required-asterisk">*</span> <input type="text" name="fname"
+                        <legend tabindex="0">Applicant Information</legend>
+                        <label tabindex="0">First Name<span class="required-asterisk">*</span> <input type="text" name="fname"
                                 required></label>
-                        <label>Last Name<span class="required-asterisk">*</span> <input type="text" name="lname"
+                        <label tabindex="0">Last Name<span class="required-asterisk">*</span> <input type="text" name="lname"
                                 required></label>
-                        <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                        <label>Email<span class="required-asterisk">*</span> <input type="email" name="email"
+                        <label tabindex="0">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label tabindex="0">Email<span class="required-asterisk">*</span> <input type="email" name="email"
                                 placeholder="someone@gmail.com" required></label>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Research Subject Information</legend>
-                        <div>Vital Information</div>
-                        <label>First Name <input type="text" name="rs-first-name"></label>
-                        <label>Last Name <input type="text" name="rs-last-name"></label>
-                        <div>Gender</div>
-                        <label><input type="radio" name="rs-gender" value="male">Male</label>
-                        <label><input type="radio" name="rs-gender" value="female">Female</label>
-                        <label>Year of Birth <input type="number" name="rs-year-of-birth"></label>
-                        <label>Year of Marriage <input type="number" name="rs-year-of-marriage"></label>
-                        <label>Year of Death <input type="number" name="rs-year-of-death"></label>
-                        <label>Place of Birth <input type="text" name="rs-birthplace"></label>
-                        <label>Place of Marriage <input type="text" name="rs-marriageplace"></label>
-                        <label>Place of Death <input type="text" name="rs-deathplace"></label>
+                        <legend tabindex="0">Research Subject Information</legend>
+                        <div tabindex="0">Vital Information</div>
+                        <label tabindex="0">First Name <input type="text" name="rs-first-name"></label>
+                        <label tabindex="0">Last Name <input type="text" name="rs-last-name"></label>
+                        <div tabindex="0">Gender</div>
+                        <label tabindex="0"><input type="radio" name="rs-gender" value="male" tabindex="0">Male</label>
+                        <label tabindex="0"><input type="radio" name="rs-gender" value="female" tabindex="0">Female</label>
+                        <label tabindex="0">Year of Birth <input type="number" name="rs-year-of-birth"></label>
+                        <label tabindex="0">Year of Marriage <input type="number" name="rs-year-of-marriage"></label>
+                        <label tabindex="0">Year of Death <input type="number" name="rs-year-of-death"></label>
+                        <label tabindex="0">Place of Birth <input type="text" name="rs-birthplace"></label>
+                        <label tabindex="0">Place of Marriage <input type="text" name="rs-marriageplace"></label>
+                        <label tabindex="0">Place of Death <input type="text" name="rs-deathplace"></label>
                     </fieldset>
                     <fieldset>
-                        <legend>Research Subject Family Information</legend>
-                        <label>Spouse's First Name <input type="text" name="rs-spouse-first-name"></label>
-                        <label>Spouse's Last Name <input type="text" name="rs-spouse-last-name"></label>
-                        <label>Father's First Name <input type="text" name="rs-pat-first-name"></label>
-                        <label>Father's Last Name <input type="text" name="rs-pat-last-name"></label>
-                        <label>Mother's First Name <input type="text" name="rs-mat-first-name"></label>
-                        <label>Mother's Last Name <input type="text" name="rs-mat-last-name"></label>
+                        <legend tabindex="0">Research Subject Family Information</legend>
+                        <label tabindex="0">Spouse's First Name <input type="text" name="rs-spouse-first-name"></label>
+                        <label tabindex="0">Spouse's Last Name <input type="text" name="rs-spouse-last-name"></label>
+                        <label tabindex="0">Father's First Name <input type="text" name="rs-pat-first-name"></label>
+                        <label tabindex="0">Father's Last Name <input type="text" name="rs-pat-last-name"></label>
+                        <label tabindex="0">Mother's First Name <input type="text" name="rs-mat-first-name"></label>
+                        <label tabindex="0">Mother's Last Name <input type="text" name="rs-mat-last-name"></label>
                     </fieldset>
                     <fieldset>
-                        <legend>Sources</legend>
-                        <div>Please indicate any source records you have found for this individual.</div>
-                        <label>Date of Last Source Search <input type="date" name="rs-date-last-source-search"></label>
-                        <label><input type="checkbox" name="birth-certificate" value="yes">Birth Certificate</label>
-                        <label><input type="checkbox" name="death-certificate" value="yes">Death Certificate</label>
-                        <label><input type="checkbox" name="marriage-certificate" value="yes">Marriage
+                        <legend tabindex="0">Sources</legend>
+                        <div tabindex="0">Please indicate any source records you have found for this individual.</div>
+                        <label tabindex="0">Date of Last Source Search <input type="date" name="rs-date-last-source-search"></label>
+                        <label tabindex="0"><input type="checkbox" name="birth-certificate" value="yes" tabindex="0">Birth Certificate</label>
+                        <label tabindex="0"><input type="checkbox" name="death-certificate" value="yes" tabindex="0">Death Certificate</label>
+                        <label tabindex="0"><input type="checkbox" name="marriage-certificate" value="yes" tabindex="0">Marriage
                             Certificate</label>
-                        <label><input type="checkbox" name="found-in-census" value="yes">Found in Census</label>
-                        <label>Other Sources<textarea name="other-sources" id="other-sources"
+                        <label tabindex="0"><input type="checkbox" name="found-in-census" value="yes" tabindex="0">Found in Census</label>
+                        <label tabindex="0">Other Sources<textarea name="other-sources" id="other-sources"
                                 rows="10"></textarea></label>
                     </fieldset>
 
-                    <input type="submit" value="Request Help">
+                    <input type="submit" value="Request Help" tabindex="0">
                 </form>
             </div>
         </section>
