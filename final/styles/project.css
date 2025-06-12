@@ -321,11 +321,15 @@ section img {
 footer {
     padding: 10px;
     text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 115px;
 }
 
 footer p {
-    width: 100%;
+    width: 310px;
     padding: 5px;
+    margin: auto;
 }
 
 footer a {

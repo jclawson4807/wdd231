@@ -234,10 +234,11 @@ section {
 }
 
 .article-body {
-    width: 100%;
-    padding: 1em;
+    width: 320px;
+    padding: 16px;
     border-radius: 0 0 6px 6px;
     position: relative;
+    margin: 0 auto;
 }
 
 .article-body p {
@@ -310,6 +311,10 @@ footer a:hover {
 
 @media (min-width: 800px) {
 
+    .article-body {
+        width: 780px;
+    }
+    
     h2,
     h3 {
         text-align: left;
@@ -337,6 +342,10 @@ footer a:hover {
 @media (max-width: 500px) {
     h1 {
         font-size: 1.0rem;
+    }
+
+    .article-body {
+        width: 480px;
     }
 
     .article-body img {
