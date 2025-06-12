@@ -105,7 +105,7 @@ function generateArticleSection(article) {
             <div class="article-body" tabindex="0">`;
 
     if (Object.hasOwn(article, "articleImage")) {
-        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="${article.articleImageWidth}" height="${article.articleImageHeight}" loading="lazy" tabindex="0"></img> `;
+        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="300" height="217" loading="lazy" tabindex="0"></img> `;
     }
 
     article.paragraphs.forEach(paragraph => {

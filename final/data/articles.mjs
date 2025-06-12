@@ -30,10 +30,10 @@ export const articles = [
         articleTitle: "American Ancestors",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
-        articleImage: "american-ancestors-homepage-300-247.webp",
+        articleImage: "american-ancestors-homepage-300-217.webp",
         articleImageAlt: "American Ancestors",
         articleImageWidth: 300,
-        articleImageHeight: 247,
+        articleImageHeight: 217,
         paragraphs: [
             {
                 referenceURL: "https://www.americanancestors.org",
@@ -50,10 +50,10 @@ export const articles = [
         articleTitle: "Find My Past",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
-        articleImage: "find-my-past-homepage-300-247.webp",
+        articleImage: "find-my-past-homepage-300-217.webp",
         articleImageAlt: "Find My Past",
         articleImageWidth: 300,
-        articleImageHeight: 247,
+        articleImageHeight: 217,
         paragraphs: [
             {
                 referenceURL: "https://www.findmypast.com",
@@ -70,10 +70,10 @@ export const articles = [
         articleTitle: "Family History Interviews - Part 1",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
-        articleImage: "family-photos-300-234.webp",
+        articleImage: "family-photos-300-217.webp",
         articleImageAlt: "Pile of family photos",
         articleImageWidth: 300,
-        articleImageHeight: 234,
+        articleImageHeight: 217,
         paragraphs: [
             {
                 paragraphText: "When my parents joined the Church of Jesus Christ of Latter-day Saints in the mid 1970s, they began doing recorded interviews with family members. My mother worked for a time as a secretary, and would transcribe these recordings during her lunch break.  My parents produced several short family histories based on these interviews.  I have copies of some of these histories, and have read them many times.  As a result, there are family members I feel that I know, though we have never met."
@@ -115,10 +115,10 @@ export const articles = [
         articleTitle: "Family History Interviews - Part 2",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
-        articleImage: "grandma-300-248.webp",
+        articleImage: "grandma-300-217.webp",
         articleImageAlt: "Grandma looking amused while holding large garden shears",
         articleImageWidth: 300,
-        articleImageHeight: 248,
+        articleImageHeight: 217,
         paragraphs: [
             {
                 paragraphText: "In my last article, I wrote about techniques that may help you have a successful family history interview.  In this article, I will provide a few lists of questions you may ask during an interview, organized by category.  These lists may be adapted as needed.  For example, if a family member was adopted, you may want to ask additional questions about the person's adoption date, birth name, birth family, etc.  If the person you are interviewing has published articles or books, you can talk about their motivation for writing and publishing those works.  If the person is a talented musician, you may want to record the person performing.  I will add additional lists of techniques and questions in later articles.",
