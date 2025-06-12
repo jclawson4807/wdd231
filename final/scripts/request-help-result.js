@@ -1,5 +1,46 @@
 const responseContainer = document.querySelector("#request-data");
 
+async function getInfoAboutIP(responseContainer, ip) {
+    try {
+        const response = await fetch(`http://api.ipstack.com/${ip}?access_key=44a39eefdf0e3abb231da4dea6bf8266`);
+        const data = await response.json();
+
+        const h25 = document.createElement("h2");
+        h25.setAttribute("tabindex", "0");
+        h25.textContent = "Request Client IP Information";
+
+        responseContainer.appendChild(h25);
+
+        const h25p4 = document.createElement("p");
+        const h25p5 = document.createElement("p");
+        const h25p6 = document.createElement("p");
+        const h25p7 = document.createElement("p");
+        const h25p8 = document.createElement("p");
+
+        h25p4.setAttribute("tabindex", "0");
+        h25p5.setAttribute("tabindex", "0");
+        h25p6.setAttribute("tabindex", "0");
+        h25p7.setAttribute("tabindex", "0");
+        h25p8.setAttribute("tabindex", "0");
+
+        h25p4.textContent = `IP Address: ${visitorip}`;
+        h25p5.textContent = `Country: ${data.country_name}`;
+        h25p6.textContent = `State or Provice: ${data.region_name}`;
+        h25p7.textContent = `City: ${data.city}`;
+        h25p8.textContent = `Postal Code: ${data.zip}`;
+
+        responseContainer.appendChild(h25p4);
+        responseContainer.appendChild(h25p5);
+        responseContainer.appendChild(h25p6);
+        responseContainer.appendChild(h25p7);
+        responseContainer.appendChild(h25p8);
+
+        console.log(data);
+    } catch (error) {
+        console.error('Error fetching data about IP address:', error);
+    }
+}
+
 function addReferenceIfTextContentFound(label, inputName) {
     if (formData.get(inputName)) {
         const p = document.createElement("p");
@@ -13,6 +54,8 @@ function addReferenceIfTextContentFound(label, inputName) {
 
 const formData = new URLSearchParams(window.location.search);
 
+const visitorip = formData.get('visitorip');
+
 const h21 = document.createElement("h2");
 h21.setAttribute("tabindex", "0");
 h21.textContent = "Applicant Information";
@@ -25,9 +68,9 @@ h21p1.setAttribute("tabindex", "0");
 h21p2.setAttribute("tabindex", "0");
 h21p3.setAttribute("tabindex", "0");
 
-h21p1.textContent = `Applicant Name: ${formData.get('fname')} ${formData.get('lname')}`
-h21p2.textContent = `Telephone Number: ${formData.get('phone')}`
-h21p3.textContent = `Email Address: ${formData.get('email')}`
+h21p1.textContent = `Applicant Name: ${formData.get('fname')} ${formData.get('lname')}`;
+h21p2.textContent = `Telephone Number: ${formData.get('phone')}`;
+h21p3.textContent = `Email Address: ${formData.get('email')}`;
 
 responseContainer.appendChild(h21);
 responseContainer.appendChild(h21p1);
@@ -75,3 +118,5 @@ addReferenceIfTextContentFound("Found Death Certificate", "death-certificate");
 addReferenceIfTextContentFound("Found Marriage Certificate", "marriage-certificate");
 addReferenceIfTextContentFound("Found in Census", "found-in-census");
 addReferenceIfTextContentFound("Other Sources Searched", "other-sources");
+
+const dataAboutIP = getInfoAboutIP(responseContainer, visitorip);

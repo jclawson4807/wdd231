@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/basic-navigation.js" defer></script>
     <script src="scripts/theme-switch.js" defer></script>
+    <script src="scripts/request-help.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
 
@@ -70,6 +71,7 @@
             </p>
             <div id="request-research-help-container">
                 <form method="get" action="request-research-help-response.html" id="request-research-help-form">
+                    <input name="visitorip" type="hidden" id="visitorip">
                     <fieldset>
                         <legend tabindex="0">Applicant Information</legend>
                         <label tabindex="0">First Name<span class="required-asterisk">*</span> <input type="text" name="fname"
