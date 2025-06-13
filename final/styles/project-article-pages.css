@@ -153,6 +153,12 @@ main picture {
     width: 100%;
 }
 
+main picture img {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
 section {
     margin: 0 auto;
     width: 100%;

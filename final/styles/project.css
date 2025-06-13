@@ -143,6 +143,7 @@ main picture {
 main picture img {
     margin: 0;
     width: 100%;
+    object-fit: cover;
 }
 
 .required-asterisk {
@@ -295,6 +296,11 @@ main picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#request-reseach-help-section, #request-reseach-help-section p {
+    width: 300px;
+    margin: 10px auto;
 }
 
 section {
@@ -508,6 +514,28 @@ dialog button {
     #cta-form input[type="submit"] {
         font-size: 1.2em;
     }
+
+    #request-reseach-help-section, #request-reseach-help-section p {
+        width: 595px;
+        margin: 10px auto;
+        text-align: left;
+    }
+
+    #request-research-help-container legend, #request-research-help-container label, #request-research-help-form div, #request-research-help-container input[type="text"],
+#request-research-help-container input[type="tel"],
+#request-research-help-container input[type="email"],
+#request-research-help-container input[type="url"],
+#request-research-help-container input[type="date"],
+#request-research-help-container select,
+#request-research-help-container input[type="number"], #request-research-help-container input[type="text"],
+#request-research-help-container input[type="tel"],
+#request-research-help-container input[type="email"],
+#request-research-help-container input[type="url"],
+#request-research-help-container input[type="date"],
+#request-research-help-container select,
+#request-research-help-container input[type="number"] {
+    text-align: left;
+}
 }
 
 @media (min-width: 652px) {
@@ -605,6 +633,11 @@ dialog button {
 
     #fh-center-content {
         max-width: 100%;
+    }
+
+    #request-reseach-help-section, #request-reseach-help-section p  {
+        width: 780px;
+        margin: 10px auto;
     }
 }
 
