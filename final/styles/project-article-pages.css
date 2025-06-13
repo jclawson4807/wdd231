@@ -104,6 +104,7 @@ nav {
     text-align: center;
     text-decoration: none;
     color: #fff;
+    font-size: 0.75em;
 }
 
 .navigation a:hover {
@@ -286,7 +287,6 @@ footer a:hover {
     }
 
     h3 {
-        font-size: 1.75rem;
         text-align: left;
     }
 
@@ -318,6 +318,10 @@ footer a:hover {
     h2,
     h3 {
         text-align: left;
+    }
+
+    h3 {
+        font-size: 1.75rem;
     }
 
     nav {
