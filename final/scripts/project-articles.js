@@ -1,5 +1,5 @@
 import { articles } from '../data/articles.mjs'
-
+ 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 

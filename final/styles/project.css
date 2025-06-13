@@ -648,6 +648,7 @@ dialog button {
 
     #common-questions-section div {
         max-width: 375px;
+        font-size: 0.95em;
     }
 
     #common-questions-section div p {
